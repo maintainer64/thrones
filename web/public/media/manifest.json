@@ -1,0 +1,57 @@
+{
+  "units": {
+    "stark": {
+      "footman": "/media/units/StarFoot.png",
+      "knight": "/media/units/StarKnight.png",
+      "siege-engine": "/media/units/StarSeige.png",
+      "ship": "/media/units/StarShip.png"
+    },
+    "greyjoy": {
+      "footman": "/media/units/GreyFoot.png",
+      "knight": "/media/units/GreyKnight.png",
+      "siege-engine": "/media/units/GreySeige.png",
+      "ship": "/media/units/GreyShip.png"
+    },
+    "lannister": {
+      "footman": "/media/units/LanFoot.png",
+      "knight": "/media/units/LanKnight.png",
+      "siege-engine": "/media/units/LanSeige.png",
+      "ship": "/media/units/LanShip.png"
+    },
+    "baratheon": {
+      "footman": "/media/units/BarathFoot.png",
+      "knight": "/media/units/BarathKnight.png",
+      "siege-engine": "/media/units/BarathSeige.png",
+      "ship": "/media/units/BarathShip.png"
+    },
+    "tyrell": {
+      "footman": "/media/units/TyrFoot.png",
+      "knight": "/media/units/TyrKnight.png",
+      "siege-engine": "/media/units/TyrSeige.png",
+      "ship": "/media/units/TyrShip.png"
+    },
+    "martell": {
+      "footman": "/media/units/MartFoot.png",
+      "knight": "/media/units/MartKnight.png",
+      "siege-engine": "/media/units/MartSeige.png",
+      "ship": "/media/units/MartShip.png"
+    }
+  },
+  "orders": {
+    "march": "/media/orders/March.webp",
+    "march-minus": "/media/orders/March.webp",
+    "march-star": "/media/orders/March.webp",
+    "defend-1": "/media/orders/Defend.webp",
+    "defend-2": "/media/orders/Defend.webp",
+    "defend-star": "/media/orders/Defend.webp",
+    "support-1": "/media/orders/Support.webp",
+    "support-2": "/media/orders/Support.webp",
+    "support-star": "/media/orders/Support.webp",
+    "raid-1": "/media/orders/Raid.webp",
+    "raid-2": "/media/orders/Raid.webp",
+    "raid-star": "/media/orders/Raid.webp",
+    "power-1": "/media/orders/Consolidate.webp",
+    "power-2": "/media/orders/Consolidate.webp",
+    "power-star": "/media/orders/Consolidate.webp"
+  }
+}

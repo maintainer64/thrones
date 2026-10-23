@@ -1,0 +1,338 @@
+.influence-backdrop {
+  padding: 20px;
+}
+.influence-modal {
+  width: min(880px, 100%);
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.influence-modal:focus {
+  outline: none;
+}
+.influence-modal h2 {
+  margin: 4px 0 0;
+  color: #ead5a8;
+  font:
+    30px Georgia,
+    serif;
+}
+.influence-header-actions {
+  display: flex;
+  gap: 8px;
+}
+.influence-header-actions button {
+  min-width: 44px;
+  min-height: 44px;
+}
+.influence-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+}
+.influence-steps li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #7e755344;
+  padding: 12px;
+  color: #94a797;
+  font-size: 12px;
+}
+.influence-steps svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.influence-steps [aria-current] {
+  color: #ecd6a2;
+  border-color: #bfa568;
+  background: #a1894620;
+}
+.influence-steps [data-complete="true"] {
+  color: #9ac0a0;
+}
+.influence-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 26px;
+}
+.influence-modal h3 {
+  font-size: 15px;
+  color: #e6d8b3;
+}
+.influence-decision {
+  min-width: 0;
+}
+.influence-balance {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b6bba6;
+  margin: 0 0 20px;
+}
+.influence-balance strong {
+  margin-left: auto;
+  color: #e8cf8d;
+  font-size: 24px;
+}
+.influence-decision form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.influence-decision form label {
+  font-size: 14px;
+  color: #e6d8b3;
+}
+.influence-decision input {
+  width: 100%;
+  min-height: 60px;
+  font-size: 28px;
+  text-align: center;
+  border: 1px solid #9d8c5f;
+  background: #0d191a;
+  color: #f0e0b9;
+}
+.influence-presets {
+  display: flex;
+  gap: 8px;
+}
+.influence-presets button {
+  flex: 1;
+}
+.influence-modal button {
+  min-height: 44px;
+}
+.influence-modal button:focus-visible,
+.influence-modal input:focus-visible,
+.influence-modal summary:focus-visible {
+  outline: 2px solid #efd18d;
+  outline-offset: 3px;
+}
+.influence-modal button.primary {
+  width: 100%;
+  justify-content: center;
+}
+.influence-confirm {
+  padding: 15px;
+  background: #b9934320;
+  border: 1px solid #aa945b;
+}
+.influence-confirm h3 {
+  margin: 0;
+}
+.influence-confirm p,
+.influence-tie-decision p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #c6c6b3;
+}
+.influence-confirm button + button {
+  width: 100%;
+  margin-top: 10px;
+}
+.influence-committed {
+  padding: 22px 12px;
+  text-align: center;
+  border: 1px solid #527d5f;
+  background: #4870501c;
+}
+.influence-committed > svg {
+  color: #a3bca1;
+}
+.influence-committed > strong {
+  display: block;
+  font:
+    46px Georgia,
+    serif;
+  color: #ead5a8;
+}
+.influence-committed p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #b3c1b3;
+}
+.influence-clock-hint {
+  font-size: 12px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+.influence-participants {
+  min-width: 0;
+  border-left: 1px solid #8d80513d;
+  padding-left: 24px;
+}
+.influence-participants h3 {
+  margin: 0 0 12px;
+}
+.influence-participants progress {
+  display: block;
+  width: 100%;
+  height: 5px;
+  accent-color: #c5a666;
+  margin-bottom: 12px;
+}
+.influence-participants ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.influence-participants li,
+.influence-results li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 53px;
+  border-bottom: 1px solid #8d80512d;
+  font-size: 13px;
+}
+.influence-house {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.influence-house img {
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.influence-bid-status,
+.influence-participants li > strong,
+.influence-result-bid {
+  margin-left: auto;
+}
+.influence-bid-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #adbaa8;
+}
+.influence-participants [data-tied="true"] {
+  background: #b99a5712;
+}
+.influence-participants [data-ranked="true"] {
+  color: #a2c29c;
+}
+.influence-participants li > strong {
+  font:
+    22px Georgia,
+    serif;
+  color: #e8cf8d;
+}
+.influence-rank {
+  display: inline-grid;
+  place-content: center;
+  width: 22px;
+  min-width: 22px;
+  height: 24px;
+  color: #b7a474;
+  font-size: 13px;
+}
+.influence-tie-decision > svg {
+  color: #dec589;
+}
+.influence-tie-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.influence-tie-options button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  padding: 10px;
+  border-color: #9e8a53;
+}
+.influence-tie-options button > span:last-child {
+  color: #baa978;
+  font-size: 11px;
+}
+.influence-error {
+  color: #ffb6a5;
+  border-left: 3px solid #c66c52;
+  padding: 10px;
+  overflow-wrap: anywhere;
+}
+.influence-previous {
+  margin-top: 24px;
+  border-top: 1px solid #8d805144;
+  padding-top: 15px;
+}
+.influence-previous summary {
+  padding: 8px 0;
+  color: #d1bc8e;
+  cursor: pointer;
+}
+.influence-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+.influence-results h3 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.influence-results h3 svg {
+  width: 18px;
+  height: 18px;
+}
+.influence-results ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.influence-result-bid {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #cbb985;
+  white-space: nowrap;
+}
+.influence-report {
+  width: min(960px, 100%);
+}
+.influence-report > button {
+  margin-top: 24px;
+}
+@media (max-width: 680px) {
+  .influence-backdrop {
+    padding: 8px;
+  }
+  .influence-modal {
+    padding: 18px;
+    max-height: calc(100dvh - 16px);
+  }
+  .influence-modal h2 {
+    font-size: 25px;
+  }
+  .influence-steps {
+    gap: 5px;
+  }
+  .influence-steps li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 8px;
+    font-size: 10px;
+  }
+  .influence-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .influence-participants {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #8d805144;
+    padding-top: 18px;
+  }
+}

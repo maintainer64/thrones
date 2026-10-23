@@ -1,0 +1,37 @@
+{
+  "name": "westeros-web-ui",
+  "packageManager": "pnpm@11.13.0",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "artwork:index": "node ../scripts/index-local-art.mjs",
+    "build": "pnpm artwork:index && tsc --noEmit && vite build",
+    "test": "node ../scripts/check-locales.mjs && vitest run src",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src index.html vite.config.ts tsconfig.json package.json",
+    "format:check": "prettier --check src index.html vite.config.ts tsconfig.json package.json"
+  },
+  "dependencies": {
+    "@fontsource-variable/alegreya": "^5.3.0",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "lucide-react": "1.31.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/three": "^0.186.0",
+    "prettier": "^3.9.10",
+    "sharp": "^0.35.5",
+    "typescript": "5.9.3",
+    "vite": "8.0.13",
+    "vitest": "4.1.11",
+    "yaml": "^2.9.1"
+  }
+}

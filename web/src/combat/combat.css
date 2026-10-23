@@ -1,0 +1,400 @@
+.combat-playback-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.combat-playback-controls > div {
+  flex: 1 1 260px;
+  display: grid;
+  gap: 5px;
+}
+.combat-playback-controls small {
+  max-width: 620px;
+}
+.combat-playback-controls button {
+  min-height: 44px;
+}
+.combat-stages {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 22px 0;
+}
+.combat-stages li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #b9ad94;
+  font-size: 14px;
+}
+.combat-stages li[aria-current] {
+  color: #f1d596;
+}
+.combat-stages li > span {
+  display: grid;
+  place-items: center;
+  border: 1px solid #9a8048;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  flex: none;
+}
+.combat-card-flip {
+  width: 100%;
+}
+.combat-card-back {
+  aspect-ratio: 1 / 1.7;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 20px;
+  background: radial-gradient(ellipse, #3b3421, #121b17 75%);
+  border: 2px solid #a58b54;
+  box-shadow:
+    inset 0 0 0 8px #a58b5422,
+    0 10px 30px #0008;
+  color: #e9d39d;
+  font:
+    28px "Alegreya Variable",
+    Georgia,
+    serif;
+}
+.combat-card-back img {
+  width: 45%;
+  max-height: 140px;
+}
+.combat-card-flip[data-revealed="true"] {
+  animation: combat-card-reveal 0.55s ease-out both;
+  transform-origin: center;
+}
+@keyframes combat-card-reveal {
+  from {
+    transform: perspective(1000px) rotateY(80deg);
+    opacity: 0.3;
+  }
+  to {
+    transform: perspective(1000px) rotateY(0);
+    opacity: 1;
+  }
+}
+.combat-calculation-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.combat-calculation-controls button {
+  min-height: 44px;
+}
+.combat-strength li[data-pending="true"] {
+  opacity: 0.25;
+}
+.combat-strength li {
+  transition: opacity 0.25s;
+}
+.combat-static .combat-card-flip,
+.no-motion .combat-card-flip {
+  animation: none;
+}
+.combat-static .combat-strength li,
+.no-motion .combat-strength li {
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .combat-card-flip {
+    animation: none !important;
+  }
+  .combat-strength li {
+    transition: none;
+  }
+}
+@media (max-width: 600px) {
+  .combat-stages {
+    gap: 8px;
+  }
+  .combat-stages li {
+    font-size: 12px;
+  }
+  .combat-playback-controls > .primary {
+    flex: 1 1 100%;
+  }
+}
+.immersive .combat-intro {
+  width: min(960px, 100%);
+  text-align: left;
+  background: var(--leather);
+  border-color: #ba9758;
+}
+.combat-intro h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.combat-route {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+  margin: 24px 0;
+  padding: 18px;
+  background: #131b17;
+  border: 1px solid #967d4b66;
+}
+.combat-route > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.combat-route img {
+  flex: none;
+  width: 44px;
+  height: 44px;
+}
+.combat-route small,
+.combat-route b {
+  display: block;
+}
+.combat-route small {
+  font-size: 12px;
+  color: #acb59f;
+  margin-bottom: 5px;
+}
+.combat-route b {
+  color: #ead4a0;
+  font:
+    23px "Alegreya Variable",
+    Georgia,
+    serif;
+  line-height: 1.15;
+}
+.combat-route-arrow {
+  color: #d6af60;
+  animation: attack-route 1.5s ease-in-out 2;
+}
+@keyframes attack-route {
+  50% {
+    transform: translateX(6px);
+    filter: drop-shadow(0 0 6px #d6af60);
+  }
+}
+.combat-strength {
+  text-align: left;
+  margin: 18px 0;
+}
+.combat-strength-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.combat-strength-side {
+  min-width: 0;
+  border: 1px solid #9a804849;
+  background: #17201999;
+}
+.combat-strength-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 1px solid #9a804849;
+}
+.combat-strength-heading > div {
+  flex: 1;
+  min-width: 0;
+}
+.combat-strength-heading h3 {
+  margin: 2px 0 0;
+  color: #ead4a0;
+  font:
+    22px "Alegreya Variable",
+    Georgia,
+    serif;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.combat-strength-heading small {
+  font-size: 11px;
+  color: #aeb79f;
+}
+.combat-strength-heading > .strength-shield {
+  width: 38px;
+  height: 45px;
+  flex: none;
+}
+.combat-strength-heading .strength-shield > span {
+  font-size: 24px;
+}
+.combat-strength ul {
+  list-style: none;
+  padding: 0 12px;
+  margin: 0;
+}
+.combat-strength li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 0;
+  border-bottom: 1px solid #967d4b2b;
+  font-size: 13px;
+}
+.combat-strength li > :is(img, svg) {
+  object-fit: contain;
+  color: #b6a071;
+}
+.combat-strength li b {
+  font-size: 13px;
+  font-weight: 500;
+  color: #e5d7b5;
+}
+.combat-strength li small {
+  display: block;
+  margin-top: 3px;
+  color: #9dac98;
+  font-size: 11px;
+  line-height: 1.4;
+}
+.combat-strength li strong {
+  font:
+    23px Georgia,
+    serif;
+  color: #e5ce95;
+  font-variant-numeric: tabular-nums;
+}
+.combat-strength li[data-kind$="effect"] {
+  background: #b9974712;
+}
+.combat-strength .combat-siege-note {
+  color: #c2b07e;
+}
+.combat-strength-side > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px;
+  background: #a78c491c;
+  color: #ead4a0;
+  font-size: 12px;
+}
+.combat-strength-side > footer b {
+  font:
+    26px Georgia,
+    serif;
+}
+.combat-secret-note,
+.combat-remaining {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #b5bba3;
+}
+.combat-remaining {
+  border-top: 1px solid #967d4b44;
+  padding-top: 12px;
+}
+.combat-intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+.combat-intro-actions button {
+  min-height: 44px;
+}
+.combat-report .combat-breakdown-details {
+  margin-top: 24px;
+  text-align: left;
+}
+.combat-breakdown-details > summary {
+  font-size: 14px;
+  padding: 12px 0;
+}
+.combat-history ul {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+.combat-history li {
+  margin: 8px 0;
+}
+.combat-history button {
+  display: grid;
+  width: 100%;
+  gap: 5px;
+  text-align: left;
+  justify-content: start;
+  padding: 10px;
+}
+.combat-history button span {
+  font-size: 12px;
+}
+.combat-history button small {
+  color: #a2af98;
+  font-size: 10px;
+}
+.combat-map-banner {
+  position: absolute;
+  bottom: calc(var(--hand-height) + 85px);
+  left: calc(var(--hud-left) + 16px);
+  right: calc(var(--hud-right) + 16px);
+  z-index: 22;
+  padding: 12px;
+  border: 1px solid #b89a5d;
+  background: #17231bf2;
+  color: #e4d2a6;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.combat-map-banner > span {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+}
+.game3d-region:is(.battle-from, .battle-to) {
+  border-color: #efbd60;
+  box-shadow:
+    0 0 0 2px #e6ad4a66,
+    0 0 12px #d8913b77;
+  opacity: 1;
+}
+.game3d-region.battle-to {
+  border-color: #f09c7a;
+}
+.combat-static .combat-route-arrow,
+.no-motion .combat-route-arrow {
+  animation: none;
+}
+@media (max-width: 600px) {
+  .combat-route {
+    gap: 8px;
+    padding: 12px 8px;
+  }
+  .combat-route > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .combat-route b {
+    font-size: 21px;
+  }
+  .combat-strength-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .combat-map-banner {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .combat-route-arrow {
+    animation: none;
+  }
+}

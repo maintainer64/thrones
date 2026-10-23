@@ -1,0 +1,374 @@
+{
+  "cards": {
+    "stannis-baratheon": {
+      "name": "Stannis Baratheon",
+      "description": "If your opponent is ahead of you on the Iron Throne track, this card gains 1 combat strength."
+    },
+    "renly-baratheon": {
+      "name": "Renly Baratheon",
+      "description": "After winning, you may replace one participating Baratheon footman, including one in your own supporting army, with a knight from your reserves."
+    },
+    "ser-davos-seaworth": {
+      "name": "Ser Davos Seaworth",
+      "description": "If Stannis Baratheon is in your discard pile, this card gains 1 combat strength and one sword icon."
+    },
+    "brienne-of-tarth": {
+      "name": "Brienne of Tarth",
+      "description": "No special text ability: use the printed strength, sword and fortification icons."
+    },
+    "salladhor-saan": {
+      "name": "Salladhor Saan",
+      "description": "If you are supported, participating non-Baratheon ships have their strength reduced to zero. Support order bonuses remain. Effects in the same timing window resolve in Iron Throne order."
+    },
+    "melisandre": {
+      "name": "Melisandre",
+      "description": "No special text ability: use the printed strength and sword icon."
+    },
+    "patchface": {
+      "name": "Patchface",
+      "description": "After combat, you may choose and discard one card from your opponent's hand. Hand recovery and Roose Bolton resolve first."
+    },
+    "tywin-lannister": {
+      "name": "Tywin Lannister",
+      "description": "If you win, gain two available power tokens, up to your total supply."
+    },
+    "ser-gregor-clegane": {
+      "name": "Ser Gregor Clegane",
+      "description": "No special text ability: use the printed strength and three sword icons."
+    },
+    "ser-jaime-lannister": {
+      "name": "Ser Jaime Lannister",
+      "description": "No special text ability: use the printed strength and sword icon."
+    },
+    "the-hound": {
+      "name": "The Hound",
+      "description": "No special text ability: use the printed strength and two fortification icons."
+    },
+    "ser-kevan-lannister": {
+      "name": "Ser Kevan Lannister",
+      "description": "When attacking, each participating Lannister footman, including your supporting footmen, contributes 2 strength instead of 1."
+    },
+    "tyrion-lannister": {
+      "name": "Tyrion Lannister",
+      "description": "You may cancel your opponent's revealed card and return it to their hand. They must choose another card; if none remain, they fight without a card. A replacement resolves its own ability."
+    },
+    "cersei-lannister": {
+      "name": "Cersei Lannister",
+      "description": "If you win, you may remove one of the losing opponent's orders anywhere on the board."
+    },
+    "eddard-stark": {
+      "name": "Eddard Stark",
+      "description": "No special text ability: use the printed strength and two sword icons."
+    },
+    "robb-stark": {
+      "name": "Robb Stark",
+      "description": "If you win, you may choose your opponent's legal retreat destination. Choose an area with the fewest losses. This also applies when winning as defender."
+    },
+    "roose-bolton": {
+      "name": "Roose Bolton",
+      "description": "If you lose, return your entire house card discard pile to your hand, including Roose Bolton."
+    },
+    "greatjon-umber": {
+      "name": "Greatjon Umber",
+      "description": "No special text ability: use the printed strength and sword icon."
+    },
+    "ser-rodrick-cassel": {
+      "name": "Ser Rodrik Cassel",
+      "description": "No special text ability: use the printed strength and two fortification icons."
+    },
+    "the-blackfish": {
+      "name": "The Blackfish",
+      "description": "Prevents combat casualties from cards and icons, including Mace Tyrell. Does not save siege engines after a defeat or units without a legal retreat."
+    },
+    "catelyn-stark": {
+      "name": "Catelyn Stark",
+      "description": "Double the bonus of your Defense order in the embattled area."
+    },
+    "the-red-viper": {
+      "name": "The Red Viper",
+      "description": "No special text ability: use the printed strength, two sword icons and one fortification icon."
+    },
+    "areo-hotah": {
+      "name": "Areo Hotah",
+      "description": "No special text ability: use the printed strength and fortification icon."
+    },
+    "darkstar": {
+      "name": "Darkstar",
+      "description": "No special text ability: use the printed strength and sword icon."
+    },
+    "obara-sand": {
+      "name": "Obara Sand",
+      "description": "No special text ability: use the printed strength and sword icon."
+    },
+    "arianne-martell": {
+      "name": "Arianne Martell",
+      "description": "If you lose as defender, the victorious army does not occupy the area and returns to its origin. Your surviving units must still retreat."
+    },
+    "nymeria-sand": {
+      "name": "Nymeria Sand",
+      "description": "This card gains a sword icon when attacking or a fortification icon when defending."
+    },
+    "doran-martell": {
+      "name": "Doran Martell",
+      "description": "Immediately move your opponent to the bottom of an influence track of your choice. Already placed special orders remain on the board."
+    },
+    "euron-crows-eye": {
+      "name": "Euron Crow's Eye",
+      "description": "No special text ability: use the printed strength and sword icon."
+    },
+    "victarion-greyjoy": {
+      "name": "Victarion Greyjoy",
+      "description": "When attacking, each participating Greyjoy ship, including your supporting ships, contributes 1 additional strength."
+    },
+    "balon-greyjoy": {
+      "name": "Balon Greyjoy",
+      "description": "Reduce the printed strength of your opponent's card to zero. Ability bonuses and other combat icons remain."
+    },
+    "theon-greyjoy": {
+      "name": "Theon Greyjoy",
+      "description": "When defending a castle or stronghold, this card gains 1 combat strength and one sword icon."
+    },
+    "dagmar-cleftjaw": {
+      "name": "Dagmer Cleftjaw",
+      "description": "No special text ability: use the printed strength, sword and fortification icons."
+    },
+    "asha-greyjoy": {
+      "name": "Asha Greyjoy",
+      "description": "If you are not supported, this card gains two sword icons and one fortification icon."
+    },
+    "aeron-damphair": {
+      "name": "Aeron Damphair",
+      "description": "You may spend two available power tokens, discard Aeron and immediately play another card from your hand."
+    },
+    "mace-tyrell": {
+      "name": "Mace Tyrell",
+      "description": "Before calculating final strength, destroy one attacking or defending enemy footman. Supporting units are unaffected. Combat continues even if no units remain."
+    },
+    "ser-loras-tyrell": {
+      "name": "Ser Loras Tyrell",
+      "description": "After winning as attacker, move your March order into the conquered area. You may resolve it again later this round. Remove the order if no units occupy the area."
+    },
+    "randyll-tarly": {
+      "name": "Randyll Tarly",
+      "description": "No special text ability: use the printed strength and sword icon."
+    },
+    "ser-garlan-tyrell": {
+      "name": "Ser Garlan Tyrell",
+      "description": "No special text ability: use the printed strength and two sword icons."
+    },
+    "margaery-tyrell": {
+      "name": "Margaery Tyrell",
+      "description": "No special text ability: use the printed strength and fortification icon."
+    },
+    "alester-florent": {
+      "name": "Alester Florent",
+      "description": "No special text ability: use the printed strength and fortification icon."
+    },
+    "queen-of-thorns": {
+      "name": "Queen of Thorns",
+      "description": "Immediately remove an opponent's order in an area adjacent to the battle. You cannot remove the March order that started this combat."
+    }
+  },
+  "messages": {
+    "tides.bladeRedraw": "Valyrian Steel Blade: Tides card replaced",
+    "tides.bladeBonus": "Valyrian Steel Blade: +1 strength",
+    "tides.cardPrefix": "Tides of Battle: strength +",
+    "tides.swordsSeparator": ", swords ",
+    "tides.towersSeparator": ", fortifications ",
+    "tides.skullsSeparator": ", skulls ",
+    "events.roomCreated": "Room created. The link invites players but does not grant access to someone else's seat.",
+    "events.planningStarted": "Secret planning for round one has started.",
+    "events.ordersRevealed": "All players are ready. Orders have been revealed simultaneously.",
+    "events.planningTimeout": "planning timed out; missing orders were assigned",
+    "events.hardTimeout": "turn completed by the hard timer",
+    "events.orderPassed": "order removed without action",
+    "events.raidPrefix": "raid in ",
+    "events.marchPrefix": "march to ",
+    "events.combatStartedPrefix": "Combat started: ",
+    "events.opponentSeparator": " against ",
+    "events.combatResultPrefix": "Combat: ",
+    "events.combatWinnerPrefix": "House victory: ",
+    "events.retreatPrefix": "retreat to ",
+    "events.gameWinnerPrefix": "Winning house: ",
+    "events.roundPrefix": "Round ",
+    "events.newOrdersHint": "assign new secret orders",
+    "effects.blackfishPreventsMace": "Mace's footman casualty prevented",
+    "effects.maceDestroysFootman": "one enemy footman destroyed before calculating strength",
+    "effects.optionalDeclined": "player declined the optional ability",
+    "effects.replacementChosen": "chosen to replace the cancelled card",
+    "effects.cardCancelled": "opponent's card cancelled and returned to their hand",
+    "effects.aeronReplacementPrefix": "spent 2 power; new card: ",
+    "effects.orderRemovedPrefix": "order removed in ",
+    "effects.trackDemotionPrefix": "opponent moved to the bottom of track ",
+    "effects.winnerChoosesRetreat": "winner chooses the opponent's retreat",
+    "effects.footmanUpgradedPrefix": "footman upgraded to knight: ",
+    "effects.cardDiscardedPrefix": "opponent's card discarded: ",
+    "effects.strengthPrefix": "card strength ",
+    "effects.swordsPrefix": "swords ",
+    "effects.fortificationsPrefix": "fortifications ",
+    "effects.defenseDoubled": "Defense order bonus doubled",
+    "effects.unitStrengthRecalculated": "participating and supporting unit strength recalculated",
+    "effects.shipsStrengthCancelled": "enemy ship strength set to zero at this ability step; subsequent effects follow Iron Throne order",
+    "effects.armyReturnsToOrigin": "victorious units returned to their origin",
+    "effects.marchOrderTransferred": "March order moved into the conquered area",
+    "effects.powerGained": "gained up to two power tokens",
+    "effects.handRestored": "entire discard pile, including Roose, returned to hand",
+    "errors.noAutomaticCard": "No card is available for automatic selection",
+    "errors.revisionConflict": "The room has changed; please retry the action",
+    "errors.crossOrigin": "Cross-site request is not allowed",
+    "errors.invalidName": "Enter a name of up to 40 characters",
+    "errors.roomSave": "Could not save the room",
+    "errors.invitationRequired": "Join the room using its invitation",
+    "errors.roomMissing": "Room not found",
+    "errors.storage": "Storage error",
+    "errors.invalidPreview": "Invalid preview request",
+    "errors.accessDenied": "You do not have access to this room",
+    "errors.turnTimeout": "The turn has timed out",
+    "errors.invalidCommand": "Invalid command",
+    "errors.timerSave": "Could not save the timer expiration",
+    "errors.roomUpdatedAfterTimeout": "The turn has timed out. The room has been updated",
+    "errors.actionSave": "Could not save the action",
+    "errors.alreadyStarted": "The game has already started",
+    "errors.chooseHouseBeforeStart": "You can only choose a house before the game starts",
+    "errors.houseTaken": "This house is taken by another player",
+    "errors.houseUnavailable": "This house is taken by another player or does not exist",
+    "errors.noPlayerSeat": "No player seat is available; ask the host to replace a bot",
+    "errors.notParticipant": "You are not a participant in this room",
+    "errors.settingsHostOnly": "Only the host can change settings before the game starts",
+    "errors.settingsMissing": "Settings are missing",
+    "errors.settingsBeforeStartOnly": "Only the host can change settings before the game starts",
+    "errors.unknownDifficulty": "Unknown difficulty",
+    "errors.seatOccupied": "An occupied player seat cannot be replaced",
+    "errors.unknownHouse": "Unknown house",
+    "errors.startHostOnly": "Only the host can start the game from the lobby",
+    "errors.emptySeats": "Some player seats are still empty",
+    "errors.notPlanning": "It is not the planning phase",
+    "errors.ordersNotRevealed": "Orders have not been revealed yet",
+    "errors.ordersAlreadyRevealed": "Orders have already been revealed",
+    "errors.actionUnavailable": "This action is not implemented in the Go engine yet",
+    "errors.ordersLocked": "Orders can be changed before confirming readiness",
+    "errors.noOwnUnits": "You have no units in this area",
+    "errors.unknownOrder": "Unknown order",
+    "errors.powerOnLandOnly": "Consolidate Power is only available on land in this prototype",
+    "errors.orderInUse": "This order token is already in use",
+    "errors.specialOrderLimit": "The King's Court special order limit has been exceeded",
+    "errors.invalidTurnDuration": "The turn limit must be between 1 and 120 minutes",
+    "errors.expansionUnavailable": "This expansion is not implemented; only the base tactical prototype is available",
+    "errors.notYourTurn": "It is not your turn",
+    "errors.cannotPassNow": "An order cannot be passed in this phase",
+    "errors.noOrdersToPass": "No orders are available to pass",
+    "errors.noActiveOrder": "You have no active order there",
+    "errors.unknownAction": "Unknown action",
+    "errors.ownRaidRequired": "Your own Raid order is required",
+    "errors.raidAdjacency": "A raid requires an adjacent enemy area",
+    "errors.raidLandToSea": "A land area cannot raid a sea area or port",
+    "errors.raidForbiddenOrder": "This order cannot be removed by a raid",
+    "errors.ownMarchRequired": "Your own March order is required",
+    "errors.unreachableArea": "Area cannot be reached: check adjacency and ship transport",
+    "errors.negativeUnitCount": "Unit counts cannot be negative",
+    "errors.notEnoughUnits": "Not enough units",
+    "errors.unknownUnitType": "Unknown unit type",
+    "errors.noUnitsSelected": "Select at least one unit",
+    "errors.supplyLimit": "This march exceeds your supply limits",
+    "errors.controlTokenMissing": "No power token is available to retain control",
+    "errors.neutralGarrisonStrength": "Not enough strength to attack the neutral garrison",
+    "errors.notInCombat": "You are not participating in this combat",
+    "errors.cardAlreadyChosen": "A card has already been chosen",
+    "errors.cardUnavailable": "This card is not available",
+    "errors.notYourRetreat": "It is not your retreat decision",
+    "errors.invalidRetreat": "Invalid retreat destination",
+    "errors.invalidPreviewAction": "Preview is only available for March and Raid actions",
+    "errors.ownActiveOrderRequired": "Select your own active order",
+    "errors.notYourAbility": "It is not your card ability decision",
+    "errors.invalidAbilityChoice": "Invalid card ability choice",
+    "errors.notEnoughPower": "Not enough available power",
+    "errors.notAnAuctionParticipant": "You are not participating in this auction",
+    "errors.bidAlreadyCommitted": "Your bid is already committed",
+    "errors.invalidBidAmount": "Your bid must be between zero and your available power",
+    "errors.influenceRequiresWesteros": "Influence auctions require a Westeros event",
+    "errors.invalidInfluenceTracks": "Invalid influence track participants",
+    "errors.notBidding": "It is not the secret bidding phase",
+    "errors.missingBid": "Specify a bid, including zero",
+    "errors.notThroneTieBreaker": "The Iron Throne holder decides tied bids",
+    "errors.invalidTiedHouse": "Choose a house from the current tied group",
+    "influence.biddingStarted": "Secret auction started: ",
+    "influence.biddingFinished": "Auction completed: ",
+    "influence.bidCommitted": ": bid committed",
+    "influence.bidRevealed": ": bid revealed ",
+    "influence.tieChoice": ": next house chosen among tied bids — ",
+    "influence.ironThrone": "Iron Throne",
+    "influence.fiefdoms": "Fiefdoms",
+    "influence.kingsCourt": "King’s Court",
+    "errors.supplyRequiresWesteros": "Supply adjustment requires a Westeros event",
+    "errors.notYourDisband": "It is not your disbanding decision",
+    "errors.selectOwnedUnits": "Select an area containing your units",
+    "errors.invalidDisbandCount": "Invalid number of units to disband",
+    "errors.selectDisbandUnits": "Select units to disband",
+    "errors.musterRequiresWesteros": "Mustering requires a Westeros event",
+    "errors.invalidMuster": "Invalid mustering action",
+    "errors.notYourMuster": "It is not your mustering decision",
+    "errors.notYourConsolidation": "It is not your special Consolidate Power decision",
+    "errors.selectConsolidation": "Choose power or mustering",
+    "provision.supplyAdjusted": ": supply adjusted — ",
+    "provision.unitsDisbanded": ": units disbanded — ",
+    "provision.mustered": ": units mustered",
+    "errors.westerosRevealBoundary": "Westeros cards can only be revealed in the Westeros phase of rounds 2–10",
+    "errors.westerosRewind": "Westeros cards cannot be revealed again for a previous round",
+    "errors.invalidWesterosDeck": "Invalid Westeros deck composition: ",
+    "errors.previousWesterosPending": "Previous Westeros events are not finished",
+    "errors.invalidWildlingThreat": "Invalid wildling threat",
+    "errors.unknownWesterosEvent": "Unknown Westeros event",
+    "errors.noWesterosChoice": "There is no pending Westeros event decision",
+    "errors.notWesterosHolder": "The relevant dominance token holder makes this decision",
+    "errors.invalidWesterosChoice": "Choose a legal Westeros event effect",
+    "errors.noWildlingAttack": "There is no pending wildling attack",
+    "errors.westerosOrderBanned": "This order is forbidden by this round’s Westeros event",
+    "westeros.revealed": "Westeros: cards revealed for round ",
+    "westeros.threat": "Wildling threat: ",
+    "westeros.event": "Westeros event: ",
+    "westeros.choice": ": chosen Westeros effect — ",
+    "westeros.power": ": power gained from Westeros — ",
+    "westeros.attackPending": "Awaiting resolution of the wildling attack",
+    "errors.wildlingRequiresWesteros": "A wildling attack requires a Westeros event",
+    "errors.invalidWildlingDeck": "Invalid wildling deck composition",
+    "errors.notWildlingBidding": "There is no secret Night’s Watch contribution round",
+    "wildlings.biddingStarted": "Night’s Watch: secret contributions started against strength ",
+    "wildlings.bidCommitted": ": Night’s Watch contribution committed",
+    "wildlings.bidRevealed": ": Night’s Watch contribution revealed — ",
+    "wildlings.cardRevealed": "Wildling card revealed: ",
+    "wildlings.completed": "Wildling attack completed",
+    "errors.noWildlingDecision": "There is no wildling card decision for you now",
+    "errors.invalidWildlingTrack": "Choose a legal influence track for the wildling card",
+    "wildlings.supplyChanged": ": supply changed by wildlings — ",
+    "wildlings.trackChanged": ": house moved by wildlings — ",
+    "wildlings.top": ", top",
+    "wildlings.bottom": ", bottom",
+    "errors.invalidWildlingDiscard": "Choose a house card eligible to be discarded",
+    "wildlings.cardDiscarded": ": house card discarded due to wildlings — ",
+    "wildlings.handRestored": ": house cards returned by wildlings — ",
+    "errors.invalidWildlingUnit": "Choose an eligible unit for the wildling effect",
+    "wildlings.upgradesFinished": ": wildling reward upgrades finished",
+    "wildlings.unitEffect": ": wildlings — ",
+    "wildlings.knightDowngraded": "knight replaced with a footman",
+    "wildlings.knightDestroyed": "knight destroyed because no footman was available",
+    "wildlings.footmanUpgraded": "footman replaced with a knight",
+    "errors.invalidWildlingRetrieve": "Choose a card from your discard pile or decline the reward",
+    "wildlings.cardRetrieved": ": house card returned by wildlings — ",
+    "wildlings.unitDestroyed": ": unit destroyed by wildlings — ",
+    "wildlings.preemptiveTrack": ": influence reduced by two positions by wildlings — ",
+    "wildlings.preemptiveAttack": ": exempt from the repeat wildling attack of strength 6",
+    "errors.ravenStart": "The Messenger Raven step cannot begin now",
+    "errors.ravenChoice": "It is not your Messenger Raven decision",
+    "errors.ravenReplacement": "Replace an existing order with a different unused token",
+    "errors.ravenPlacement": "After looking, choose the top or bottom of the deck",
+    "errors.ravenAction": "Choose an available Messenger Raven action",
+    "raven.start": "Messenger Raven: House making the decision: ",
+    "raven.skip": ": Messenger Raven not used",
+    "raven.order": ": Messenger Raven replaced an order",
+    "raven.peek": ": Messenger Raven looked at a wildling card",
+    "raven.finish": ": Messenger Raven completed the deck decision",
+    "errors.bladeUnavailable": "The Valyrian Steel Blade is currently unavailable",
+    "errors.setupCount": "Choose 3 to 6 houses (humans and bots combined)",
+    "errors.setupOccupied": "The selected setup excludes an occupied house: choose an eligible house first"
+  }
+}

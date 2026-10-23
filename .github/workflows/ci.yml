@@ -1,61 +1,118 @@
-name: CI
+name: Go and React
 
 on:
+  push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
-  game-server-build:
-    name: Game Server Build
+  test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v5
-    - uses: docker/setup-buildx-action@v4
-    - name: Build game-server Docker image
-      # Shares the same GitHub Actions cache (type=gha, scope=game-server) as deploy.yml's
-      # build-game-server-image job, so this and every deploy reuse each other's layers instead of
-      # each PR/push always rebuilding node_modules etc. from scratch.
-      uses: docker/build-push-action@v7
-      with:
-        context: .
-        file: game_server.Dockerfile
-        push: false
-        cache-from: type=gha,scope=game-server
-        cache-to: type=gha,mode=max,scope=game-server
-  website-build:
-    name: Website Build
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: web/package.json
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+      - run: pnpm --dir web install --frozen-lockfile
+      - run: pnpm --dir web format:check
+      - run: pnpm --dir web test
+      - run: node --test scripts/lib/*.test.mjs
+      - run: pnpm --dir web build
+      - run: node scripts/sync-web.mjs
+      - run: test -z "$(gofmt -l cmd internal)"
+      - run: go test -race -count=1 ./...
+      - run: go vet ./...
+      - run: go build -trimpath -o bin/westeros ./cmd/server
+      - name: Save the exact frontend and artwork used by browser jobs
+        uses: actions/upload-artifact@v7
+        with:
+          name: browser-build
+          if-no-files-found: error
+          path: |
+            web/dist/
+            web/src/artwork/index.json
+            local-assets/**/*.webp
+            local-assets/*.webp
+          retention-days: 3
+
+  browser:
+    name: Browser / ${{ matrix.suite }}
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        suite:
+          [
+            Artwork,
+            Combat,
+            CombatMatrix,
+            Events,
+            Influence,
+            Orders,
+            Panels,
+            Provision,
+            Raven,
+            SetupBlade,
+            Tides,
+          ]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: web/package.json
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+      - run: pnpm --dir web install --frozen-lockfile
+      - uses: actions/download-artifact@v8
+        with:
+          name: browser-build
+          path: .
+      - run: node scripts/sync-web.mjs
+      - name: Install browser for real decision UI tests
+        run: pnpm --dir web exec playwright install --with-deps chromium
+      - name: Decision UI against real Go HTTP, WebSocket and SQLite
+        run: go test -count=1 -run "^Test${BROWSER_SUITE}Browser$" -timeout=20m -v ./internal/server
+        env:
+          BROWSER_SUITE: ${{ matrix.suite }}
+          WESTEROS_BROWSER_TEST: "1"
+          PLAYWRIGHT_MANAGED_CHROMIUM: "1"
+          SOFTWARE_WEBGL: "1"
+      - name: Preserve failed browser diagnostics
+        if: failure() || cancelled()
+        uses: actions/upload-artifact@v7
+        with:
+          name: browser-failure-${{ matrix.suite }}
+          path: |
+            web/test-results/
+            web/playwright-report/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  container:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v5
-    - uses: docker/setup-buildx-action@v4
-    - name: Build website Docker image
-      # Mirrors deploy.yml's build-website-image job (Dockerfile lives inside the project folder,
-      # build context is agot-bg-website-dotnet/ so it can COPY the sibling agot-bg-website.Data
-      # project too), and shares its GitHub Actions cache (type=gha, scope=website). Without this,
-      # every single PR push re-ran the base image's `apt-get update` (installing
-      # libgssapi-krb5-2) from scratch - archive.ubuntu.com has repeatedly taken 4-6 minutes to
-      # fetch its package indexes from GitHub-hosted runners (seen in both this workflow and
-      # deploy.yml), which is a widely reported slow-mirror/congestion issue for Azure-hosted CI
-      # traffic, not a per-account rate limit. Caching this layer means it's only re-run when the
-      # Dockerfile actually changes.
-      uses: docker/build-push-action@v7
-      with:
-        context: agot-bg-website-dotnet
-        file: agot-bg-website-dotnet/agot-bg-website/Dockerfile
-        push: false
-        cache-from: type=gha,scope=website
-        cache-to: type=gha,mode=max,scope=website
-  # build-assets:
-  #   name: Build game assets
-  #   runs-on: ubuntu-latest
-  #   defaults:
-  #     run:
-  #       working-directory: ./agot-bg-game-server
-  #   steps:
-  #   - uses: actions/checkout@v5
-  #   - uses: actions/setup-node@v3
-  #     with:
-  #       node-version: lts/*
-  #   - name: Install dependencies
-  #     run: yarn install --frozen-lockfile
-  #   - name: Build assets
-  #     run: yarn run generate-json-schemas && yarn run build-client
+      - uses: actions/checkout@v5
+      - uses: docker/setup-buildx-action@v4
+      - uses: docker/build-push-action@v7
+        with:
+          context: .
+          push: false

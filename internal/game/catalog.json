@@ -1,0 +1,4480 @@
+{
+  "source": "Longwelwind/swords-and-ravens (GPL-3.0; artwork separately owned)",
+  "houses": {
+    "baratheon": {
+      "name": "Baratheon",
+      "color": "#e6d228",
+      "unitLimits": {
+        "footman": 10,
+        "knight": 5,
+        "ship": 6,
+        "siege-engine": 2
+      },
+      "houseCards": {
+        "stannis-baratheon": {
+          "name": "Stannis Baratheon",
+          "combatStrength": 4,
+          "ability": "stannis-baratheon"
+        },
+        "renly-baratheon": {
+          "name": "Renly Baratheon",
+          "combatStrength": 3,
+          "ability": "renly-baratheon"
+        },
+        "ser-davos-seaworth": {
+          "name": "Ser Davos Seaworth",
+          "combatStrength": 2,
+          "ability": "ser-davos-seaworth"
+        },
+        "brienne-of-tarth": {
+          "name": "Brienne of Tarth",
+          "combatStrength": 2,
+          "swordIcons": 1,
+          "towerIcons": 1
+        },
+        "salladhor-saan": {
+          "name": "Salladhor Saan",
+          "combatStrength": 1,
+          "ability": "salladhor-saan"
+        },
+        "melisandre": {
+          "name": "Melisandre",
+          "combatStrength": 1,
+          "swordIcons": 1
+        },
+        "patchface": {
+          "name": "Patchface",
+          "ability": "patchface"
+        }
+      },
+      "supplyLevel": 2
+    },
+    "lannister": {
+      "name": "Lannister",
+      "color": "#dc3545",
+      "unitLimits": {
+        "footman": 10,
+        "knight": 5,
+        "ship": 6,
+        "siege-engine": 2
+      },
+      "houseCards": {
+        "tywin-lannister": {
+          "name": "Tywin Lannister",
+          "combatStrength": 4,
+          "ability": "tywin-lannister"
+        },
+        "ser-gregor-clegane": {
+          "name": "Ser Gregor Clegane",
+          "combatStrength": 3,
+          "swordIcons": 3
+        },
+        "ser-jaime-lannister": {
+          "name": "Ser Jaime Lannister",
+          "combatStrength": 2,
+          "swordIcons": 1
+        },
+        "the-hound": {
+          "name": "The Hound",
+          "combatStrength": 2,
+          "towerIcons": 2
+        },
+        "ser-kevan-lannister": {
+          "name": "Ser Kevan Lannister",
+          "combatStrength": 1,
+          "ability": "ser-kevan-lannister"
+        },
+        "tyrion-lannister": {
+          "name": "Tyrion Lannister",
+          "combatStrength": 1,
+          "ability": "tyrion-lannister"
+        },
+        "cersei-lannister": {
+          "name": "Cersei Lannister",
+          "ability": "cersei-lannister"
+        }
+      },
+      "supplyLevel": 2
+    },
+    "stark": {
+      "name": "Stark",
+      "color": "#f8f9fa",
+      "unitLimits": {
+        "footman": 10,
+        "knight": 5,
+        "ship": 6,
+        "siege-engine": 2
+      },
+      "houseCards": {
+        "eddard-stark": {
+          "name": "Eddard Stark",
+          "combatStrength": 4,
+          "swordIcons": 2
+        },
+        "robb-stark": {
+          "name": "Robb Stark",
+          "combatStrength": 3,
+          "ability": "robb-stark"
+        },
+        "roose-bolton": {
+          "name": "Roose Bolton",
+          "combatStrength": 2,
+          "ability": "roose-bolton"
+        },
+        "greatjon-umber": {
+          "name": "Greatjon Umber",
+          "combatStrength": 2,
+          "swordIcons": 1
+        },
+        "ser-rodrick-cassel": {
+          "name": "Ser Rodrick Cassel",
+          "combatStrength": 1,
+          "towerIcons": 2
+        },
+        "the-blackfish": {
+          "name": "The Blackfish",
+          "combatStrength": 1,
+          "ability": "the-blackfish"
+        },
+        "catelyn-stark": {
+          "name": "Catelyn Stark",
+          "ability": "catelyn-stark"
+        }
+      },
+      "supplyLevel": 1
+    },
+    "martell": {
+      "name": "Martell",
+      "color": "orange",
+      "unitLimits": {
+        "footman": 10,
+        "knight": 5,
+        "ship": 6,
+        "siege-engine": 2
+      },
+      "houseCards": {
+        "the-red-viper": {
+          "name": "The Red Viper",
+          "combatStrength": 4,
+          "swordIcons": 2,
+          "towerIcons": 1
+        },
+        "areo-hotah": {
+          "name": "Areo Hotah",
+          "combatStrength": 3,
+          "towerIcons": 1
+        },
+        "darkstar": {
+          "name": "Darkstar",
+          "combatStrength": 2,
+          "swordIcons": 1
+        },
+        "obara-sand": {
+          "name": "Obara Sand",
+          "combatStrength": 2,
+          "swordIcons": 1
+        },
+        "arianne-martell": {
+          "name": "Arianne Martell",
+          "combatStrength": 1,
+          "ability": "arianne-martell"
+        },
+        "nymeria-sand": {
+          "name": "Nymeria Sand",
+          "combatStrength": 1,
+          "ability": "nymeria-sand"
+        },
+        "doran-martell": {
+          "name": "Doran Martell",
+          "ability": "doran-martell"
+        }
+      },
+      "supplyLevel": 2
+    },
+    "greyjoy": {
+      "name": "Greyjoy",
+      "color": "#6c757d",
+      "unitLimits": {
+        "footman": 10,
+        "knight": 5,
+        "ship": 6,
+        "siege-engine": 2
+      },
+      "houseCards": {
+        "euron-crows-eye": {
+          "name": "Euron Crow's Eye",
+          "combatStrength": 4,
+          "swordIcons": 1
+        },
+        "victarion-greyjoy": {
+          "name": "Victarion Greyjoy",
+          "combatStrength": 3,
+          "ability": "victarion-greyjoy"
+        },
+        "balon-greyjoy": {
+          "name": "Balon Greyjoy",
+          "combatStrength": 2,
+          "ability": "balon-greyjoy"
+        },
+        "theon-greyjoy": {
+          "name": "Theon Greyjoy",
+          "combatStrength": 2,
+          "ability": "theon-greyjoy"
+        },
+        "dagmar-cleftjaw": {
+          "name": "Dagmar Cleftjaw",
+          "combatStrength": 1,
+          "swordIcons": 1,
+          "towerIcons": 1
+        },
+        "asha-greyjoy": {
+          "name": "Asha Greyjoy",
+          "combatStrength": 1,
+          "ability": "asha-greyjoy"
+        },
+        "aeron-damphair": {
+          "name": "Aeron Damphair",
+          "ability": "aeron-damphair"
+        }
+      },
+      "supplyLevel": 2
+    },
+    "tyrell": {
+      "name": "Tyrell",
+      "color": "#28a745",
+      "unitLimits": {
+        "footman": 10,
+        "knight": 5,
+        "ship": 6,
+        "siege-engine": 2
+      },
+      "houseCards": {
+        "mace-tyrell": {
+          "name": "Mace Tyrell",
+          "combatStrength": 4,
+          "ability": "mace-tyrell"
+        },
+        "ser-loras-tyrell": {
+          "name": "Ser Loras Tyrell",
+          "combatStrength": 3,
+          "ability": "ser-loras-tyrell"
+        },
+        "randyll-tarly": {
+          "name": "Randyll Tarly",
+          "combatStrength": 2,
+          "swordIcons": 1
+        },
+        "ser-garlan-tyrell": {
+          "name": "Ser Garlan Tyrell",
+          "combatStrength": 2,
+          "swordIcons": 2
+        },
+        "margaery-tyrell": {
+          "name": "Margaery Tyrell",
+          "combatStrength": 1,
+          "towerIcons": 1
+        },
+        "alester-florent": {
+          "name": "Alester Florent",
+          "combatStrength": 1,
+          "towerIcons": 1
+        },
+        "queen-of-thorns": {
+          "name": "Queen of Thorns",
+          "ability": "queen-of-thorns"
+        }
+      },
+      "supplyLevel": 2
+    },
+    "arryn": {
+      "name": "Arryn",
+      "color": "#32aadc",
+      "unitLimits": {
+        "footman": 10,
+        "knight": 5,
+        "ship": 6,
+        "siege-engine": 2
+      },
+      "houseCards": {
+        "lysa-arryn-mod": {
+          "name": "Lysa Arryn",
+          "combatStrength": 4,
+          "ability": "lysa-arryn-mod"
+        },
+        "bronze-yohn-royce-mod": {
+          "name": "Bronze Yohn Royce",
+          "combatStrength": 3,
+          "swordIcons": 1,
+          "towerIcons": 2
+        },
+        "ser-vardis-egen": {
+          "name": "Ser Vardis Egen",
+          "combatStrength": 2,
+          "ability": "ser-vardis-egen"
+        },
+        "harry-hardyng": {
+          "name": "Harry Hardyng",
+          "combatStrength": 2,
+          "swordIcons": 1
+        },
+        "godric-borrell": {
+          "name": "Godric Borrell",
+          "combatStrength": 1,
+          "ability": "godric-borrell"
+        },
+        "anya-waynwood": {
+          "name": "Anya Waynwood",
+          "combatStrength": 1,
+          "ability": "anya-waynwood"
+        },
+        "robert-arryn": {
+          "name": "Robert Arryn",
+          "ability": "robert-arryn"
+        }
+      },
+      "supplyLevel": 1
+    },
+    "targaryen": {
+      "name": "Targaryen",
+      "color": "#9013FE",
+      "unitLimits": {
+        "footman": 8,
+        "knight": 6,
+        "ship": 8,
+        "dragon": 3
+      },
+      "houseCards": {
+        "khal-drogo": {
+          "name": "Khal Drogo",
+          "combatStrength": 4,
+          "ability": "khal-drogo"
+        },
+        "arstan-whitebeard": {
+          "name": "Arstan Whitebeard",
+          "combatStrength": 3,
+          "swordIcons": 1,
+          "towerIcons": 1
+        },
+        "xaro-xhoan-daxos": {
+          "name": "Xaro Xhoan Daxos",
+          "combatStrength": 2,
+          "ability": "xaro-xhoan-daxos"
+        },
+        "ser-jorah-mormont": {
+          "name": "Ser Jorah Mormont",
+          "combatStrength": 2,
+          "swordIcons": 1,
+          "towerIcons": 1
+        },
+        "daenerys-targaryen-a": {
+          "name": "Daenerys Targaryen",
+          "combatStrength": 1,
+          "ability": "daenerys-targaryen-a"
+        },
+        "viserys-targaryen": {
+          "name": "Viserys Targaryen",
+          "combatStrength": 1,
+          "ability": "viserys-targaryen"
+        },
+        "illyrio-mopatis": {
+          "name": "Illyrio Mopatis",
+          "ability": "illyrio-mopatis"
+        }
+      },
+      "supplyLevel": 4
+    }
+  },
+  "units": {
+    "winterfell": [
+      {
+        "unitType": "footman",
+        "house": "stark",
+        "quantity": 1,
+        "quantityVassal": 2
+      },
+      {
+        "unitType": "knight",
+        "house": "stark",
+        "quantity": 1,
+        "quantityVassal": 0
+      }
+    ],
+    "white-harbor": [
+      {
+        "unitType": "footman",
+        "house": "stark",
+        "quantity": 1,
+        "quantityVassal": 0
+      }
+    ],
+    "the-shivering-sea": [
+      {
+        "unitType": "ship",
+        "house": "stark",
+        "quantity": 1,
+        "quantityVassal": 1
+      }
+    ],
+    "pyke": [
+      {
+        "unitType": "footman",
+        "house": "greyjoy",
+        "quantity": 1,
+        "quantityVassal": 1
+      },
+      {
+        "unitType": "knight",
+        "house": "greyjoy",
+        "quantity": 1,
+        "quantityVassal": 1
+      }
+    ],
+    "port-of-pyke": [
+      {
+        "unitType": "ship",
+        "house": "greyjoy",
+        "quantity": 1,
+        "quantityVassal": 0
+      }
+    ],
+    "ironmans-bay": [
+      {
+        "unitType": "ship",
+        "house": "greyjoy",
+        "quantity": 1,
+        "quantityVassal": 2
+      }
+    ],
+    "greywater-watch": [
+      {
+        "unitType": "footman",
+        "house": "greyjoy",
+        "quantity": 1,
+        "quantityVassal": 1
+      }
+    ],
+    "lannisport": [
+      {
+        "unitType": "footman",
+        "house": "lannister",
+        "quantity": 1,
+        "quantityVassal": 2
+      },
+      {
+        "unitType": "knight",
+        "house": "lannister",
+        "quantity": 1,
+        "quantityVassal": 0
+      }
+    ],
+    "port-of-lannisport": [
+      {
+        "unitType": "ship",
+        "house": "lannister",
+        "quantity": 1,
+        "quantityVassal": 0
+      }
+    ],
+    "the-golden-sound": [
+      {
+        "unitType": "ship",
+        "house": "lannister",
+        "quantity": 1,
+        "quantityVassal": 3
+      }
+    ],
+    "stoney-sept": [
+      {
+        "unitType": "footman",
+        "house": "lannister",
+        "quantity": 1,
+        "quantityVassal": 0
+      }
+    ],
+    "dragonstone": [
+      {
+        "unitType": "footman",
+        "house": "baratheon",
+        "quantity": 1,
+        "quantityVassal": 0
+      },
+      {
+        "unitType": "knight",
+        "house": "baratheon",
+        "quantity": 1,
+        "quantityVassal": 2
+      }
+    ],
+    "shipbreaker-bay": [
+      {
+        "unitType": "ship",
+        "house": "baratheon",
+        "quantity": 2,
+        "quantityVassal": 2
+      }
+    ],
+    "kingswood": [
+      {
+        "unitType": "footman",
+        "house": "baratheon",
+        "quantity": 1,
+        "quantityVassal": 1
+      }
+    ],
+    "highgarden": [
+      {
+        "unitType": "footman",
+        "house": "tyrell",
+        "quantity": 1,
+        "quantityVassal": 1
+      },
+      {
+        "unitType": "knight",
+        "house": "tyrell",
+        "quantity": 1,
+        "quantityVassal": 0
+      }
+    ],
+    "redwyne-straights": [
+      {
+        "unitType": "ship",
+        "house": "tyrell",
+        "quantity": 1,
+        "quantityVassal": 3
+      }
+    ],
+    "dornish-marches": [
+      {
+        "unitType": "footman",
+        "house": "tyrell",
+        "quantity": 1,
+        "quantityVassal": 0
+      }
+    ],
+    "sea-of-dorne": [
+      {
+        "unitType": "ship",
+        "house": "martell",
+        "quantity": 1,
+        "quantityVassal": 1
+      }
+    ],
+    "sunspear": [
+      {
+        "unitType": "footman",
+        "house": "martell",
+        "quantity": 1,
+        "quantityVassal": 1
+      },
+      {
+        "unitType": "knight",
+        "house": "martell",
+        "quantity": 1,
+        "quantityVassal": 0
+      }
+    ],
+    "salt-shore": [
+      {
+        "unitType": "footman",
+        "house": "martell",
+        "quantity": 1,
+        "quantityVassal": 1
+      }
+    ]
+  },
+  "setups": {
+    "base-game": {
+      "name": "2nd Edition Base Game (3-6p)",
+      "playerSetups": [
+        {
+          "playerCount": 3,
+          "houses": [
+            "baratheon",
+            "lannister",
+            "stark"
+          ],
+          "blockedRegions": [
+            "pyke",
+            "port-of-pyke",
+            "highgarden",
+            "oldtown",
+            "port-of-oldtown",
+            "sunspear",
+            "port-of-sunspear",
+            "salt-shore",
+            "yronwood",
+            "starfall",
+            "three-towers",
+            "dornish-marches",
+            "princes-pass",
+            "the-boneway",
+            "storms-end",
+            "port-of-storms-end"
+          ],
+          "removedUnits": [
+            "port-of-lannisport"
+          ]
+        },
+        {
+          "playerCount": 4,
+          "houses": [
+            "baratheon",
+            "lannister",
+            "stark",
+            "greyjoy"
+          ],
+          "garrisons": {
+            "oldtown": 3,
+            "three-towers": 3,
+            "dornish-marches": 3,
+            "princes-pass": 3,
+            "starfall": 3,
+            "yronwood": 3,
+            "the-boneway": 3,
+            "storms-end": 4,
+            "salt-shore": 3,
+            "sunspear": 5
+          }
+        },
+        {
+          "playerCount": 5,
+          "houses": [
+            "baratheon",
+            "lannister",
+            "stark",
+            "greyjoy",
+            "tyrell"
+          ],
+          "garrisons": {
+            "three-towers": 3,
+            "princes-pass": 3,
+            "the-boneway": 3,
+            "starfall": 3,
+            "yronwood": 3,
+            "salt-shore": 3,
+            "sunspear": 5
+          }
+        },
+        {
+          "playerCount": 6,
+          "houses": [
+            "stark",
+            "greyjoy",
+            "lannister",
+            "baratheon",
+            "tyrell",
+            "martell"
+          ]
+        }
+      ]
+    },
+    "mother-of-dragons": {
+      "name": "Mother of Dragons (7p/8p)",
+      "playerSetups": [
+        {
+          "playerCount": 7,
+          "houses": [
+            "stark",
+            "greyjoy",
+            "lannister",
+            "baratheon",
+            "tyrell",
+            "martell",
+            "arryn"
+          ],
+          "tracks": {
+            "ironThrone": [
+              "baratheon",
+              "lannister",
+              "stark",
+              "martell",
+              "greyjoy",
+              "tyrell",
+              "arryn"
+            ],
+            "fiefdoms": [
+              "greyjoy",
+              "tyrell",
+              "martell",
+              "arryn",
+              "stark",
+              "baratheon",
+              "lannister"
+            ],
+            "kingsCourt": [
+              "lannister",
+              "stark",
+              "martell",
+              "tyrell",
+              "arryn",
+              "baratheon",
+              "greyjoy"
+            ]
+          }
+        },
+        {
+          "playerCount": 8,
+          "houses": [
+            "stark",
+            "greyjoy",
+            "lannister",
+            "baratheon",
+            "tyrell",
+            "martell",
+            "arryn",
+            "targaryen"
+          ],
+          "tracks": {
+            "ironThrone": [
+              "baratheon",
+              "lannister",
+              "stark",
+              "martell",
+              "greyjoy",
+              "tyrell",
+              "arryn",
+              "targaryen"
+            ],
+            "fiefdoms": [
+              "greyjoy",
+              "tyrell",
+              "martell",
+              "arryn",
+              "stark",
+              "baratheon",
+              "lannister",
+              "targaryen"
+            ],
+            "kingsCourt": [
+              "lannister",
+              "stark",
+              "martell",
+              "tyrell",
+              "arryn",
+              "baratheon",
+              "greyjoy",
+              "targaryen"
+            ]
+          },
+          "loyaltyTokens": {
+            "kings-landing": 1
+          },
+          "westerosCards": [
+            null,
+            null,
+            null,
+            [
+              {
+                "type": "domestic-disputes"
+              },
+              {
+                "type": "empty-promises"
+              },
+              {
+                "type": "fire-made-flesh"
+              },
+              {
+                "type": "playing-with-fire"
+              },
+              {
+                "type": "scattering-dissent"
+              },
+              {
+                "type": "southron-ambitions"
+              },
+              {
+                "type": "strongholds-of-resistance"
+              },
+              {
+                "type": "the-long-plan"
+              },
+              {
+                "type": "watering-the-seed"
+              },
+              {
+                "type": "word-spreads-quickly"
+              }
+            ]
+          ],
+          "dragonStrengthTokens": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "alternateDragonStrengthTokens": [
+            2,
+            4,
+            7,
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    "a-dance-with-dragons": {
+      "name": "A Dance with Dragons (6p)",
+      "playerSetups": [
+        {
+          "playerCount": 6,
+          "houses": [
+            "stark",
+            "greyjoy",
+            "lannister",
+            "baratheon",
+            "tyrell",
+            "martell"
+          ],
+          "maxTurns": 6,
+          "tracks": {
+            "ironThrone": [
+              "lannister",
+              "tyrell",
+              "greyjoy",
+              "stark",
+              "baratheon",
+              "martell"
+            ],
+            "fiefdoms": [
+              "greyjoy",
+              "martell",
+              "baratheon",
+              "tyrell",
+              "lannister",
+              "stark"
+            ],
+            "kingsCourt": [
+              "tyrell",
+              "martell",
+              "stark",
+              "lannister",
+              "baratheon",
+              "greyjoy"
+            ]
+          },
+          "units": {
+            "winterfell": [
+              {
+                "unitType": "footman",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 2
+              },
+              {
+                "unitType": "knight",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "white-harbor": [
+              {
+                "unitType": "knight",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-white-harbor": [
+              {
+                "unitType": "ship",
+                "house": "stark",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "moat-cailin": [
+              {
+                "unitType": "footman",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 0
+              },
+              {
+                "unitType": "knight",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-twins": [
+              {
+                "unitType": "footman",
+                "house": "stark",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "pyke": [
+              {
+                "unitType": "knight",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "bay-of-ice": [
+              {
+                "unitType": "ship",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "sunset-sea": [
+              {
+                "unitType": "ship",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 2
+              }
+            ],
+            "ironmans-bay": [
+              {
+                "unitType": "ship",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 2
+              }
+            ],
+            "greywater-watch": [
+              {
+                "unitType": "footman",
+                "house": "greyjoy",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "west-summer-sea": [
+              {
+                "unitType": "ship",
+                "house": "greyjoy",
+                "quantity": 3,
+                "quantityVassal": 1
+              }
+            ],
+            "the-stony-shore": [
+              {
+                "unitType": "footman",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "searoad-marches": [
+              {
+                "unitType": "footman",
+                "house": "greyjoy",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "lannisport": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "lannister",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "the-golden-sound": [
+              {
+                "unitType": "ship",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 3
+              }
+            ],
+            "stoney-sept": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "riverrun": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "harrenhal": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 0
+              },
+              {
+                "unitType": "knight",
+                "house": "lannister",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "kings-landing": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 2,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "lannister",
+                "quantity": 0,
+                "quantityVassal": 2
+              }
+            ],
+            "blackwater-bay": [
+              {
+                "unitType": "ship",
+                "house": "lannister",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-lannisport": [
+              {
+                "unitType": "ship",
+                "house": "lannister",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-dragonstone": [
+              {
+                "unitType": "ship",
+                "house": "baratheon",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "dragonstone": [
+              {
+                "unitType": "knight",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-shivering-sea": [
+              {
+                "unitType": "ship",
+                "house": "baratheon",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "castle-black": [
+              {
+                "unitType": "knight",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 2
+              },
+              {
+                "unitType": "footman",
+                "house": "baratheon",
+                "quantity": 2,
+                "quantityVassal": 1
+              }
+            ],
+            "karhold": [
+              {
+                "unitType": "footman",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-storms-end": [
+              {
+                "unitType": "ship",
+                "house": "baratheon",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "storms-end": [
+              {
+                "unitType": "footman",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "highgarden": [
+              {
+                "unitType": "footman",
+                "house": "tyrell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "redwyne-straights": [
+              {
+                "unitType": "ship",
+                "house": "tyrell",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "oldtown": [
+              {
+                "unitType": "footman",
+                "house": "tyrell",
+                "quantity": 1,
+                "quantityVassal": 0
+              },
+              {
+                "unitType": "knight",
+                "house": "tyrell",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "kingswood": [
+              {
+                "unitType": "knight",
+                "house": "tyrell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-reach": [
+              {
+                "unitType": "footman",
+                "house": "tyrell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "crackclaw-point": [
+              {
+                "unitType": "footman",
+                "house": "tyrell",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "shipbreaker-bay": [
+              {
+                "unitType": "ship",
+                "house": "tyrell",
+                "quantity": 3,
+                "quantityVassal": 3
+              }
+            ],
+            "dornish-marches": [
+              {
+                "unitType": "knight",
+                "house": "tyrell",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "sunspear": [
+              {
+                "unitType": "footman",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 0
+              }
+            ],
+            "sea-of-dorne": [
+              {
+                "unitType": "ship",
+                "house": "martell",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "east-summer-sea": [
+              {
+                "unitType": "ship",
+                "house": "martell",
+                "quantity": 0,
+                "quantityVassal": 2
+              }
+            ],
+            "port-of-sunspear": [
+              {
+                "unitType": "ship",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 0
+              }
+            ],
+            "salt-shore": [
+              {
+                "unitType": "footman",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "yronwood": [
+              {
+                "unitType": "footman",
+                "house": "martell",
+                "quantity": 0,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-boneway": [
+              {
+                "unitType": "footman",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "starfall": [
+              {
+                "unitType": "footman",
+                "house": "martell",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ]
+          },
+          "supplyLevels": {
+            "lannister": 5,
+            "stark": 2,
+            "baratheon": 1,
+            "greyjoy": 3,
+            "martell": 4,
+            "tyrell": 4
+          },
+          "powerTokensOnBoard": {
+            "stark": [
+              "moat-cailin",
+              "widows-watch"
+            ],
+            "greyjoy": [
+              "searoad-marches"
+            ],
+            "lannister": [
+              "stoney-sept",
+              "blackwater"
+            ],
+            "baratheon": [
+              "storms-end"
+            ],
+            "tyrell": [
+              "oldtown",
+              "the-reach",
+              "dornish-marches",
+              "three-towers",
+              "the-arbor"
+            ],
+            "martell": [
+              "princes-pass",
+              "starfall"
+            ]
+          },
+          "garrisons": {
+            "storms-end": 4,
+            "oldtown": 3,
+            "kings-landing": 0
+          }
+        }
+      ]
+    },
+    "a-feast-for-crows": {
+      "name": "A Feast for Crows (4p)",
+      "playerSetups": [
+        {
+          "playerCount": 4,
+          "houses": [
+            "baratheon",
+            "stark",
+            "lannister",
+            "arryn"
+          ],
+          "blockedRegions": [
+            "pyke",
+            "port-of-pyke",
+            "highgarden",
+            "oldtown",
+            "port-of-oldtown",
+            "sunspear",
+            "port-of-sunspear",
+            "salt-shore",
+            "yronwood",
+            "starfall",
+            "three-towers",
+            "dornish-marches",
+            "princes-pass",
+            "the-boneway"
+          ],
+          "tracks": {
+            "ironThrone": [
+              "baratheon",
+              "lannister",
+              "arryn",
+              "stark"
+            ],
+            "fiefdoms": [
+              "stark",
+              "arryn",
+              "baratheon",
+              "lannister"
+            ],
+            "kingsCourt": [
+              "arryn",
+              "lannister",
+              "baratheon",
+              "stark"
+            ]
+          },
+          "supplyLevels": {
+            "baratheon": 2,
+            "lannister": 5,
+            "arryn": 3,
+            "stark": 2
+          },
+          "units": {
+            "winterfell": [
+              {
+                "unitType": "footman",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-winterfell": [
+              {
+                "unitType": "ship",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "white-harbor": [
+              {
+                "unitType": "knight",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "moat-cailin": [
+              {
+                "unitType": "footman",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "siege-engine",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "seagard": [
+              {
+                "unitType": "knight",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-shivering-sea": [
+              {
+                "unitType": "ship",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "lannisport": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "the-golden-sound": [
+              {
+                "unitType": "ship",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "stoney-sept": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "harrenhal": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "kings-landing": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "blackwater-bay": [
+              {
+                "unitType": "ship",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "dragonstone": [
+              {
+                "unitType": "footman",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "shipbreaker-bay": [
+              {
+                "unitType": "ship",
+                "house": "baratheon",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "kingswood": [
+              {
+                "unitType": "footman",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "siege-engine",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "storms-end": [
+              {
+                "unitType": "knight",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-eyrie": [
+              {
+                "unitType": "knight",
+                "house": "arryn",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-mountains-of-the-moon": [
+              {
+                "unitType": "footman",
+                "house": "arryn",
+                "quantity": 2,
+                "quantityVassal": 2
+              },
+              {
+                "unitType": "knight",
+                "house": "arryn",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-twins": [
+              {
+                "unitType": "footman",
+                "house": "arryn",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-fingers": [
+              {
+                "unitType": "footman",
+                "house": "arryn",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-narrow-sea": [
+              {
+                "unitType": "ship",
+                "house": "arryn",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ]
+          },
+          "powerTokensOnBoard": {
+            "lannister": [
+              "stoney-sept",
+              "kings-landing",
+              "blackwater",
+              "searoad-marches"
+            ]
+          },
+          "superPowerTokens": {
+            "the-eyrie": "arryn"
+          },
+          "maxPowerTokens:": {
+            "arryn": 19
+          },
+          "westerosCards": [
+            [
+              {
+                "type": "mustering-affc",
+                "quantity": 1
+              },
+              {
+                "type": "rally-the-men",
+                "quantity": 2
+              },
+              {
+                "type": "the-burden-of-power",
+                "quantity": 2
+              },
+              {
+                "type": "famine",
+                "quantity": 1
+              },
+              {
+                "type": "ironborn-raid",
+                "quantity": 1
+              },
+              {
+                "type": "shifting-ambitions",
+                "quantity": 2
+              },
+              {
+                "type": "new-information",
+                "quantity": 1
+              }
+            ],
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "a-dance-with-mother-of-dragons": {
+      "name": "A Dance with Mother of Dragons (8p)",
+      "playerSetups": [
+        {
+          "playerCount": 8,
+          "maxTurns": 6,
+          "houses": [
+            "stark",
+            "greyjoy",
+            "lannister",
+            "baratheon",
+            "tyrell",
+            "martell",
+            "arryn",
+            "targaryen"
+          ],
+          "tracks": {
+            "ironThrone": [
+              "lannister",
+              "tyrell",
+              "baratheon",
+              "greyjoy",
+              "martell",
+              "arryn",
+              "stark",
+              "targaryen"
+            ],
+            "fiefdoms": [
+              "greyjoy",
+              "baratheon",
+              "stark",
+              "martell",
+              "arryn",
+              "lannister",
+              "tyrell",
+              "targaryen"
+            ],
+            "kingsCourt": [
+              "arryn",
+              "tyrell",
+              "martell",
+              "stark",
+              "lannister",
+              "greyjoy",
+              "baratheon",
+              "targaryen"
+            ]
+          },
+          "loyaltyTokens": {
+            "kings-landing": 1
+          },
+          "westerosCards": [
+            null,
+            null,
+            null,
+            [
+              {
+                "type": "domestic-disputes"
+              },
+              {
+                "type": "empty-promises"
+              },
+              {
+                "type": "fire-made-flesh"
+              },
+              {
+                "type": "playing-with-fire"
+              },
+              {
+                "type": "scattering-dissent"
+              },
+              {
+                "type": "southron-ambitions"
+              },
+              {
+                "type": "strongholds-of-resistance"
+              },
+              {
+                "type": "the-long-plan"
+              },
+              {
+                "type": "watering-the-seed"
+              },
+              {
+                "type": "word-spreads-quickly"
+              }
+            ]
+          ],
+          "powerTokensOnBoard": {
+            "arryn": [
+              "the-vale-of-arryn",
+              "the-fingers"
+            ],
+            "stark": [
+              "moat-cailin",
+              "widows-watch"
+            ],
+            "lannister": [
+              "blackwater"
+            ],
+            "greyjoy": [
+              "searoad-marches"
+            ],
+            "baratheon": [
+              "storms-end"
+            ],
+            "tyrell": [
+              "oldtown",
+              "dornish-marches",
+              "the-arbor",
+              "three-towers",
+              "the-reach"
+            ],
+            "martell": [
+              "princes-pass",
+              "starfall"
+            ],
+            "targaryen": [
+              "myr"
+            ]
+          },
+          "garrisons": {
+            "storms-end": 4,
+            "oldtown": 3,
+            "kings-landing": 0
+          },
+          "units": {
+            "winterfell": [
+              {
+                "unitType": "footman",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "white-harbor": [
+              {
+                "unitType": "knight",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-white-harbor": [
+              {
+                "unitType": "ship",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "moat-cailin": [
+              {
+                "unitType": "footman",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "stark",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-twins": [
+              {
+                "unitType": "footman",
+                "house": "stark",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "pyke": [
+              {
+                "unitType": "knight",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "bay-of-ice": [
+              {
+                "unitType": "ship",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "sunset-sea": [
+              {
+                "unitType": "ship",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "ironmans-bay": [
+              {
+                "unitType": "ship",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "west-summer-sea": [
+              {
+                "unitType": "ship",
+                "house": "greyjoy",
+                "quantity": 3,
+                "quantityVassal": 3
+              }
+            ],
+            "the-stony-shore": [
+              {
+                "unitType": "footman",
+                "house": "greyjoy",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "searoad-marches": [
+              {
+                "unitType": "footman",
+                "house": "greyjoy",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "lannisport": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-lannisport": [
+              {
+                "unitType": "ship",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-golden-sound": [
+              {
+                "unitType": "ship",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "riverrun": [
+              {
+                "unitType": "knight",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "stoney-sept": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "harrenhal": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "kings-landing": [
+              {
+                "unitType": "footman",
+                "house": "lannister",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "dragonstone": [
+              {
+                "unitType": "knight",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-shivering-sea": [
+              {
+                "unitType": "ship",
+                "house": "baratheon",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "braavosian-coastlands": [
+              {
+                "unitType": "ship",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "castle-black": [
+              {
+                "unitType": "knight",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "footman",
+                "house": "baratheon",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "karhold": [
+              {
+                "unitType": "footman",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "storms-end": [
+              {
+                "unitType": "footman",
+                "house": "baratheon",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "highgarden": [
+              {
+                "unitType": "footman",
+                "house": "tyrell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "redwyne-straights": [
+              {
+                "unitType": "ship",
+                "house": "tyrell",
+                "quantity": 0,
+                "quantityVassal": 1
+              }
+            ],
+            "oldtown": [
+              {
+                "unitType": "footman",
+                "house": "tyrell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-oldtown": [
+              {
+                "unitType": "ship",
+                "house": "tyrell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "kingswood": [
+              {
+                "unitType": "knight",
+                "house": "tyrell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-reach": [
+              {
+                "unitType": "footman",
+                "house": "tyrell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "crackclaw-point": [
+              {
+                "unitType": "footman",
+                "house": "tyrell",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "shipbreaker-bay": [
+              {
+                "unitType": "ship",
+                "house": "tyrell",
+                "quantity": 3,
+                "quantityVassal": 3
+              }
+            ],
+            "sunspear": [
+              {
+                "unitType": "footman",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-sunspear": [
+              {
+                "unitType": "ship",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-orange-shore": [
+              {
+                "unitType": "ship",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "salt-shore": [
+              {
+                "unitType": "footman",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "yronwood": [
+              {
+                "unitType": "knight",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-boneway": [
+              {
+                "unitType": "footman",
+                "house": "martell",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "the-eyrie": [
+              {
+                "unitType": "knight",
+                "house": "arryn",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "port-of-the-eyrie": [
+              {
+                "unitType": "ship",
+                "house": "arryn",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "the-vale-of-arryn": [
+              {
+                "unitType": "footman",
+                "house": "arryn",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "the-mountains-of-the-moon": [
+              {
+                "unitType": "knight",
+                "house": "arryn",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "footman",
+                "house": "arryn",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "pentos": [
+              {
+                "unitType": "footman",
+                "house": "targaryen",
+                "quantity": 1,
+                "quantityVassal": 2
+              }
+            ],
+            "port-of-pentos": [
+              {
+                "unitType": "ship",
+                "house": "targaryen",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "sea-of-myrth": [
+              {
+                "unitType": "ship",
+                "house": "targaryen",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "the-disputed-lands": [
+              {
+                "unitType": "footman",
+                "house": "targaryen",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "the-rhoyne": [
+              {
+                "unitType": "dragon",
+                "house": "targaryen",
+                "quantity": 1,
+                "quantityVassal": 1
+              },
+              {
+                "unitType": "knight",
+                "house": "targaryen",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ],
+            "volantis": [
+              {
+                "unitType": "dragon",
+                "house": "targaryen",
+                "quantity": 2,
+                "quantityVassal": 2
+              }
+            ],
+            "port-of-volantis": [
+              {
+                "unitType": "ship",
+                "house": "targaryen",
+                "quantity": 1,
+                "quantityVassal": 1
+              }
+            ]
+          },
+          "dragonStrengthTokens": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "alternateDragonStrengthTokens": [
+            2,
+            4,
+            5,
+            6
+          ]
+        }
+      ]
+    },
+    "struggle-in-the-north": {
+      "name": "Struggle in the North (4p/5p)",
+      "playerSetups": [
+        {
+          "playerCount": 4,
+          "houses": [
+            "stark",
+            "greyjoy",
+            "lannister",
+            "baratheon"
+          ],
+          "blockedRegions": [
+            "highgarden",
+            "oldtown",
+            "port-of-oldtown",
+            "sunspear",
+            "port-of-sunspear",
+            "salt-shore",
+            "yronwood",
+            "starfall",
+            "three-towers",
+            "dornish-marches",
+            "princes-pass",
+            "the-boneway",
+            "storms-end",
+            "port-of-storms-end",
+            "sea-of-dorne",
+            "redwyne-straights"
+          ]
+        },
+        {
+          "playerCount": 5,
+          "houses": [
+            "stark",
+            "greyjoy",
+            "lannister",
+            "baratheon",
+            "tyrell"
+          ],
+          "blockedRegions": [
+            "sunspear",
+            "port-of-sunspear",
+            "salt-shore",
+            "yronwood",
+            "starfall",
+            "storms-end",
+            "port-of-storms-end",
+            "sea-of-dorne"
+          ]
+        }
+      ]
+    },
+    "rumble-in-the-south": {
+      "name": "Rumble in the South (4p)",
+      "playerSetups": [
+        {
+          "playerCount": 4,
+          "houses": [
+            "lannister",
+            "baratheon",
+            "tyrell",
+            "martell"
+          ],
+          "blockedRegions": [
+            "bay-of-ice",
+            "ironmans-bay",
+            "flints-finger",
+            "seagard",
+            "the-narrow-sea",
+            "greywater-watch",
+            "moat-cailin",
+            "the-twins",
+            "the-fingers",
+            "the-eyrie",
+            "the-stony-shore",
+            "winterfell",
+            "port-of-winterfell",
+            "white-harbor",
+            "port-of-white-harbor",
+            "widows-watch",
+            "castle-black",
+            "karhold",
+            "the-shivering-sea",
+            "pyke",
+            "port-of-pyke"
+          ],
+          "removedUnits": [
+            "port-of-lannisport"
+          ]
+        }
+      ]
+    },
+    "race-to-kings-landing": {
+      "name": "Race to King's Landing (5p)",
+      "playerSetups": [
+        {
+          "playerCount": 5,
+          "houses": [
+            "lannister",
+            "stark",
+            "greyjoy",
+            "tyrell",
+            "martell"
+          ],
+          "blockedRegions": [
+            "dragonstone",
+            "port-of-dragonstone"
+          ],
+          "tracks": {
+            "ironThrone": [
+              "stark",
+              "lannister",
+              "martell",
+              "greyjoy",
+              "tyrell"
+            ]
+          }
+        }
+      ]
+    },
+    "no-kraken-for-dinner": {
+      "name": "No Kraken for Dinner (5p)",
+      "playerSetups": [
+        {
+          "playerCount": 5,
+          "houses": [
+            "baratheon",
+            "lannister",
+            "stark",
+            "tyrell",
+            "martell"
+          ],
+          "blockedRegions": [
+            "pyke",
+            "port-of-pyke"
+          ],
+          "removedUnits": [
+            "port-of-lannisport"
+          ]
+        }
+      ]
+    },
+    "learn-the-game": {
+      "name": "Teach the Game (2p)",
+      "playerSetups": [
+        {
+          "playerCount": 2,
+          "houses": [
+            "stark",
+            "greyjoy",
+            "lannister",
+            "baratheon",
+            "tyrell",
+            "martell"
+          ]
+        }
+      ]
+    }
+  },
+  "tracks": {
+    "ironThrone": [
+      "baratheon",
+      "lannister",
+      "stark",
+      "martell",
+      "greyjoy",
+      "tyrell"
+    ],
+    "fiefdoms": [
+      "greyjoy",
+      "tyrell",
+      "martell",
+      "stark",
+      "baratheon",
+      "lannister"
+    ],
+    "kingsCourt": [
+      "lannister",
+      "stark",
+      "martell",
+      "baratheon",
+      "tyrell",
+      "greyjoy"
+    ]
+  },
+  "starredOrderRestrictions": [
+    [
+      3,
+      2,
+      1,
+      0
+    ],
+    [
+      3,
+      3,
+      2,
+      1,
+      0,
+      0,
+      0,
+      3
+    ]
+  ],
+  "supplyRestrictions": [
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      2,
+      2
+    ],
+    [
+      3,
+      2,
+      2,
+      2
+    ],
+    [
+      3,
+      3,
+      2,
+      2
+    ],
+    [
+      4,
+      3,
+      2,
+      2
+    ],
+    [
+      4,
+      3,
+      2,
+      2,
+      2
+    ]
+  ],
+  "boards": {
+    "westeros": {
+      "id": "westeros",
+      "width": 741,
+      "height": 1378,
+      "image": "westeros.jpg",
+      "regions": [
+        {
+          "id": "blackwater",
+          "supplyIcons": 2,
+          "type": "land",
+          "name": "Blackwater",
+          "x": 378.648697940025,
+          "y": 845.436332107513,
+          "neighbors": [
+            "the-reach",
+            "kings-landing",
+            "crackclaw-point",
+            "harrenhal",
+            "stoney-sept",
+            "searoad-marches"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 2,
+          "garrison": 5,
+          "id": "kings-landing",
+          "type": "land",
+          "name": "King's Landing",
+          "x": 470.298950578527,
+          "y": 925.391784016503,
+          "neighbors": [
+            "blackwater",
+            "the-reach",
+            "kingswood",
+            "blackwater-bay",
+            "crackclaw-point"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "the-reach",
+          "type": "land",
+          "name": "The Reach",
+          "x": 390.935480013156,
+          "y": 973.325290758513,
+          "neighbors": [
+            "blackwater",
+            "kings-landing",
+            "kingswood",
+            "the-boneway",
+            "dornish-marches",
+            "highgarden",
+            "searoad-marches"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "kingswood",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Kingswood",
+          "x": 533.349926749783,
+          "y": 942.97267318444,
+          "neighbors": [
+            "kings-landing",
+            "the-reach",
+            "blackwater-bay",
+            "shipbreaker-bay",
+            "storms-end",
+            "the-boneway"
+          ]
+        },
+        {
+          "id": "blackwater-bay",
+          "type": "sea",
+          "name": "Blackwater Bay",
+          "x": 563.49176308787,
+          "y": 810.427691571741,
+          "neighbors": [
+            "kings-landing",
+            "kingswood",
+            "crackclaw-point",
+            "shipbreaker-bay"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "crackclaw-point",
+          "type": "land",
+          "name": "Crackclaw Point",
+          "x": 462.159616675823,
+          "y": 757.717573094061,
+          "neighbors": [
+            "blackwater",
+            "kings-landing",
+            "blackwater-bay",
+            "harrenhal",
+            "the-mountains-of-the-moon",
+            "shipbreaker-bay",
+            "the-narrow-sea"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "crownIcons": 1,
+          "id": "harrenhal",
+          "type": "land",
+          "name": "Harrenhal",
+          "x": 363.42371698321,
+          "y": 733.358693655633,
+          "neighbors": [
+            "blackwater",
+            "crackclaw-point",
+            "riverrun",
+            "stoney-sept"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "stoney-sept",
+          "type": "land",
+          "name": "Stoney Sept",
+          "x": 327.771840542833,
+          "y": 767.26802374894,
+          "neighbors": [
+            "blackwater",
+            "searoad-marches",
+            "lannisport",
+            "riverrun",
+            "harrenhal"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "id": "riverrun",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Riverrun",
+          "x": 352.033834172146,
+          "y": 673.684251129642,
+          "neighbors": [
+            "the-golden-sound",
+            "ironmans-bay",
+            "harrenhal",
+            "stoney-sept",
+            "lannisport",
+            "seagard"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "garrison": 2,
+          "id": "lannisport",
+          "superController": "lannister",
+          "supplyIcons": 2,
+          "type": "land",
+          "name": "Lannisport",
+          "x": 210.991518235793,
+          "y": 764.565733672604,
+          "neighbors": [
+            "the-golden-sound",
+            "port-of-lannisport",
+            "stoney-sept",
+            "riverrun",
+            "searoad-marches"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "garrison": 2,
+          "id": "pyke",
+          "superController": "greyjoy",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Pyke",
+          "x": 74.2758429271354,
+          "y": 587.987908189124,
+          "neighbors": [
+            "port-of-pyke",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "ironmans-bay",
+          "type": "sea",
+          "name": "Ironman's Bay",
+          "x": 53.1542248932013,
+          "y": 644.800400646828,
+          "neighbors": [
+            "port-of-pyke",
+            "pyke",
+            "flints-finger",
+            "greywater-watch",
+            "seagard",
+            "riverrun",
+            "the-golden-sound",
+            "sunset-sea"
+          ]
+        },
+        {
+          "id": "the-golden-sound",
+          "type": "sea",
+          "name": "The Golden Sound",
+          "x": 71.1923583662714,
+          "y": 783.582142495186,
+          "neighbors": [
+            "riverrun",
+            "ironmans-bay",
+            "lannisport",
+            "port-of-lannisport",
+            "sunset-sea",
+            "searoad-marches"
+          ]
+        },
+        {
+          "id": "port-of-pyke",
+          "type": "port",
+          "name": "Port of Pyke",
+          "x": 176.522892380469,
+          "y": 545.259455023775,
+          "neighbors": [
+            "pyke",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "port-of-lannisport",
+          "type": "port",
+          "name": "Port of Lannisport",
+          "x": 142.26802374893998,
+          "y": 732.489397794741,
+          "neighbors": [
+            "lannisport",
+            "the-golden-sound"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "id": "seagard",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Seagard",
+          "x": 263.511669442232,
+          "y": 548.120459537084,
+          "neighbors": [
+            "greywater-watch",
+            "ironmans-bay",
+            "moat-cailin",
+            "the-twins",
+            "riverrun"
+          ]
+        },
+        {
+          "id": "sunset-sea",
+          "type": "sea",
+          "name": "Sunset Sea",
+          "x": 23.00439263389083,
+          "y": 771.855646465378,
+          "neighbors": [
+            "bay-of-ice",
+            "flints-finger",
+            "ironmans-bay",
+            "the-golden-sound",
+            "searoad-marches",
+            "west-summer-sea"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "flints-finger",
+          "type": "land",
+          "name": "Flint's Finger",
+          "x": 184.628256198546,
+          "y": 464.516477149273,
+          "neighbors": [
+            "bay-of-ice",
+            "greywater-watch",
+            "sunset-sea",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "greywater-watch",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Greywater Watch",
+          "x": 279.737307163033,
+          "y": 446.41739697255,
+          "neighbors": [
+            "bay-of-ice",
+            "flints-finger",
+            "moat-cailin",
+            "seagard",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "searoad-marches",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Searoad Marches",
+          "x": 203.558224384311,
+          "y": 867.526705178879,
+          "neighbors": [
+            "blackwater",
+            "the-reach",
+            "highgarden",
+            "sunset-sea",
+            "west-summer-sea",
+            "stoney-sept",
+            "lannisport",
+            "the-golden-sound"
+          ]
+        },
+        {
+          "id": "bay-of-ice",
+          "type": "sea",
+          "name": "Bay of Ice",
+          "x": 36.9325077847782,
+          "y": 342.794916358896,
+          "neighbors": [
+            "the-stony-shore",
+            "castle-black",
+            "winterfell",
+            "port-of-winterfell",
+            "greywater-watch",
+            "flints-finger",
+            "sunset-sea"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "castle-black",
+          "type": "land",
+          "name": "Castle Black",
+          "x": 471.023934920752,
+          "y": 54.0892367035086,
+          "neighbors": [
+            "bay-of-ice",
+            "the-shivering-sea",
+            "winterfell",
+            "karhold"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "karhold",
+          "type": "land",
+          "name": "Karhold",
+          "x": 615.850283114507,
+          "y": 133.615186806123,
+          "neighbors": [
+            "castle-black",
+            "winterfell",
+            "the-shivering-sea"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "garrison": 2,
+          "id": "winterfell",
+          "superController": "stark",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Winterfell",
+          "x": 334.308578745198,
+          "y": 318.119931711481,
+          "neighbors": [
+            "castle-black",
+            "karhold",
+            "the-shivering-sea",
+            "white-harbor",
+            "bay-of-ice",
+            "the-stony-shore",
+            "moat-cailin",
+            "port-of-winterfell"
+          ]
+        },
+        {
+          "id": "port-of-winterfell",
+          "type": "port",
+          "name": "Port of Winterfell",
+          "x": 203.919985113509,
+          "y": 104.857585907456,
+          "neighbors": [
+            "bay-of-ice",
+            "winterfell"
+          ]
+        },
+        {
+          "id": "the-stony-shore",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "The Stony Shore",
+          "x": 162.776995305164,
+          "y": 373.780623132736,
+          "neighbors": [
+            "bay-of-ice",
+            "winterfell"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "white-harbor",
+          "type": "land",
+          "name": "White Harbor",
+          "x": 463.24384432089,
+          "y": 274.851469420175,
+          "neighbors": [
+            "the-shivering-sea",
+            "widows-watch",
+            "winterfell",
+            "moat-cailin",
+            "the-narrow-sea",
+            "port-of-white-harbor"
+          ]
+        },
+        {
+          "id": "widows-watch",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Widow's Watch",
+          "x": 504.24966904951,
+          "y": 360.583796664019,
+          "neighbors": [
+            "the-shivering-sea",
+            "the-narrow-sea",
+            "white-harbor"
+          ]
+        },
+        {
+          "id": "the-shivering-sea",
+          "type": "sea",
+          "name": "The Shivering Sea",
+          "x": 670.339359079704,
+          "y": 318.344289235826,
+          "neighbors": [
+            "castle-black",
+            "karhold",
+            "winterfell",
+            "white-harbor",
+            "widows-watch",
+            "the-narrow-sea"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "moat-cailin",
+          "type": "land",
+          "name": "Moat Cailin",
+          "x": 323.703894159966,
+          "y": 522.186596171024,
+          "neighbors": [
+            "white-harbor",
+            "winterfell",
+            "greywater-watch",
+            "the-narrow-sea",
+            "the-twins",
+            "seagard"
+          ]
+        },
+        {
+          "id": "port-of-white-harbor",
+          "type": "port",
+          "name": "Port of White Harbor",
+          "x": 454.442746432969,
+          "y": 468.590980420559,
+          "neighbors": [
+            "white-harbor",
+            "the-narrow-sea"
+          ]
+        },
+        {
+          "id": "the-narrow-sea",
+          "type": "sea",
+          "name": "The Narrow Sea",
+          "x": 695.431662558204,
+          "y": 563.395508079977,
+          "neighbors": [
+            "crackclaw-point",
+            "the-shivering-sea",
+            "widows-watch",
+            "white-harbor",
+            "moat-cailin",
+            "port-of-white-harbor",
+            "shipbreaker-bay",
+            "the-twins",
+            "the-fingers",
+            "the-mountains-of-the-moon",
+            "the-eyrie"
+          ]
+        },
+        {
+          "id": "the-fingers",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "The Fingers",
+          "x": 540.709393224966,
+          "y": 540.39157050089,
+          "neighbors": [
+            "the-twins",
+            "the-narrow-sea",
+            "the-mountains-of-the-moon"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "the-twins",
+          "type": "land",
+          "name": "The Twins",
+          "x": 409.616463329126,
+          "y": 550.508624316365,
+          "neighbors": [
+            "the-narrow-sea",
+            "moat-cailin",
+            "seagard",
+            "the-fingers",
+            "the-mountains-of-the-moon"
+          ]
+        },
+        {
+          "id": "the-mountains-of-the-moon",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "The Mountains of the Moon",
+          "x": 493.613062001076,
+          "y": 623.18356289035,
+          "neighbors": [
+            "crackclaw-point",
+            "the-twins",
+            "the-narrow-sea",
+            "the-fingers",
+            "the-eyrie"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "crownIcons": 1,
+          "garrison": 6,
+          "id": "the-eyrie",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "The Eyrie",
+          "x": 600.6390663244,
+          "y": 653.744512765406,
+          "neighbors": [
+            "the-mountains-of-the-moon",
+            "the-narrow-sea"
+          ]
+        },
+        {
+          "id": "shipbreaker-bay",
+          "type": "sea",
+          "name": "Shipbreaker Bay",
+          "x": 698.345335869952,
+          "y": 1011.112662985476,
+          "neighbors": [
+            "kingswood",
+            "blackwater-bay",
+            "crackclaw-point",
+            "the-narrow-sea",
+            "port-of-dragonstone",
+            "dragonstone",
+            "east-summer-sea",
+            "port-of-storms-end",
+            "storms-end"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "garrison": 2,
+          "id": "dragonstone",
+          "superController": "baratheon",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Dragonstone",
+          "x": 672.755765204477,
+          "y": 751.518528507567,
+          "neighbors": [
+            "port-of-dragonstone",
+            "shipbreaker-bay"
+          ]
+        },
+        {
+          "id": "port-of-dragonstone",
+          "type": "port",
+          "name": "Port of Dragonstone",
+          "x": 693.710871885294,
+          "y": 892.938316860781,
+          "neighbors": [
+            "dragonstone",
+            "shipbreaker-bay"
+          ]
+        },
+        {
+          "id": "port-of-sunspear",
+          "type": "port",
+          "name": "Port of Sunspear",
+          "x": 668.471710875973,
+          "y": 1269.33787505437,
+          "neighbors": [
+            "sunspear",
+            "east-summer-sea"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "garrison": 2,
+          "id": "sunspear",
+          "superController": "martell",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Sunspear",
+          "x": 518.771468078006,
+          "y": 1203.15653459209,
+          "neighbors": [
+            "port-of-sunspear",
+            "east-summer-sea",
+            "yronwood",
+            "salt-shore",
+            "sea-of-dorne"
+          ]
+        },
+        {
+          "id": "sea-of-dorne",
+          "type": "sea",
+          "name": "Sea of Dorne",
+          "x": 563.379185389187,
+          "y": 1139.93559453062,
+          "neighbors": [
+            "east-summer-sea",
+            "storms-end",
+            "yronwood",
+            "the-boneway",
+            "sunspear"
+          ]
+        },
+        {
+          "id": "east-summer-sea",
+          "type": "sea",
+          "name": "East Summer Sea",
+          "x": 618.362226409624,
+          "y": 1338.27796298981,
+          "neighbors": [
+            "west-summer-sea",
+            "starfall",
+            "storms-end",
+            "port-of-sunspear",
+            "sunspear",
+            "sea-of-dorne",
+            "salt-shore",
+            "shipbreaker-bay"
+          ]
+        },
+        {
+          "id": "salt-shore",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Salt Shore",
+          "x": 420.181148090239,
+          "y": 1254.6694214876,
+          "neighbors": [
+            "starfall",
+            "east-summer-sea",
+            "yronwood",
+            "sunspear"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "storms-end",
+          "type": "land",
+          "name": "Storm's End",
+          "x": 528.101525703858,
+          "y": 1011.376926236943,
+          "neighbors": [
+            "kingswood",
+            "the-boneway",
+            "east-summer-sea",
+            "sea-of-dorne",
+            "port-of-storms-end",
+            "shipbreaker-bay"
+          ]
+        },
+        {
+          "id": "port-of-storms-end",
+          "type": "port",
+          "name": "Port of Storm's End",
+          "x": 604.611111111111,
+          "y": 1008.611111111113,
+          "neighbors": [
+            "shipbreaker-bay",
+            "storms-end"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "the-boneway",
+          "type": "land",
+          "name": "The Boneway",
+          "x": 427.88709747708,
+          "y": 1075.97626810297,
+          "neighbors": [
+            "kingswood",
+            "the-reach",
+            "dornish-marches",
+            "yronwood",
+            "princes-pass",
+            "storms-end",
+            "sea-of-dorne"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "princes-pass",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Prince's Pass",
+          "x": 326.972093609247,
+          "y": 1108.2385271977,
+          "neighbors": [
+            "the-boneway",
+            "three-towers",
+            "starfall",
+            "yronwood",
+            "dornish-marches"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "yronwood",
+          "type": "land",
+          "name": "Yronwood",
+          "x": 440.697164019585,
+          "y": 1199.64603683543,
+          "neighbors": [
+            "the-boneway",
+            "sunspear",
+            "sea-of-dorne",
+            "salt-shore",
+            "starfall",
+            "princes-pass"
+          ]
+        },
+        {
+          "id": "three-towers",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Three Towers",
+          "x": 222.726794544709,
+          "y": 1154.71287284639,
+          "neighbors": [
+            "west-summer-sea",
+            "oldtown",
+            "redwyne-straights",
+            "dornish-marches",
+            "princes-pass"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "starfall",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Starfall",
+          "x": 349.594917595659,
+          "y": 1256.66549519062,
+          "neighbors": [
+            "east-summer-sea",
+            "salt-shore",
+            "west-summer-sea",
+            "princes-pass",
+            "yronwood"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "the-arbor",
+          "type": "land",
+          "name": "The Arbor",
+          "x": 103.3408228911613,
+          "y": 1282.69561668826,
+          "neighbors": [
+            "west-summer-sea",
+            "redwyne-straights"
+          ]
+        },
+        {
+          "id": "west-summer-sea",
+          "type": "sea",
+          "name": "West Summer Sea",
+          "x": 123.538801470285,
+          "y": 1353.6085160864,
+          "neighbors": [
+            "east-summer-sea",
+            "the-arbor",
+            "highgarden",
+            "searoad-marches",
+            "sunset-sea",
+            "redwyne-straights",
+            "three-towers",
+            "starfall"
+          ]
+        },
+        {
+          "id": "redwyne-straights",
+          "type": "sea",
+          "name": "Redwyne Straights",
+          "x": 49.6891353401507,
+          "y": 1165.49719141581,
+          "neighbors": [
+            "the-arbor",
+            "port-of-oldtown",
+            "west-summer-sea",
+            "oldtown",
+            "three-towers",
+            "highgarden"
+          ]
+        },
+        {
+          "id": "port-of-oldtown",
+          "type": "port",
+          "name": "Port of Oldtown",
+          "x": 99.6864653797505,
+          "y": 1065.85739426937,
+          "neighbors": [
+            "redwyne-straights",
+            "oldtown"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "id": "oldtown",
+          "type": "land",
+          "name": "Oldtown",
+          "x": 120.316534926585,
+          "y": 1156.49998144507,
+          "neighbors": [
+            "port-of-oldtown",
+            "highgarden",
+            "redwyne-straights",
+            "three-towers",
+            "dornish-marches"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "garrison": 2,
+          "id": "highgarden",
+          "superController": "tyrell",
+          "supplyIcons": 2,
+          "type": "land",
+          "name": "Highgarden",
+          "x": 165.475451812818,
+          "y": 988.109758662065,
+          "neighbors": [
+            "the-reach",
+            "west-summer-sea",
+            "searoad-marches",
+            "oldtown",
+            "dornish-marches",
+            "redwyne-straights"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "dornish-marches",
+          "type": "land",
+          "name": "Dornish Marches",
+          "x": 333.731411041428,
+          "y": 1057.02241436895,
+          "neighbors": [
+            "the-reach",
+            "the-boneway",
+            "three-towers",
+            "oldtown",
+            "highgarden",
+            "princes-pass"
+          ]
+        }
+      ]
+    },
+    "westeros-with-essos": {
+      "id": "westeros-with-essos",
+      "width": 1204,
+      "height": 1378,
+      "image": "westeros-with-essos.jpg",
+      "regions": [
+        {
+          "id": "blackwater",
+          "supplyIcons": 2,
+          "type": "land",
+          "name": "Blackwater",
+          "x": 411.982031273358,
+          "y": 887.436332107513,
+          "neighbors": [
+            "the-reach",
+            "kings-landing",
+            "crackclaw-point",
+            "harrenhal",
+            "stoney-sept",
+            "searoad-marches"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 2,
+          "garrison": 5,
+          "id": "kings-landing",
+          "type": "land",
+          "name": "King's Landing",
+          "x": 559.13228391186,
+          "y": 821.891784016503,
+          "neighbors": [
+            "blackwater",
+            "the-reach",
+            "kingswood",
+            "blackwater-bay",
+            "crackclaw-point"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "the-reach",
+          "type": "land",
+          "name": "The Reach",
+          "x": 457.602146679823,
+          "y": 992.99195742518,
+          "neighbors": [
+            "blackwater",
+            "kings-landing",
+            "kingswood",
+            "the-boneway",
+            "dornish-marches",
+            "highgarden",
+            "searoad-marches"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "kingswood",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Kingswood",
+          "x": 578.933260083116,
+          "y": 922.97267318444,
+          "neighbors": [
+            "kings-landing",
+            "the-reach",
+            "blackwater-bay",
+            "shipbreaker-bay",
+            "storms-end",
+            "the-boneway"
+          ]
+        },
+        {
+          "id": "blackwater-bay",
+          "type": "sea",
+          "name": "Blackwater Bay",
+          "x": 606.825096421203,
+          "y": 837.761024905074,
+          "neighbors": [
+            "kings-landing",
+            "kingswood",
+            "crackclaw-point",
+            "shipbreaker-bay"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "crackclaw-point",
+          "type": "land",
+          "name": "Crackclaw Point",
+          "x": 593.159616675823,
+          "y": 743.050906427394,
+          "neighbors": [
+            "blackwater",
+            "kings-landing",
+            "blackwater-bay",
+            "harrenhal",
+            "the-mountains-of-the-moon",
+            "shipbreaker-bay",
+            "the-narrow-sea"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "crownIcons": 1,
+          "id": "harrenhal",
+          "type": "land",
+          "name": "Harrenhal",
+          "x": 417.757050316544,
+          "y": 706.5253603223,
+          "neighbors": [
+            "blackwater",
+            "crackclaw-point",
+            "riverrun",
+            "stoney-sept"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "stoney-sept",
+          "type": "land",
+          "name": "Stoney Sept",
+          "x": 379.105173876166,
+          "y": 741.26802374894,
+          "neighbors": [
+            "blackwater",
+            "searoad-marches",
+            "lannisport",
+            "riverrun",
+            "harrenhal"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "id": "riverrun",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Riverrun",
+          "x": 426.700500838813,
+          "y": 665.684251129642,
+          "neighbors": [
+            "the-golden-sound",
+            "harrenhal",
+            "stoney-sept",
+            "lannisport",
+            "seagard",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "garrison": 2,
+          "id": "lannisport",
+          "superController": "lannister",
+          "supplyIcons": 2,
+          "type": "land",
+          "name": "Lannisport",
+          "x": 280.324851569127,
+          "y": 689.899067005938,
+          "neighbors": [
+            "the-golden-sound",
+            "port-of-lannisport",
+            "stoney-sept",
+            "riverrun",
+            "searoad-marches"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "garrison": 2,
+          "id": "pyke",
+          "superController": "greyjoy",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Pyke",
+          "x": 174.609176260469,
+          "y": 559.821241522458,
+          "neighbors": [
+            "port-of-pyke",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "ironmans-bay",
+          "type": "sea",
+          "name": "Ironman's Bay",
+          "x": 81.8208915598679,
+          "y": 598.133733980161,
+          "neighbors": [
+            "port-of-pyke",
+            "pyke",
+            "flints-finger",
+            "greywater-watch",
+            "seagard",
+            "riverrun",
+            "the-golden-sound",
+            "sunset-sea"
+          ]
+        },
+        {
+          "id": "the-golden-sound",
+          "type": "sea",
+          "name": "The Golden Sound",
+          "x": 129.859025032938,
+          "y": 753.582142495186,
+          "neighbors": [
+            "riverrun",
+            "lannisport",
+            "port-of-lannisport",
+            "sunset-sea",
+            "searoad-marches",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "port-of-pyke",
+          "type": "port",
+          "name": "Port of Pyke",
+          "x": 238.522892380469,
+          "y": 520.926121690442,
+          "neighbors": [
+            "pyke",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "port-of-lannisport",
+          "type": "port",
+          "name": "Port of Lannisport",
+          "x": 185.601357082273,
+          "y": 704.489397794741,
+          "neighbors": [
+            "lannisport",
+            "the-golden-sound"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "id": "seagard",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Seagard",
+          "x": 320.845002775565,
+          "y": 528.787126203751,
+          "neighbors": [
+            "greywater-watch",
+            "moat-cailin",
+            "the-twins",
+            "riverrun",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "sunset-sea",
+          "type": "sea",
+          "name": "Sunset Sea",
+          "x": 39.0043926338908,
+          "y": 756.522313132044,
+          "neighbors": [
+            "bay-of-ice",
+            "flints-finger",
+            "the-golden-sound",
+            "searoad-marches",
+            "west-summer-sea",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "flints-finger",
+          "type": "land",
+          "name": "Flint's Finger",
+          "x": 251.794922865213,
+          "y": 440.683143815939,
+          "neighbors": [
+            "bay-of-ice",
+            "greywater-watch",
+            "sunset-sea",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "greywater-watch",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Greywater Watch",
+          "x": 333.070640496366,
+          "y": 431.750730305884,
+          "neighbors": [
+            "bay-of-ice",
+            "flints-finger",
+            "moat-cailin",
+            "seagard",
+            "ironmans-bay"
+          ]
+        },
+        {
+          "id": "searoad-marches",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Searoad Marches",
+          "x": 259.55822438431096,
+          "y": 838.860038512212,
+          "neighbors": [
+            "blackwater",
+            "the-reach",
+            "highgarden",
+            "sunset-sea",
+            "west-summer-sea",
+            "stoney-sept",
+            "lannisport",
+            "the-golden-sound"
+          ]
+        },
+        {
+          "id": "bay-of-ice",
+          "type": "sea",
+          "name": "Bay of Ice",
+          "x": 75.5991744514449,
+          "y": 342.128249692229,
+          "neighbors": [
+            "the-stony-shore",
+            "castle-black",
+            "winterfell",
+            "port-of-winterfell",
+            "greywater-watch",
+            "flints-finger",
+            "sunset-sea"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "castle-black",
+          "type": "land",
+          "name": "Castle Black",
+          "x": 551.023934920752,
+          "y": 47.089236703508504,
+          "neighbors": [
+            "bay-of-ice",
+            "the-shivering-sea",
+            "winterfell",
+            "karhold"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "karhold",
+          "type": "land",
+          "name": "Karhold",
+          "x": 585.18361644784,
+          "y": 115.615186806123,
+          "neighbors": [
+            "castle-black",
+            "winterfell",
+            "the-shivering-sea"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "garrison": 2,
+          "id": "winterfell",
+          "superController": "stark",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Winterfell",
+          "x": 481.641912078531,
+          "y": 192.453265044814,
+          "neighbors": [
+            "castle-black",
+            "karhold",
+            "the-shivering-sea",
+            "white-harbor",
+            "bay-of-ice",
+            "the-stony-shore",
+            "moat-cailin",
+            "port-of-winterfell"
+          ]
+        },
+        {
+          "id": "port-of-winterfell",
+          "type": "port",
+          "name": "Port of Winterfell",
+          "x": 264.086651780176,
+          "y": 105.0242525741227,
+          "neighbors": [
+            "bay-of-ice",
+            "winterfell"
+          ]
+        },
+        {
+          "id": "the-stony-shore",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "The Stony Shore",
+          "x": 281.110328638497,
+          "y": 359.447289799403,
+          "neighbors": [
+            "bay-of-ice",
+            "winterfell"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "white-harbor",
+          "type": "land",
+          "name": "White Harbor",
+          "x": 566.577177654224,
+          "y": 258.184802753508,
+          "neighbors": [
+            "the-shivering-sea",
+            "widows-watch",
+            "winterfell",
+            "moat-cailin",
+            "the-bite",
+            "port-of-white-harbor"
+          ]
+        },
+        {
+          "id": "widows-watch",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Widow's Watch",
+          "x": 572.583002382843,
+          "y": 357.583796664019,
+          "neighbors": [
+            "the-shivering-sea",
+            "the-narrow-sea",
+            "white-harbor",
+            "the-bite"
+          ]
+        },
+        {
+          "id": "the-shivering-sea",
+          "type": "sea",
+          "name": "The Shivering Sea",
+          "x": 711.006025746371,
+          "y": 299.010955902493,
+          "neighbors": [
+            "castle-black",
+            "karhold",
+            "winterfell",
+            "white-harbor",
+            "widows-watch",
+            "the-narrow-sea",
+            "braavosian-coastlands"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "moat-cailin",
+          "type": "land",
+          "name": "Moat Cailin",
+          "x": 382.370560826633,
+          "y": 506.186596171025,
+          "neighbors": [
+            "white-harbor",
+            "winterfell",
+            "greywater-watch",
+            "the-bite",
+            "the-twins",
+            "seagard"
+          ]
+        },
+        {
+          "id": "port-of-white-harbor",
+          "type": "port",
+          "name": "Port of White Harbor",
+          "x": 502.776079766302,
+          "y": 444.924313753893,
+          "neighbors": [
+            "white-harbor",
+            "the-bite"
+          ]
+        },
+        {
+          "id": "the-narrow-sea",
+          "type": "sea",
+          "name": "The Narrow Sea",
+          "x": 736.098329224871,
+          "y": 532.062174746644,
+          "neighbors": [
+            "crackclaw-point",
+            "braavosian-coastlands",
+            "the-shivering-sea",
+            "widows-watch",
+            "shipbreaker-bay",
+            "the-vale-of-arryn",
+            "the-mountains-of-the-moon",
+            "the-fingers",
+            "the-bite",
+            "the-eyrie",
+            "bay-of-pentos",
+            "port-of-the-eyrie"
+          ]
+        },
+        {
+          "id": "the-fingers",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "The Fingers",
+          "x": 588.376059891633,
+          "y": 528.724903834223,
+          "neighbors": [
+            "the-twins",
+            "the-bite",
+            "the-mountains-of-the-moon",
+            "the-narrow-sea",
+            "the-vale-of-arryn"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "the-twins",
+          "type": "land",
+          "name": "The Twins",
+          "x": 463.616463329126,
+          "y": 570.508624316365,
+          "neighbors": [
+            "the-bite",
+            "moat-cailin",
+            "seagard",
+            "the-fingers",
+            "the-mountains-of-the-moon"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "crownIcons": 1,
+          "id": "the-vale-of-arryn",
+          "type": "land",
+          "name": "The Vale of Arryn",
+          "x": 661.666666666667,
+          "y": 565.166666666667,
+          "neighbors": [
+            "the-narrow-sea",
+            "the-eyrie",
+            "the-mountains-of-the-moon",
+            "the-fingers"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "garrison": 4,
+          "id": "the-eyrie",
+          "superController": "arryn",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "The Eyrie",
+          "x": 569.972399657733,
+          "y": 636.577846098739,
+          "neighbors": [
+            "the-mountains-of-the-moon",
+            "the-vale-of-arryn",
+            "the-narrow-sea",
+            "port-of-the-eyrie"
+          ]
+        },
+        {
+          "id": "shipbreaker-bay",
+          "type": "sea",
+          "name": "Shipbreaker Bay",
+          "x": 727.678669203285,
+          "y": 981.112662985476,
+          "neighbors": [
+            "kingswood",
+            "blackwater-bay",
+            "crackclaw-point",
+            "bay-of-pentos",
+            "the-narrow-sea",
+            "port-of-dragonstone",
+            "dragonstone",
+            "east-summer-sea",
+            "port-of-storms-end",
+            "storms-end",
+            "sea-of-myrth"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "garrison": 2,
+          "id": "dragonstone",
+          "superController": "baratheon",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Dragonstone",
+          "x": 673.58909853781,
+          "y": 766.018528507567,
+          "neighbors": [
+            "port-of-dragonstone",
+            "shipbreaker-bay"
+          ]
+        },
+        {
+          "id": "port-of-dragonstone",
+          "type": "port",
+          "name": "Port of Dragonstone",
+          "x": 721.544205218627,
+          "y": 866.604983527447,
+          "neighbors": [
+            "dragonstone",
+            "shipbreaker-bay"
+          ]
+        },
+        {
+          "id": "port-of-sunspear",
+          "type": "port",
+          "name": "Port of Sunspear",
+          "x": 710.555044209306,
+          "y": 1218.58787505437,
+          "neighbors": [
+            "sunspear",
+            "east-summer-sea"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "garrison": 2,
+          "id": "sunspear",
+          "superController": "martell",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Sunspear",
+          "x": 550.271468078006,
+          "y": 1158.65653459209,
+          "neighbors": [
+            "port-of-sunspear",
+            "east-summer-sea",
+            "yronwood",
+            "salt-shore",
+            "sea-of-dorne"
+          ]
+        },
+        {
+          "id": "sea-of-dorne",
+          "type": "sea",
+          "name": "Sea of Dorne",
+          "x": 625.379185389187,
+          "y": 1105.26892786395,
+          "neighbors": [
+            "east-summer-sea",
+            "storms-end",
+            "yronwood",
+            "the-boneway",
+            "sunspear"
+          ]
+        },
+        {
+          "id": "east-summer-sea",
+          "type": "sea",
+          "name": "East Summer Sea",
+          "x": 625.695559742957,
+          "y": 1276.94462965648,
+          "neighbors": [
+            "west-summer-sea",
+            "starfall",
+            "storms-end",
+            "port-of-sunspear",
+            "sunspear",
+            "sea-of-dorne",
+            "salt-shore",
+            "shipbreaker-bay",
+            "sea-of-myrth",
+            "the-orange-shore"
+          ]
+        },
+        {
+          "id": "salt-shore",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Salt Shore",
+          "x": 494.514481423572,
+          "y": 1212.00275482093,
+          "neighbors": [
+            "starfall",
+            "east-summer-sea",
+            "yronwood",
+            "sunspear"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "storms-end",
+          "type": "land",
+          "name": "Storm's End",
+          "x": 630.684859037192,
+          "y": 1045.71025957028,
+          "neighbors": [
+            "kingswood",
+            "the-boneway",
+            "east-summer-sea",
+            "sea-of-dorne",
+            "port-of-storms-end",
+            "shipbreaker-bay"
+          ]
+        },
+        {
+          "id": "port-of-storms-end",
+          "type": "port",
+          "name": "Port of Storm's End",
+          "x": 664.944444444444,
+          "y": 964.02777777778,
+          "neighbors": [
+            "shipbreaker-bay",
+            "storms-end"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "the-boneway",
+          "type": "land",
+          "name": "The Boneway",
+          "x": 490.387097477079,
+          "y": 1035.8096014363,
+          "neighbors": [
+            "kingswood",
+            "the-reach",
+            "dornish-marches",
+            "yronwood",
+            "princes-pass",
+            "storms-end",
+            "sea-of-dorne"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "princes-pass",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Prince's Pass",
+          "x": 389.972093609247,
+          "y": 1077.90519386437,
+          "neighbors": [
+            "the-boneway",
+            "three-towers",
+            "starfall",
+            "yronwood",
+            "dornish-marches"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "yronwood",
+          "type": "land",
+          "name": "Yronwood",
+          "x": 409.030497352918,
+          "y": 1160.31270350209,
+          "neighbors": [
+            "the-boneway",
+            "sunspear",
+            "sea-of-dorne",
+            "salt-shore",
+            "starfall",
+            "princes-pass"
+          ]
+        },
+        {
+          "id": "three-towers",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Three Towers",
+          "x": 227.726794544709,
+          "y": 1176.71287284639,
+          "neighbors": [
+            "west-summer-sea",
+            "oldtown",
+            "redwyne-straights",
+            "dornish-marches",
+            "princes-pass"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "id": "starfall",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Starfall",
+          "x": 418.428250928992,
+          "y": 1219.49882852395,
+          "neighbors": [
+            "east-summer-sea",
+            "salt-shore",
+            "west-summer-sea",
+            "princes-pass",
+            "yronwood"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "the-arbor",
+          "type": "land",
+          "name": "The Arbor",
+          "x": 109.3408228911612,
+          "y": 1234.02895002159,
+          "neighbors": [
+            "west-summer-sea",
+            "redwyne-straights"
+          ]
+        },
+        {
+          "id": "west-summer-sea",
+          "type": "sea",
+          "name": "West Summer Sea",
+          "x": 48.205468136951595,
+          "y": 1262.94184941973,
+          "neighbors": [
+            "east-summer-sea",
+            "the-arbor",
+            "highgarden",
+            "searoad-marches",
+            "sunset-sea",
+            "redwyne-straights",
+            "three-towers",
+            "starfall"
+          ]
+        },
+        {
+          "id": "redwyne-straights",
+          "type": "sea",
+          "name": "Redwyne Straights",
+          "x": 166.355802006817,
+          "y": 1194.16385808248,
+          "neighbors": [
+            "the-arbor",
+            "port-of-oldtown",
+            "west-summer-sea",
+            "oldtown",
+            "three-towers",
+            "highgarden"
+          ]
+        },
+        {
+          "id": "port-of-oldtown",
+          "type": "port",
+          "name": "Port of Oldtown",
+          "x": 166.353132046417,
+          "y": 1028.5240609360399,
+          "neighbors": [
+            "redwyne-straights",
+            "oldtown"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "id": "oldtown",
+          "type": "land",
+          "name": "Oldtown",
+          "x": 179.816534926585,
+          "y": 1119.66664811173,
+          "neighbors": [
+            "port-of-oldtown",
+            "highgarden",
+            "redwyne-straights",
+            "three-towers",
+            "dornish-marches"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "garrison": 2,
+          "id": "highgarden",
+          "superController": "tyrell",
+          "supplyIcons": 2,
+          "type": "land",
+          "name": "Highgarden",
+          "x": 214.225451812818,
+          "y": 951.859758662065,
+          "neighbors": [
+            "the-reach",
+            "west-summer-sea",
+            "searoad-marches",
+            "oldtown",
+            "dornish-marches",
+            "redwyne-straights"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "dornish-marches",
+          "type": "land",
+          "name": "Dornish Marches",
+          "x": 302.064744374761,
+          "y": 1056.35574770228,
+          "neighbors": [
+            "the-reach",
+            "the-boneway",
+            "three-towers",
+            "oldtown",
+            "highgarden",
+            "princes-pass"
+          ]
+        },
+        {
+          "id": "the-mountains-of-the-moon",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "The Mountains of the Moon",
+          "x": 523.446395334409,
+          "y": 605.350229557016,
+          "neighbors": [
+            "crackclaw-point",
+            "the-twins",
+            "the-fingers",
+            "the-eyrie",
+            "the-narrow-sea",
+            "the-vale-of-arryn"
+          ]
+        },
+        {
+          "id": "the-bite",
+          "type": "sea",
+          "name": "The Bite",
+          "x": 558.333333333333,
+          "y": 458.666666666666,
+          "neighbors": [
+            "white-harbor",
+            "moat-cailin",
+            "port-of-white-harbor",
+            "the-twins",
+            "the-fingers",
+            "widows-watch",
+            "the-narrow-sea"
+          ]
+        },
+        {
+          "id": "port-of-the-eyrie",
+          "type": "port",
+          "name": "Port of The Eyrie",
+          "x": 711.666666666667,
+          "y": 606.666666666666,
+          "neighbors": [
+            "the-eyrie",
+            "the-narrow-sea"
+          ]
+        },
+        {
+          "id": "braavosian-coastlands",
+          "type": "sea",
+          "name": "Braavosian Coastlands",
+          "x": 1014.666666666667,
+          "y": 445.333333333333,
+          "neighbors": [
+            "the-narrow-sea",
+            "the-shivering-sea",
+            "bay-of-pentos",
+            "braavos",
+            "port-of-braavos",
+            "norvos"
+          ]
+        },
+        {
+          "id": "bay-of-pentos",
+          "type": "sea",
+          "name": "Bay of Pentos",
+          "x": 870,
+          "y": 898,
+          "neighbors": [
+            "shipbreaker-bay",
+            "braavosian-coastlands",
+            "the-narrow-sea",
+            "braavos",
+            "pentos",
+            "port-of-pentos",
+            "myr",
+            "sea-of-myrth"
+          ]
+        },
+        {
+          "id": "sea-of-myrth",
+          "type": "sea",
+          "name": "Sea of Myrth",
+          "x": 824.666666666667,
+          "y": 1153.33333333333,
+          "neighbors": [
+            "bay-of-pentos",
+            "shipbreaker-bay",
+            "myr",
+            "east-summer-sea",
+            "the-orange-shore",
+            "the-disputed-lands"
+          ]
+        },
+        {
+          "id": "the-orange-shore",
+          "type": "sea",
+          "name": "The Orange Shore",
+          "x": 959.333333333333,
+          "y": 1312,
+          "neighbors": [
+            "east-summer-sea",
+            "sea-of-myrth",
+            "the-disputed-lands",
+            "volantis",
+            "port-of-volantis"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "the-disputed-lands",
+          "type": "land",
+          "name": "The Disputed Lands",
+          "x": 865.833333333334,
+          "y": 1110.16666666667,
+          "neighbors": [
+            "sea-of-myrth",
+            "the-orange-shore",
+            "myr",
+            "volantis"
+          ]
+        },
+        {
+          "crownIcons": 1,
+          "id": "myr",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Myr",
+          "x": 1013.5,
+          "y": 956.333333333333,
+          "neighbors": [
+            "norvos",
+            "pentos",
+            "bay-of-pentos",
+            "sea-of-myrth",
+            "the-disputed-lands",
+            "volantis",
+            "the-rhoyne"
+          ]
+        },
+        {
+          "id": "the-rhoyne",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "The Rhoyne",
+          "x": 1158.66666666667,
+          "y": 910,
+          "neighbors": [
+            "norvos",
+            "myr",
+            "volantis"
+          ]
+        },
+        {
+          "id": "norvos",
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Norvos",
+          "x": 1062.66666666667,
+          "y": 729.333333333333,
+          "neighbors": [
+            "braavosian-coastlands",
+            "braavos",
+            "pentos",
+            "myr",
+            "the-rhoyne"
+          ]
+        },
+        {
+          "castleLevel": 2,
+          "crownIcons": 1,
+          "id": "volantis",
+          "type": "land",
+          "name": "Volantis",
+          "x": 1066.5,
+          "y": 1157.5,
+          "neighbors": [
+            "the-disputed-lands",
+            "the-orange-shore",
+            "port-of-volantis",
+            "myr",
+            "the-rhoyne"
+          ]
+        },
+        {
+          "castleLevel": 1,
+          "garrison": 5,
+          "id": "braavos",
+          "type": "land",
+          "name": "Braavos",
+          "x": 952,
+          "y": 625.833333333333,
+          "neighbors": [
+            "braavosian-coastlands",
+            "port-of-braavos",
+            "bay-of-pentos",
+            "pentos",
+            "norvos"
+          ]
+        },
+        {
+          "canRegainGarrison": true,
+          "castleLevel": 2,
+          "garrison": 2,
+          "id": "pentos",
+          "superController": "targaryen",
+          "superLoyaltyToken": true,
+          "supplyIcons": 1,
+          "type": "land",
+          "name": "Pentos",
+          "x": 831.333333333333,
+          "y": 754.666666666667,
+          "neighbors": [
+            "braavos",
+            "norvos",
+            "bay-of-pentos",
+            "myr",
+            "port-of-pentos"
+          ]
+        },
+        {
+          "id": "port-of-braavos",
+          "type": "port",
+          "name": "Port of Braavos",
+          "x": 879.5,
+          "y": 466.166666666667,
+          "neighbors": [
+            "braavos",
+            "braavosian-coastlands"
+          ]
+        },
+        {
+          "id": "port-of-pentos",
+          "type": "port",
+          "name": "Port of Pentos",
+          "x": 813.75,
+          "y": 811.25,
+          "neighbors": [
+            "bay-of-pentos",
+            "pentos"
+          ]
+        },
+        {
+          "id": "port-of-volantis",
+          "type": "port",
+          "name": "Port of Volantis",
+          "x": 1139.83333333333,
+          "y": 1281,
+          "neighbors": [
+            "volantis",
+            "the-orange-shore"
+          ]
+        }
+      ]
+    }
+  }
+}

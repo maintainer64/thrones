@@ -1,0 +1,532 @@
+.house-card {
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
+  --light-x: 50%;
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 10 / 17;
+  border-radius: 4px;
+  background: #17201b;
+  color: #efdfba;
+  overflow: visible;
+  isolation: isolate;
+  font-family: Georgia, serif;
+  container-type: inline-size;
+  box-shadow:
+    0 1px 0 #a49465,
+    0 3px 0 #343124,
+    0 16px 30px #0006;
+}
+.house-card-portrait {
+  position: absolute;
+  inset: 11% 0 calc(98% - var(--card-rules-top, 66%));
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 35%, var(--house-ink), #17201b);
+}
+.house-card .house-card-portrait > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  max-width: none;
+}
+.house-card-name,
+.house-card-strength,
+.house-card-parchment {
+  position: absolute;
+  z-index: 3;
+}
+.house-card-name {
+  top: 1%;
+  left: -2%;
+  right: -2%;
+  height: 12%;
+  padding: 1% 4% 1% 26%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 7.5cqw;
+  font-weight: bold;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+  color: #302516;
+  background:
+    radial-gradient(ellipse at 50% 40%, #fff3c8, transparent 80%),
+    linear-gradient(0deg, #b28a4e, #e5cc91 15% 85%, #bb9559);
+  border-block: 1px solid #927044;
+  box-shadow: 0 4px 8px #0007;
+  clip-path: polygon(
+    0 5%,
+    97% 0,
+    100% 14%,
+    98% 50%,
+    100% 89%,
+    4% 100%,
+    0 91%,
+    2% 50%
+  );
+}
+.house-card-strength {
+  left: 1%;
+  top: -0.5%;
+  width: 22%;
+  height: 16%;
+  display: grid;
+  place-items: center;
+  font-size: 17cqw;
+  line-height: 1;
+  text-shadow: 0 2px 4px #000;
+  z-index: 5;
+  color: #fff5da;
+  background: linear-gradient(
+    120deg,
+    #d3d0bd,
+    #5c6263 40%,
+    #f0e8d2 62%,
+    #454b4f
+  );
+  clip-path: polygon(0 0, 100% 0, 96% 65%, 82% 83%, 50% 100%, 18% 83%, 4% 65%);
+}
+.house-card-strength::before {
+  content: "";
+  position: absolute;
+  inset: 4%;
+  background: linear-gradient(140deg, #40494d, #192126 65%, #364044);
+  clip-path: inherit;
+  z-index: -1;
+}
+.house-card-parchment {
+  inset: var(--card-rules-top, 66%) 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3cqw;
+  padding: 5% 7% 4%;
+  color: #34291c;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 40%, #fff3d0, transparent 85%),
+    linear-gradient(95deg, #ad8953, #e8d5a6 7% 92%, #b28d58);
+  border-bottom: 2px solid #705438;
+  box-shadow: 0 -3px 8px #0005;
+  clip-path: polygon(
+    0 2%,
+    12% 1%,
+    19% 3%,
+    34% 0,
+    51% 2%,
+    72% 0,
+    87% 2%,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
+.house-card-description {
+  display: block;
+  font-size: 5.2cqw;
+  font-weight: 500;
+  line-height: 1.17;
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+}
+.house-card-stats {
+  display: flex;
+  justify-content: center;
+  gap: 12%;
+  font-size: clamp(12px, 8cqw, 36px);
+}
+.house-card-stats > span {
+  display: flex;
+  align-items: center;
+  gap: 2cqw;
+}
+.house-card-stats .game-symbol {
+  width: clamp(20px, 16cqw, 64px);
+  height: clamp(20px, 16cqw, 64px);
+}
+.house-card-foil {
+  position: absolute;
+  inset: 13% 0 calc(100% - var(--card-rules-top, 66%));
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.16;
+  background:
+    linear-gradient(115deg, transparent 15%, #fff5 42%, transparent 55%),
+    radial-gradient(ellipse at var(--light-x) 10%, #fff7, transparent 65%);
+  mix-blend-mode: screen;
+}
+.house-card-missing {
+  position: absolute;
+  inset: 10%;
+  display: grid;
+  place-items: center;
+  color: #e0cc9d;
+}
+.house-card.cinematic {
+  transform: perspective(1100px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transition: transform 180ms ease-out;
+  box-shadow:
+    0 3px 0 #a49465,
+    0 6px 0 #343124,
+    0 22px 40px #0008,
+    0 0 50px color-mix(in srgb, var(--house-ink) 15%, transparent);
+}
+.house-card.cinematic.animated .house-card-art {
+  animation: card-breath 14s ease-in-out infinite alternate;
+}
+.house-card.cinematic.animated .house-card-foil {
+  opacity: 0.26;
+}
+.house-card-motes {
+  position: absolute;
+  inset: 14% 5% 31%;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
+}
+.house-card-motes i {
+  position: absolute;
+  bottom: -8%;
+  left: calc(8% + var(--i) * 11%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #e8d7a3;
+  opacity: 0;
+  box-shadow: 0 0 8px #ffe2a4;
+}
+.animated .house-card-motes i {
+  animation: card-mote calc(5s + var(--i) * 0.7s) linear infinite;
+  animation-delay: calc(var(--i) * -0.9s);
+}
+@keyframes card-breath {
+  from {
+    transform: scale(1.02) translateY(0);
+  }
+  to {
+    transform: scale(1.07) translateY(-0.7%);
+  }
+}
+@keyframes card-mote {
+  10%,
+  65% {
+    opacity: 0.6;
+  }
+  to {
+    transform: translate(15px, -300px);
+    opacity: 0;
+  }
+}
+.hand-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px 8px;
+  padding-bottom: 10px;
+}
+.hand-cards button {
+  width: auto;
+  aspect-ratio: auto;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  border-radius: 7px;
+  min-width: 0;
+  touch-action: manipulation;
+  transform: none;
+}
+.hand-cards button:hover,
+.hand-cards button:focus-visible {
+  transform: none;
+  outline: 2px solid #e2c27d;
+  outline-offset: 3px;
+  background: transparent;
+}
+.hand-cards button:hover .house-card,
+.hand-cards button:focus-visible .house-card {
+  box-shadow: 0 0 18px #c8a55666;
+}
+@media (pointer: coarse) {
+  .card-inspector-controls button,
+  .card-inspector-navigation button,
+  .card-inspector-modal .modal-close {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .hand-cards button {
+    min-height: 60px;
+  }
+}
+.hand-cards button:focus-visible {
+  outline: 2px solid #e2c27d;
+  outline-offset: 4px;
+}
+.hand-hint {
+  display: block;
+  margin-top: 10px;
+  font-size: 10px;
+  color: #a6af9c;
+  line-height: 1.6;
+}
+.card-inspector-modal {
+  width: min(1120px, 100%);
+  height: min(850px, calc(100dvh - 48px));
+  max-height: calc(100dvh - 48px);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  align-items: stretch;
+  padding: 28px;
+  gap: 28px;
+  background:
+    radial-gradient(ellipse at 22% 40%, #43513b66, transparent 60%), #111e1cf7;
+}
+.card-inspector-stage {
+  height: 100%;
+  min-height: 0;
+  min-width: 0;
+  overflow: auto;
+  display: block;
+  padding: 24px;
+  background: #020a0855;
+  border: 1px solid #95815b44;
+  border-radius: 8px;
+  scrollbar-width: thin;
+}
+.card-inspector-stage .house-card {
+  flex: none;
+  width: calc(var(--card-fit-width, 280px) * var(--card-zoom, 1));
+  max-width: none;
+  margin-inline: auto;
+}
+.card-inspector-copy {
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.card-inspector-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 24px 0 12px;
+}
+.card-inspector-controls button {
+  display: inline-grid;
+  place-items: center;
+  min-width: 36px;
+  min-height: 36px;
+  padding: 8px;
+}
+.card-inspector-controls output {
+  min-width: 45px;
+  text-align: center;
+  font-size: 12px;
+  color: #ddc68c;
+}
+.card-inspector-navigation {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 24px;
+}
+.card-inspector-navigation button {
+  padding: 9px;
+}
+.card-inspector-navigation span {
+  color: #adbbab;
+  font-size: 12px;
+}
+.card-inspector-copy .card-help {
+  color: #a8b3a2;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.battle-hand button {
+  overflow: visible;
+  background: transparent;
+  border: 0;
+}
+.battle-hand button > .house-card {
+  min-height: 0;
+  padding: 0;
+}
+.battle-hand .chosen .house-card {
+  outline: 2px solid #edcf82;
+}
+.battle-hand button > span:not(.house-card) {
+  font-size: 10px;
+  padding: 10px 2px;
+}
+.combat-result-cards > div > .house-card {
+  width: 155px;
+  opacity: 0.65;
+}
+.combat-result-cards > .victorious > .house-card {
+  opacity: 1;
+  box-shadow: 0 0 40px #d9ba6a55;
+}
+@media (max-width: 850px) {
+  .card-inspector-modal {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1.9fr) minmax(0, 1fr);
+    padding: 38px 14px 18px;
+    gap: 16px;
+  }
+  .card-inspector-stage {
+    padding: 16px;
+  }
+  .card-inspector-copy h2 {
+    margin-top: 5px;
+    font-size: 24px;
+  }
+  .card-inspector-controls {
+    margin: 12px 0;
+  }
+  .hand-cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-height: 550px) and (min-width: 650px) {
+  .card-inspector-modal {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    padding: 18px;
+    gap: 20px;
+  }
+  .card-inspector-stage {
+    padding: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .house-card.cinematic {
+    transform: none !important;
+  }
+  .house-card-portrait > img,
+  .house-card-motes i {
+    animation: none !important;
+  }
+  .hand-cards button:hover {
+    transform: none;
+  }
+}
+.card-rules {
+  margin: 16px 0;
+  padding: 14px;
+  border: 1px solid #b69b5a66;
+  border-radius: 6px;
+  background: #162526;
+  line-height: 1.65;
+}
+.card-rules h3 {
+  margin: 0 0 8px;
+  color: #e8cc8f;
+  font-size: 15px;
+}
+.card-rules p {
+  margin: 0 0 8px;
+}
+.card-rules small {
+  color: #9fb7a6;
+}
+.card-effect-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+.card-effect-options button {
+  min-height: 44px;
+  padding: 12px 16px;
+  flex: 1 1 180px;
+}
+.card-effect-modal {
+  max-width: 760px;
+}
+.combat-effects {
+  margin: 16px 0;
+  padding: 12px;
+  border: 1px solid #817449;
+  color: #d3d4bb;
+  line-height: 1.7;
+}
+.no-combat-card {
+  padding: 40px 12px;
+  border: 1px dashed #9d8c66;
+}
+.tides-pair {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 18px 0;
+}
+.tides-card {
+  width: min(152px, 100%);
+  margin: 0;
+  color: #d5c6a5;
+}
+.tides-card > img,
+.tides-card-fallback {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.tides-card > img {
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #0005;
+}
+.tides-card-fallback {
+  aspect-ratio: 2 / 3;
+  border: 1px solid #7d7152;
+  border-radius: 5px;
+  background: #20272a;
+}
+.tides-card-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.tides-card-fallback b {
+  font-size: 26px;
+}
+.tides-card figcaption {
+  display: grid;
+  gap: 6px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 11px;
+}
+.tides-card-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.tides-card-icons > .game-symbol {
+  width: 24px;
+  height: 24px;
+}
+.combat-result-cards .tides-card {
+  width: min(132px, 100%);
+}
+.tides-blade-note {
+  max-width: 150px;
+  text-align: center;
+  color: #d4b775;
+}
+.battle-card-description {
+  display: block;
+  color: #aebcae;
+  line-height: 1.5;
+  margin-top: 8px;
+  font: 11px system-ui;
+  max-width: 180px;
+  text-align: left;
+}

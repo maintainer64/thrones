@@ -1,0 +1,64 @@
+.house-picker {
+  margin: 14px 0;
+  padding: 0;
+  min-width: 0;
+  border: 0;
+}
+.house-picker legend {
+  color: #dfc58b;
+  font:
+    14px Georgia,
+    serif;
+  margin-bottom: 9px;
+}
+.house-picker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+.house-picker .house-picker-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #6c684b;
+  border-radius: 5px;
+  background: #172b29;
+  color: #e8dfc5;
+  cursor: pointer;
+}
+.house-picker-option[data-selected="true"] {
+  border-color: #e6c785;
+  background: #554e2e;
+}
+.house-picker-option input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.house-picker-option:focus-within {
+  outline: 2px solid #e6c785;
+  outline-offset: 2px;
+}
+.house-picker-option span {
+  min-width: 0;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.house-picker-option small {
+  display: block;
+  margin-top: 2px;
+  font-size: 10px;
+}
+.house-picker-option img {
+  flex: none;
+}
+.house-picker-option[data-disabled="true"],
+.house-picker:disabled .house-picker-option {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

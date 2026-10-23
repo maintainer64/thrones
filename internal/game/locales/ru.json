@@ -1,0 +1,374 @@
+{
+  "cards": {
+    "stannis-baratheon": {
+      "name": "Станнис Баратеон",
+      "description": "Если противник выше вас на треке Железного трона, сила карты увеличивается на 1."
+    },
+    "renly-baratheon": {
+      "name": "Ренли Баратеон",
+      "description": "После победы можно заменить одного участвовавшего пехотинца Баратеона, включая собственную поддержку, рыцарем из резерва."
+    },
+    "ser-davos-seaworth": {
+      "name": "Сир Давос Сиворт",
+      "description": "Если Станнис Баратеон в вашем сбросе, карта получает +1 к силе и один меч."
+    },
+    "brienne-of-tarth": {
+      "name": "Бриенна Тарт",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила, меч и башня."
+    },
+    "salladhor-saan": {
+      "name": "Салладор Саан",
+      "description": "Если вас поддерживают, сила участвующих кораблей не-Баратеонов обнуляется. Бонус приказа поддержки сохраняется; эффекты одного этапа разрешаются по Железному трону."
+    },
+    "melisandre": {
+      "name": "Мелисандра",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и меч."
+    },
+    "patchface": {
+      "name": "Пестряк",
+      "description": "После завершения боя можно выбрать и сбросить одну карту из руки противника. Сначала разрешаются возврат руки и эффект Русе Болтона."
+    },
+    "tywin-lannister": {
+      "name": "Тайвин Ланнистер",
+      "description": "При победе получите два доступных жетона власти, не превышая общий запас."
+    },
+    "ser-gregor-clegane": {
+      "name": "Сир Григор Клиган",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и три меча."
+    },
+    "ser-jaime-lannister": {
+      "name": "Сир Джейме Ланнистер",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и меч."
+    },
+    "the-hound": {
+      "name": "Пёс",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и две башни."
+    },
+    "ser-kevan-lannister": {
+      "name": "Сир Киван Ланнистер",
+      "description": "При атаке каждый участвующий пехотинец Ланнистеров, включая собственную поддержку, даёт 2 силы вместо 1."
+    },
+    "tyrion-lannister": {
+      "name": "Тирион Ланнистер",
+      "description": "Можно отменить открытую карту противника и вернуть её ему. Противник выбирает другую карту; если других нет, он сражается без карты. Замена разыгрывает свою способность."
+    },
+    "cersei-lannister": {
+      "name": "Серсея Ланнистер",
+      "description": "При победе можно снять один любой приказ проигравшего противника с поля."
+    },
+    "eddard-stark": {
+      "name": "Эддард Старк",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и два меча."
+    },
+    "robb-stark": {
+      "name": "Робб Старк",
+      "description": "При победе можно самому выбрать допустимое отступление противника. Выбирайте область с наименьшими потерями; действие доступно и при победе в обороне."
+    },
+    "roose-bolton": {
+      "name": "Русе Болтон",
+      "description": "При поражении верните весь сброс карт дома в руку, включая Русе Болтона."
+    },
+    "greatjon-umber": {
+      "name": "Большой Джон Амбер",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и меч."
+    },
+    "ser-rodrick-cassel": {
+      "name": "Сир Родрик Кассель",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и две башни."
+    },
+    "the-blackfish": {
+      "name": "Чёрная Рыба",
+      "description": "Защищает от боевых потерь от карт и символов, включая эффект Мейса Тирелла. Не спасает осадные орудия при поражении или войска без допустимого отступления."
+    },
+    "catelyn-stark": {
+      "name": "Кейтилин Старк",
+      "description": "Удваивает бонус вашего приказа обороны в области боя."
+    },
+    "the-red-viper": {
+      "name": "Красный Змей",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила, два меча и башня."
+    },
+    "areo-hotah": {
+      "name": "Арео Хотах",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и башня."
+    },
+    "darkstar": {
+      "name": "Тёмная Звезда",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и меч."
+    },
+    "obara-sand": {
+      "name": "Обара Сэнд",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и меч."
+    },
+    "arianne-martell": {
+      "name": "Арианна Мартелл",
+      "description": "При поражении в обороне победившая армия не занимает область и возвращается туда, откуда пришла. Ваши выжившие войска всё равно отступают."
+    },
+    "nymeria-sand": {
+      "name": "Нимерия Сэнд",
+      "description": "При атаке карта получает один меч, при обороне — одну башню."
+    },
+    "doran-martell": {
+      "name": "Доран Мартелл",
+      "description": "Сразу переместите противника в конец выбранного трека влияния. Уже выданные особые приказы с поля не снимаются."
+    },
+    "euron-crows-eye": {
+      "name": "Эурон Вороний Глаз",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и меч."
+    },
+    "victarion-greyjoy": {
+      "name": "Виктарион Грейджой",
+      "description": "При атаке каждый участвующий корабль Грейджоев, включая собственную поддержку, получает дополнительно 1 силу."
+    },
+    "balon-greyjoy": {
+      "name": "Бейлон Грейджой",
+      "description": "Обнуляет напечатанную силу карты противника. Дополнительные бонусы её способности и остальные боевые символы сохраняются."
+    },
+    "theon-greyjoy": {
+      "name": "Теон Грейджой",
+      "description": "При обороне замка или крепости карта получает +1 к силе и один меч."
+    },
+    "dagmar-cleftjaw": {
+      "name": "Дагмер Щербатый",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила, меч и башня."
+    },
+    "asha-greyjoy": {
+      "name": "Аша Грейджой",
+      "description": "Если вас не поддерживают, карта получает два меча и одну башню."
+    },
+    "aeron-damphair": {
+      "name": "Эйрон Мокроголовый",
+      "description": "Можно потратить два доступных жетона власти, сбросить Эйрона и немедленно разыграть другую карту из руки."
+    },
+    "mace-tyrell": {
+      "name": "Мейс Тирелл",
+      "description": "До подсчёта итоговой силы уничтожьте одного атакующего или защищающегося пехотинца противника. Поддерживающие войска не затрагиваются; бой продолжается даже без оставшихся отрядов."
+    },
+    "ser-loras-tyrell": {
+      "name": "Сир Лорас Тирелл",
+      "description": "При победе в атаке перенесите использованный приказ похода в занятую область. Его можно выполнить позднее в этом раунде. Без занявших область войск приказ удаляется."
+    },
+    "randyll-tarly": {
+      "name": "Рендилл Тарли",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и меч."
+    },
+    "ser-garlan-tyrell": {
+      "name": "Сир Гарлан Тирелл",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и два меча."
+    },
+    "margaery-tyrell": {
+      "name": "Маргери Тирелл",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и башня."
+    },
+    "alester-florent": {
+      "name": "Алестер Флорент",
+      "description": "Особого текстового эффекта нет: действуют напечатанные сила и башня."
+    },
+    "queen-of-thorns": {
+      "name": "Королева Шипов",
+      "description": "Немедленно снимите приказ противника в соседней с местом боя области. Приказ похода, начавший этот бой, снять нельзя."
+    }
+  },
+  "messages": {
+    "tides.bladeRedraw": "Валирийский меч — замена карты перевеса",
+    "tides.bladeBonus": "Валирийский меч — бонус +1",
+    "tides.cardPrefix": "карта перевеса — сила +",
+    "tides.swordsSeparator": ", мечи ",
+    "tides.towersSeparator": ", крепости ",
+    "tides.skullsSeparator": ", черепа ",
+    "events.roomCreated": "Создана комната. Ссылка приглашает в игру, но не открывает чужое место.",
+    "events.planningStarted": "Начато тайное планирование первого раунда.",
+    "events.ordersRevealed": "Все игроки подтвердили приказы. Приказы раскрыты одновременно.",
+    "events.planningTimeout": "время планирования истекло; назначены недостающие приказы",
+    "events.hardTimeout": "ход завершён по жёсткому таймеру",
+    "events.orderPassed": "приказ снят без выполнения",
+    "events.raidPrefix": "набег в ",
+    "events.marchPrefix": "поход в ",
+    "events.combatStartedPrefix": "Начался бой: ",
+    "events.opponentSeparator": " против ",
+    "events.combatResultPrefix": "Бой: ",
+    "events.combatWinnerPrefix": "Победа дома ",
+    "events.retreatPrefix": "отступление в ",
+    "events.gameWinnerPrefix": "Победил дом ",
+    "events.roundPrefix": "Раунд ",
+    "events.newOrdersHint": "назначьте новые тайные приказы",
+    "effects.blackfishPreventsMace": "потеря пехотинца от Мейса предотвращена",
+    "effects.maceDestroysFootman": "уничтожен один пехотинец противника до подсчёта силы",
+    "effects.optionalDeclined": "игрок отказался от необязательного эффекта",
+    "effects.replacementChosen": "выбрана взамен отменённой карты",
+    "effects.cardCancelled": "карта противника отменена и возвращена в руку",
+    "effects.aeronReplacementPrefix": "потрачено 2 власти; новая карта — ",
+    "effects.orderRemovedPrefix": "снят приказ в области ",
+    "effects.trackDemotionPrefix": "противник перемещён в конец трека ",
+    "effects.winnerChoosesRetreat": "отступление противника выбирает победитель",
+    "effects.footmanUpgradedPrefix": "пехотинец заменён рыцарем: ",
+    "effects.cardDiscardedPrefix": "из руки противника сброшена карта ",
+    "effects.strengthPrefix": "сила карты ",
+    "effects.swordsPrefix": "мечи ",
+    "effects.fortificationsPrefix": "башни ",
+    "effects.defenseDoubled": "бонус приказа обороны удвоен",
+    "effects.unitStrengthRecalculated": "пересчитана сила участвующих и поддерживающих отрядов",
+    "effects.shipsStrengthCancelled": "обнулена сила кораблей противника на этапе способности; последующие эффекты применяются по Железному трону",
+    "effects.armyReturnsToOrigin": "победившие отряды возвращены в исходную область",
+    "effects.marchOrderTransferred": "приказ похода перенесён в занятую область",
+    "effects.powerGained": "получено до двух жетонов власти",
+    "effects.handRestored": "весь сброс, включая Русе, возвращён в руку",
+    "errors.noAutomaticCard": "Нет карты для автоматического выбора",
+    "errors.revisionConflict": "Комната обновилась: повторите действие",
+    "errors.crossOrigin": "Запрос с другого сайта запрещён",
+    "errors.invalidName": "Укажите имя до 40 символов",
+    "errors.roomSave": "Не удалось сохранить комнату",
+    "errors.invitationRequired": "Войдите в комнату по приглашению",
+    "errors.roomMissing": "Комната не найдена",
+    "errors.storage": "Ошибка хранилища",
+    "errors.invalidPreview": "Некорректный запрос предпросмотра",
+    "errors.accessDenied": "Нет доступа к комнате",
+    "errors.turnTimeout": "Время хода истекло",
+    "errors.invalidCommand": "Некорректная команда",
+    "errors.timerSave": "Не удалось сохранить истечение таймера",
+    "errors.roomUpdatedAfterTimeout": "Время хода истекло. Состояние комнаты обновилось",
+    "errors.actionSave": "Не удалось сохранить действие",
+    "errors.alreadyStarted": "Игра уже началась",
+    "errors.chooseHouseBeforeStart": "Выбрать дом можно только до начала игры",
+    "errors.houseTaken": "Дом занят другим игроком",
+    "errors.houseUnavailable": "Дом занят другим игроком или не существует",
+    "errors.noPlayerSeat": "Нет свободного места для игрока — попросите ведущего заменить бота",
+    "errors.notParticipant": "Вы не участник этой комнаты",
+    "errors.settingsHostOnly": "Настройки доступны ведущему до начала игры",
+    "errors.settingsMissing": "Не указаны настройки",
+    "errors.settingsBeforeStartOnly": "Настройки доступны только ведущему до старта",
+    "errors.unknownDifficulty": "Неизвестная сложность",
+    "errors.seatOccupied": "Нельзя заменить занятого игрока",
+    "errors.unknownHouse": "Неизвестный дом",
+    "errors.startHostOnly": "Запуск доступен ведущему в лобби",
+    "errors.emptySeats": "Остались свободные места",
+    "errors.notPlanning": "Сейчас не фаза планирования",
+    "errors.ordersNotRevealed": "Приказы ещё не раскрыты",
+    "errors.ordersAlreadyRevealed": "Приказы уже раскрыты",
+    "errors.actionUnavailable": "Это действие ещё не реализовано в Go-движке",
+    "errors.ordersLocked": "Приказы можно менять до подтверждения готовности",
+    "errors.noOwnUnits": "В области нет ваших отрядов",
+    "errors.unknownOrder": "Неизвестный приказ",
+    "errors.powerOnLandOnly": "Сбор власти в текущем прототипе доступен только на суше",
+    "errors.orderInUse": "Этот жетон уже используется",
+    "errors.specialOrderLimit": "Превышен лимит особых приказов на Королевском дворе",
+    "errors.invalidTurnDuration": "Лимит хода должен быть от 1 до 120 минут",
+    "errors.expansionUnavailable": "Дополнение ещё не реализовано: доступен только базовый тактический прототип",
+    "errors.notYourTurn": "Сейчас не ваш ход",
+    "errors.cannotPassNow": "Сейчас нельзя пропускать приказ",
+    "errors.noOrdersToPass": "Нет приказов для пропуска",
+    "errors.noActiveOrder": "Нет вашего активного приказа",
+    "errors.unknownAction": "Неизвестное действие",
+    "errors.ownRaidRequired": "Нужен собственный приказ набега",
+    "errors.raidAdjacency": "Набег возможен только в соседнюю чужую область",
+    "errors.raidLandToSea": "С суши нельзя совершить набег в море или порт",
+    "errors.raidForbiddenOrder": "Этот приказ нельзя снять набегом",
+    "errors.ownMarchRequired": "Нужен собственный приказ похода",
+    "errors.unreachableArea": "Область недоступна для похода: проверьте соседство и транспорт",
+    "errors.negativeUnitCount": "Отрицательное количество отрядов",
+    "errors.notEnoughUnits": "Недостаточно отрядов",
+    "errors.unknownUnitType": "Неизвестный тип отряда",
+    "errors.noUnitsSelected": "Выберите хотя бы один отряд",
+    "errors.supplyLimit": "Поход нарушает ограничения снабжения",
+    "errors.controlTokenMissing": "Нет жетона власти для сохранения контроля",
+    "errors.neutralGarrisonStrength": "Недостаточно силы для атаки нейтрального гарнизона",
+    "errors.notInCombat": "Вы не участвуете в этом бою",
+    "errors.cardAlreadyChosen": "Карта уже выбрана",
+    "errors.cardUnavailable": "Эта карта недоступна",
+    "errors.notYourRetreat": "Сейчас не ваше отступление",
+    "errors.invalidRetreat": "Недопустимая область отступления",
+    "errors.invalidPreviewAction": "Предпросмотр доступен только для похода или набега",
+    "errors.ownActiveOrderRequired": "Выберите собственный активный приказ",
+    "errors.notYourAbility": "Сейчас не ваш выбор способности",
+    "errors.invalidAbilityChoice": "Недопустимый выбор способности",
+    "errors.notEnoughPower": "Недостаточно доступной власти",
+    "errors.notAnAuctionParticipant": "Вы не участвуете в этих торгах",
+    "errors.bidAlreadyCommitted": "Ставка уже подтверждена",
+    "errors.invalidBidAmount": "Ставка должна быть от нуля до доступной власти",
+    "errors.influenceRequiresWesteros": "Торги за влияние доступны только по событию Вестероса",
+    "errors.invalidInfluenceTracks": "Некорректный состав треков влияния",
+    "errors.notBidding": "Сейчас не время тайных ставок",
+    "errors.missingBid": "Укажите ставку, включая нулевую",
+    "errors.notThroneTieBreaker": "Порядок при равных ставках определяет владелец Железного трона",
+    "errors.invalidTiedHouse": "Выберите дом из текущей группы равных ставок",
+    "influence.biddingStarted": "Начаты тайные торги: ",
+    "influence.biddingFinished": "Завершены торги: ",
+    "influence.bidCommitted": ": ставка подтверждена",
+    "influence.bidRevealed": ": раскрыта ставка ",
+    "influence.tieChoice": ": выбран следующий дом при равных ставках — ",
+    "influence.ironThrone": "Железный трон",
+    "influence.fiefdoms": "Вотчины",
+    "influence.kingsCourt": "Королевский двор",
+    "errors.supplyRequiresWesteros": "Снабжение доступно только по событию Вестероса",
+    "errors.notYourDisband": "Сейчас не ваше расформирование",
+    "errors.selectOwnedUnits": "Выберите область со своими отрядами",
+    "errors.invalidDisbandCount": "Недопустимое количество для расформирования",
+    "errors.selectDisbandUnits": "Выберите отряды для расформирования",
+    "errors.musterRequiresWesteros": "Сбор войск доступен только по событию Вестероса",
+    "errors.invalidMuster": "Недопустимый набор войск",
+    "errors.notYourMuster": "Сейчас не ваш сбор войск",
+    "errors.notYourConsolidation": "Сейчас не ваш особый сбор власти",
+    "errors.selectConsolidation": "Выберите власть или сбор войск",
+    "provision.supplyAdjusted": ": снабжение пересчитано — ",
+    "provision.unitsDisbanded": ": расформировано отрядов — ",
+    "provision.mustered": ": выполнен набор войск",
+    "errors.westerosRevealBoundary": "Карты Вестероса открываются только в фазе Вестероса раундов 2–10",
+    "errors.westerosRewind": "Нельзя повторно открывать карты прошедшего раунда",
+    "errors.invalidWesterosDeck": "Некорректный состав колоды Вестероса ",
+    "errors.previousWesterosPending": "Предыдущие события Вестероса ещё не завершены",
+    "errors.invalidWildlingThreat": "Некорректная угроза одичалых",
+    "errors.unknownWesterosEvent": "Неизвестное событие Вестероса",
+    "errors.noWesterosChoice": "Сейчас нет решения по событию Вестероса",
+    "errors.notWesterosHolder": "Решение принимает владелец соответствующего жетона",
+    "errors.invalidWesterosChoice": "Выберите допустимый эффект события Вестероса",
+    "errors.noWildlingAttack": "Нет незавершённого нападения одичалых",
+    "errors.westerosOrderBanned": "Этот приказ запрещён событием Вестероса текущего раунда",
+    "westeros.revealed": "Вестерос: раскрыты карты раунда ",
+    "westeros.threat": "Угроза одичалых: ",
+    "westeros.event": "Событие Вестероса: ",
+    "westeros.choice": ": выбран эффект Вестероса — ",
+    "westeros.power": ": получено власти за Вестерос — ",
+    "westeros.attackPending": "Ожидается разрешение нападения одичалых",
+    "errors.wildlingRequiresWesteros": "Нападение одичалых доступно только по событию Вестероса",
+    "errors.invalidWildlingDeck": "Некорректный состав колоды одичалых",
+    "errors.notWildlingBidding": "Сейчас нет тайного сбора власти в Ночной дозор",
+    "wildlings.biddingStarted": "Ночной дозор: начат тайный сбор власти против силы ",
+    "wildlings.bidCommitted": ": взнос в Ночной дозор подтверждён",
+    "wildlings.bidRevealed": ": раскрыт взнос в Ночной дозор — ",
+    "wildlings.cardRevealed": "Открыта карта одичалых: ",
+    "wildlings.completed": "Нападение одичалых завершено",
+    "errors.noWildlingDecision": "Сейчас нет вашего решения по карте одичалых",
+    "errors.invalidWildlingTrack": "Выберите доступный трек влияния на карте одичалых",
+    "wildlings.supplyChanged": ": одичалые изменили снабжение — ",
+    "wildlings.trackChanged": ": одичалые переместили дом — ",
+    "wildlings.top": ", верх",
+    "wildlings.bottom": ", низ",
+    "errors.invalidWildlingDiscard": "Выберите доступную для сброса карту дома",
+    "wildlings.cardDiscarded": ": одичалые вынудили сбросить карту — ",
+    "wildlings.handRestored": ": одичалые вернули карт в руку — ",
+    "errors.invalidWildlingUnit": "Выберите доступный отряд для эффекта одичалых",
+    "wildlings.upgradesFinished": ": улучшения за одичалых завершены",
+    "wildlings.unitEffect": ": одичалые — ",
+    "wildlings.knightDowngraded": "рыцарь заменён пехотинцем",
+    "wildlings.knightDestroyed": "рыцарь уничтожен из-за нехватки пехоты",
+    "wildlings.footmanUpgraded": "пехотинец заменён рыцарем",
+    "errors.invalidWildlingRetrieve": "Выберите карту из своего сброса или откажитесь от награды",
+    "wildlings.cardRetrieved": ": одичалые вернули карту — ",
+    "wildlings.unitDestroyed": ": одичалые уничтожили отряд — ",
+    "wildlings.preemptiveTrack": ": одичалые снизили влияние на две позиции — ",
+    "wildlings.preemptiveAttack": ": освобождён от повторного нападения одичалых силой 6",
+    "errors.ravenStart": "Сейчас нельзя начать шаг Посыльного ворона",
+    "errors.ravenChoice": "Сейчас нет вашего решения Посыльного ворона",
+    "errors.ravenReplacement": "Замените существующий приказ другим неиспользованным жетоном",
+    "errors.ravenPlacement": "После просмотра выберите верх или низ колоды",
+    "errors.ravenAction": "Выберите допустимое действие Посыльного ворона",
+    "raven.start": "Посыльный ворон: решение принимает дом ",
+    "raven.skip": ": Посыльный ворон не использован",
+    "raven.order": ": Посыльный ворон заменил приказ",
+    "raven.peek": ": Посыльный ворон посмотрел карту одичалых",
+    "raven.finish": ": Посыльный ворон завершил решение по колоде",
+    "errors.bladeUnavailable": "Валирийский меч сейчас недоступен",
+    "errors.setupCount": "Число домов должно быть от 3 до 6 (люди и боты вместе)",
+    "errors.setupOccupied": "В выбранной расстановке нет занятого дома: сначала выберите доступный дом"
+  }
+}
