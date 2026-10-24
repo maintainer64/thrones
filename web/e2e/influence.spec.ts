@@ -1,6 +1,11 @@
 import { test, expect } from "@playwright/test";
 import type { APIRequestContext, BrowserContext, Page } from "@playwright/test";
 import type { Room } from "../src/types";
+import {
+  captureVisualCheckpoint,
+  throttleBrowserCPU,
+  waitForRoomRevision,
+} from "./helpers/runtime";
 
 type Fixture = {
   id: string;
@@ -25,6 +30,7 @@ async function openRoom(
   baseURL: string,
   house = "stark",
 ) {
+  await throttleBrowserCPU(page);
   const value = fixture.cookies[house];
   await page
     .context()
@@ -32,9 +38,21 @@ async function openRoom(
   await page.addInitScript(() => {
     localStorage.setItem("westeros-tour-v2", "true");
     localStorage.setItem("westeros-language", "ru");
+    localStorage.setItem("westeros-motion", "false");
   });
-  await page.goto(`${baseURL}/?room=${fixture.id}`);
+  const current = await state(page.request, fixture, house);
+  await page.goto(`${baseURL}/?room=${fixture.id}`, {
+    waitUntil: "domcontentloaded",
+  });
+  await waitForRoomRevision(page, fixture.id, current.revision);
   await expect(page.getByRole("dialog")).toBeVisible({ timeout: 20000 });
+}
+
+async function reloadRoom(page: Page, fixture: Fixture) {
+  const current = await state(page.request, fixture);
+  // Readiness is the applied room snapshot, not every image's load event.
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await waitForRoomRevision(page, fixture.id, current.revision);
 }
 
 async function state(
@@ -124,8 +142,10 @@ test("secret bid requires confirmation, survives reload and RU/EN without leakin
     expect(foreign.influence!.bids.values).toBeUndefined();
     expect(foreign.match!.power.stark).toBe(20);
     await page.bringToFront();
-    await page.reload();
-    await expect(modal.getByTestId("your-bid")).toHaveText("13");
+    await reloadRoom(page, fixture);
+    await expect(modal.getByTestId("your-bid")).toHaveText("13", {
+      timeout: 20000,
+    });
     await modal
       .getByRole("button", { name: "Сменить язык", exact: true })
       .click();
@@ -139,9 +159,10 @@ test("secret bid requires confirmation, survives reload and RU/EN without leakin
       .getByRole("button", { name: "Open auction", exact: true })
       .click();
     await expect(modal.getByTestId("your-bid")).toHaveText("13");
-    await page.screenshot({
-      path: test.info().outputPath("influence-secret-en.png"),
-    });
+    await captureVisualCheckpoint(
+      page,
+      test.info().outputPath("influence-secret-en.png"),
+    );
   } finally {
     await guestContext.close();
   }
@@ -258,13 +279,23 @@ test("all three real auctions, old throne holder ties and final report work acro
       }
       const ruler = rulers[plan.ruler];
       await ruler.bringToFront();
-      // Activate the other player's window with an actual pointer event;
-      // bringToFront alone need not focus an occluded Chrome window on macOS.
-      await ruler.locator(".modal-top").click({ position: { x: 15, y: 15 } });
+      // Only local macOS Chrome needs an extra pointer event to focus an
+      // occluded window. In managed headless Chromium this redundant click
+      // waits for GPU frames and can cost tens of seconds with three boards.
+      if (
+        process.platform === "darwin" &&
+        process.env.PLAYWRIGHT_MANAGED_CHROMIUM !== "1"
+      )
+        await ruler.locator(".modal-top").click({
+          position: { x: 15, y: 15 },
+        });
+      const revealed = await state(page.request, fixture);
+      await waitForRoomRevision(ruler, fixture.id, revealed.revision);
       await expect(
         ruler.getByRole("heading", { name: "Ставки раскрыты", exact: true }),
       ).toBeVisible({ timeout: 20000 });
       await page.bringToFront();
+      await waitForRoomRevision(page, fixture.id, revealed.revision);
       await expect(
         page.getByRole("heading", {
           name: `Ожидаем решение дома ${names[plan.ruler]}`,
@@ -308,13 +339,14 @@ test("all three real auctions, old throne holder ties and final report work acro
     expect(final.match!.tracks.fiefdoms[0]).toBe("stark");
     expect(final.match!.tracks.kingsCourt[0]).toBe("tyrell");
     expect(final.match!.power.stark).toBe(12);
-    await page.screenshot({
-      path: test.info().outputPath("influence-results-ru.png"),
-    });
+    await captureVisualCheckpoint(
+      page,
+      test.info().outputPath("influence-results-ru.png"),
+    );
     await modal
       .getByRole("button", { name: "Вернуться к полю", exact: true })
       .click();
-    await page.reload();
+    await reloadRoom(page, fixture);
     await page
       .getByRole("button", { name: "Итоги влияния", exact: true })
       .click();
@@ -428,7 +460,7 @@ test("tablet touch, keyboard focus, explicit zero and pending tie survive reload
     await expect(
       modal.getByRole("button", { name: "Назначить дом Старк", exact: true }),
     ).toBeFocused();
-    await page.reload();
+    await reloadRoom(page, fixture);
     await expect(
       modal.getByRole("heading", {
         name: "Выберите дом для места №2",
@@ -449,9 +481,10 @@ test("tablet touch, keyboard focus, explicit zero and pending tie survive reload
     expect(bounds!.y).toBeGreaterThanOrEqual(0);
     expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(768);
     expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(1024);
-    await page.screenshot({
-      path: test.info().outputPath("influence-tablet-tie.png"),
-    });
+    await captureVisualCheckpoint(
+      page,
+      test.info().outputPath("influence-tablet-tie.png"),
+    );
   } finally {
     await context.close();
   }

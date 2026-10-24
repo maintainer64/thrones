@@ -5,13 +5,9 @@ import { OrbitControls } from "@react-three/drei";
 import { MOUSE, TOUCH, PerspectiveCamera, Vector3 } from "three";
 import type { Point2 } from "./game-state";
 import type { Relief } from "./terrain";
+import { sameCameraPose, type CameraPose } from "./render-policy";
+export type { CameraPose } from "./render-policy";
 
-export type CameraPose = {
-  polar: string;
-  azimuth: string;
-  target: string;
-  distance: number;
-};
 export type CameraRequest = {
   view: "table" | "focus" | "action" | "in" | "out";
   serial: number;
@@ -39,9 +35,10 @@ export default function TableCamera({
   instant?: boolean;
 }) {
   const controls = useRef<ComponentRef<typeof OrbitControls>>(null);
-  const { camera, size } = useThree();
+  const { camera, size, invalidate } = useThree();
   const goal = useRef<{ eye: Vector3; target: Vector3 } | undefined>(undefined);
   const lastReport = useRef(0);
+  const lastPose = useRef<CameraPose>(undefined);
   useEffect(() => {
     if ((request.view === "in" || request.view === "out") && controls.current) {
       const target = controls.current.target.clone(),
@@ -54,6 +51,7 @@ export default function TableCamera({
         target,
         eye: target.clone().addScaledVector(offset.normalize(), distance),
       };
+      invalidate();
       return;
     }
     const angle = Math.atan2(12, -15) + request.rotation;
@@ -100,8 +98,9 @@ export default function TableCamera({
       target,
       eye: target.clone().addScaledVector(direction, distance),
     };
+    invalidate();
     // Coordinates are sampled on explicit requests/resizes, never on hover.
-  }, [request, size.width, size.height, camera, width, depth]);
+  }, [request, size.width, size.height, camera, width, depth, invalidate]);
   useFrame(({ clock }, delta) => {
     const orbit = controls.current;
     if (!orbit) return;
@@ -125,9 +124,9 @@ export default function TableCamera({
     const minimum = relief.height(orbit.target.x, orbit.target.z) * 0.5;
     orbit.target.y = Math.max(minimum, Math.min(0.5, orbit.target.y));
     camera.position.add(orbit.target.clone().sub(old));
-    if (clock.elapsedTime - lastReport.current > 0.3) {
+    if (instant || clock.elapsedTime - lastReport.current > 0.3) {
       lastReport.current = clock.elapsedTime;
-      onPose({
+      const next = {
         polar: orbit.getPolarAngle().toFixed(3),
         azimuth: orbit.getAzimuthalAngle().toFixed(3),
         target: orbit.target
@@ -135,7 +134,11 @@ export default function TableCamera({
           .map((n) => n.toFixed(3))
           .join(","),
         distance: orbit.getDistance(),
-      });
+      };
+      if (!lastPose.current || !sameCameraPose(lastPose.current, next)) {
+        lastPose.current = next;
+        onPose(next);
+      }
     }
   });
   return (

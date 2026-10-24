@@ -2,6 +2,11 @@ import { test, expect, type APIRequestContext } from "@playwright/test";
 import { openGameMenu } from "./helpers/game-menu";
 import { createHash } from "node:crypto";
 import sharp from "sharp";
+import {
+  captureVisualCheckpoint,
+  throttleBrowserCPU,
+  waitForRoomRevision,
+} from "./helpers/runtime";
 import { TidesCardID } from "../src/enums";
 import { tidesArt, tidesArtURL } from "../src/cards/tides-art";
 
@@ -95,6 +100,7 @@ test("real combat persists private draws, reveals both cards, applies Blade and 
   baseURL,
 }) => {
   test.setTimeout(90000);
+  await throttleBrowserCPU(page);
   const contexts = [];
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
@@ -203,6 +209,7 @@ test("real combat persists private draws, reveals both cards, applies Blade and 
     expect(JSON.stringify(greyState)).not.toContain('"deck"');
     const context = contexts.find((context) => context.request === greyjoy)!;
     const opponent = await context.newPage();
+    await throttleBrowserCPU(opponent);
     opponent.on("pageerror", (error) => errors.push(error.message));
     await opponent.addInitScript(() =>
       localStorage.setItem("westeros-tour-v2", "true"),
@@ -212,6 +219,7 @@ test("real combat persists private draws, reveals both cards, applies Blade and 
       (route) => route.fulfill({ status: 404, body: "combat-only test" }),
     );
     await opponent.goto(`/?room=${created.id}`);
+    await waitForRoomRevision(opponent, created.id, greyState.revision);
     await opponent
       .locator(".combat-intro")
       .getByRole("button", { name: "Пропустить движение", exact: true })
@@ -220,7 +228,12 @@ test("real combat persists private draws, reveals both cards, applies Blade and 
     await expect(dialog).toContainText("Карты перевеса");
     await expect(dialog.locator('[data-card-id="hidden"]')).toHaveCount(1);
     await opponent.reload();
-    await expect(dialog).toBeVisible();
+    await waitForRoomRevision(
+      opponent,
+      created.id,
+      (await snapshot(greyjoy)).revision,
+    );
+    await expect(dialog).toBeVisible({ timeout: 20000 });
     expect((await snapshot(greyjoy)).battle.modifiers.greyjoy).toEqual(
       greyState.battle.modifiers.greyjoy,
     );
@@ -296,10 +309,10 @@ test("real combat persists private draws, reveals both cards, applies Blade and 
     await expect(opponent.locator(".combat-result-cards")).toContainText(
       "Valyrian Steel Blade: +1 strength",
     );
-    await opponent.screenshot({
-      path: "test-results/tides-result.png",
-      animations: "disabled",
-    });
+    await captureVisualCheckpoint(
+      opponent,
+      test.info().outputPath("tides-result.png"),
+    );
     await opponent.setViewportSize({ width: 390, height: 844 });
     await expect(opponent.locator(".combat-report")).toBeInViewport();
     expect(
@@ -309,10 +322,10 @@ test("real combat persists private draws, reveals both cards, applies Blade and 
     ).toBe(true);
     await opponent.locator(".combat-continue").scrollIntoViewIfNeeded();
     await expect(opponent.locator(".combat-continue")).toBeInViewport();
-    await opponent.screenshot({
-      path: "test-results/strategy-combat-mobile.png",
-      animations: "disabled",
-    });
+    await captureVisualCheckpoint(
+      opponent,
+      test.info().outputPath("strategy-combat-mobile.png"),
+    );
     await opponent.keyboard.press("Escape");
     await expect(opponent.locator(".combat-report")).toHaveCount(0);
     expect(errors).toEqual([]);

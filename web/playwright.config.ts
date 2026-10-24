@@ -8,6 +8,10 @@ export default defineConfig({
     baseURL: process.env.BASE_URL || "http://127.0.0.1:18081",
     viewport: { width: 1600, height: 1000 },
     headless: true,
+    // Managed CI uses real Chromium's new headless mode, matching local Chrome,
+    // not the separate legacy shell whose WebGL context lifecycle differs.
+    channel:
+      process.env.PLAYWRIGHT_MANAGED_CHROMIUM === "1" ? "chromium" : undefined,
     launchOptions: {
       args: [
         // Multiple independent players must keep receiving WS snapshots in
@@ -28,7 +32,14 @@ export default defineConfig({
             : "/usr/bin/google-chrome"),
     },
     screenshot: "only-on-failure",
-    trace: "retain-on-failure",
+    // Continuous GPU screencasts can stall SwiftShader. Keep DOM snapshots,
+    // network and sources; on-failure screenshots still capture the final UI.
+    trace: {
+      mode: "retain-on-failure",
+      screenshots: false,
+      snapshots: true,
+      sources: true,
+    },
   },
   outputDir: process.env.PLAYWRIGHT_OUTPUT_DIR || "test-results",
 });

@@ -60,6 +60,7 @@ import type {
 import { formation, lastRoute, reconcilePieces } from "./game-state";
 import TableCamera from "./TableCamera";
 import type { CameraPose, CameraRequest } from "./TableCamera";
+import { boardFrameLoop } from "./render-policy";
 import { createSurfaceData, terrainPlane } from "./surface-data";
 import type { SurfaceData } from "./surface-data";
 import type { Relief } from "./terrain";
@@ -715,7 +716,7 @@ function SceneContent({
             ?.position || [0, 0]
         }
         request={request}
-        instant={!!playback && !playback.motion}
+        instant={!motion || (!!playback && !playback.motion)}
         points={(props.battleFocus
           ? [
               props.battleFocus.to,
@@ -1078,12 +1079,22 @@ export default function GameBoard3D(props: Props) {
   const chooseRegion = catalog.board.regions.find(
     (r) => r.id === (hovered || selected),
   );
+  const frameLoop = boardFrameLoop({
+    paused: !!props.paused,
+    visible,
+    motion: props.motion,
+    animatedPlayback:
+      !!props.combatPlayback?.motion &&
+      !!props.combatPlayback?.playing &&
+      !props.combatPlayback.complete,
+  });
   return (
     <section
       className="game-board game3d-board"
       data-tour="board"
       data-testid="game3d-board"
       data-ready={loaded}
+      data-render-mode={frameLoop}
       data-revision={room.revision}
       data-piece-count={
         props.combatPlayback
@@ -1141,7 +1152,7 @@ export default function GameBoard3D(props: Props) {
       >
         <BoardBoundary onRetry={onRetry} onError={() => setFailed(true)}>
           <Canvas
-            frameloop={props.paused || !visible ? "demand" : "always"}
+            frameloop={frameLoop}
             shadows="percentage"
             dpr={[1, 1.5]}
             camera={{

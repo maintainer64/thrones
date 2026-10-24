@@ -1,16 +1,23 @@
 import { expect, test } from "@playwright/test";
 import { orderModifier, orderTokenArt } from "../src/artwork/order-art";
 import type { Catalog, Room } from "../src/types";
+import {
+  captureVisualCheckpoint,
+  throttleBrowserCPU,
+  waitForRoomRevision,
+} from "./helpers/runtime";
 
 for (const width of [1600, 820]) {
   test(`five HD order bases compose all bonuses on the palette and real 3D board at ${width}px`, async ({
     page,
   }) => {
     test.setTimeout(120000);
+    await throttleBrowserCPU(page);
     await page.setViewportSize({ width, height: 1180 });
     await page.addInitScript(() => {
       localStorage.setItem("westeros-tour-v2", "true");
       localStorage.setItem("westeros-language", "ru");
+      localStorage.setItem("westeros-motion", "false");
     });
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
@@ -33,6 +40,7 @@ for (const width of [1600, 820]) {
       data: { type: "start", revision: room.revision },
     });
     expect(start.ok(), await start.text()).toBe(true);
+    const started: Room = await start.json();
     const catalog: Catalog = await page.request
       .get("/api/catalog?lang=ru")
       .then((r) => r.json());
@@ -40,12 +48,31 @@ for (const width of [1600, 820]) {
       await page.request.get("/local-assets/preview3d/game-manifest.json")
     ).ok();
     await page.goto(`/?room=${room.id}`);
-    if (hasBoard)
-      await expect(page.getByTestId("game3d-board")).toHaveAttribute(
-        "data-ready",
-        "true",
-        { timeout: 60000 },
+    await waitForRoomRevision(page, room.id, started.revision);
+    if (hasBoard) {
+      const board = page.getByTestId("game3d-board");
+      await expect(board).toHaveAttribute("data-ready", "true", {
+        timeout: 60000,
+      });
+      await expect(board).toHaveAttribute("data-render-mode", "demand");
+      await expect
+        .poll(
+          async () => Number(await board.getAttribute("data-camera-distance")),
+          { timeout: 20000 },
+        )
+        .toBeGreaterThan(0);
+      const previousDistance = Number(
+        await board.getAttribute("data-camera-distance"),
       );
+      await page.getByTitle("Приблизить поле", { exact: true }).click();
+      await expect
+        .poll(
+          async () => Number(await board.getAttribute("data-camera-distance")),
+          { timeout: 20000 },
+        )
+        .toBeLessThan(previousDistance);
+      await page.getByTitle("Показать всё поле", { exact: true }).click();
+    }
     const inspector = page.locator(".inspector");
     if (!(await inspector.isVisible())) {
       await page
@@ -80,9 +107,10 @@ for (const width of [1600, 820]) {
         )
         .toBeGreaterThanOrEqual(1000);
     }
-    await inspector.screenshot({
-      path: test.info().outputPath("composed-orders.png"),
-    });
+    await captureVisualCheckpoint(
+      inspector,
+      test.info().outputPath("composed-orders.png"),
+    );
     const star = catalog.orders.find((order) => order.id === "march-star")!;
     const assign = page
       .locator(".order-palette button")
@@ -105,9 +133,10 @@ for (const width of [1600, 820]) {
         "src",
         orderTokenArt(star)!,
       );
-      await page.screenshot({
-        path: test.info().outputPath("starred-march-board.png"),
-      });
+      await captureVisualCheckpoint(
+        page,
+        test.info().outputPath("starred-march-board.png"),
+      );
     }
     // Both the hand and enlarged cards must show genuinely large game pieces,
     // without cutting off symbols or overlapping the ability above them.
@@ -155,10 +184,12 @@ for (const width of [1600, 820]) {
       expect(stats.y + stats.height).toBeLessThanOrEqual(
         parchment.y + parchment.height + 1,
       );
-      await dialog.screenshot({
-        path: test.info().outputPath(`large-${kind}.png`),
-      });
+      await captureVisualCheckpoint(
+        dialog,
+        test.info().outputPath(`large-${kind}.png`),
+      );
       await page.keyboard.press("Escape");
+      await expect(dialog).toHaveCount(0);
     }
     expect(brokenOrders).toEqual([]);
     expect(errors).toEqual([]);

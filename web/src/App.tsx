@@ -878,6 +878,9 @@ export default function App() {
     >
       <div
         className={`app immersive ${!room && tab === "board" ? "welcome-screen" : ""} ${room && tab === "board" ? "game-hud" : ""} ${motion ? "" : "no-motion"}`}
+        data-room-id={room?.id}
+        data-room-revision={room?.revision}
+        data-room-phase={room?.phase}
         data-combat-playback={combatPresentation.onMap}
         data-houses-open={housesOpen}
         data-inspector-open={inspectorOpen}
