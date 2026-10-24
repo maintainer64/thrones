@@ -1,5 +1,11 @@
 import { expect, test, type Page } from "@playwright/test";
 import type { Room } from "../src/types";
+import {
+  captureVisualCheckpoint,
+  clickOrWaitForCompletion,
+  throttleBrowserCPU,
+  waitForRoomRevision,
+} from "./helpers/runtime";
 
 type Fixture = {
   id: string;
@@ -13,6 +19,7 @@ test.beforeEach(async ({ page }) => {
     !process.env.WESTEROS_COMBAT_FIXTURES,
     "Run TestCombatBrowser with real Go HTTP/WS/SQLite",
   );
+  await throttleBrowserCPU(page);
   await page.addInitScript(() =>
     localStorage.setItem("westeros-tour-v2", "true"),
   );
@@ -83,6 +90,16 @@ for (const mode of ["live", "tablet", "english"]) {
     await expect(page.getByRole("dialog")).toHaveCount(0);
     await expect(page.locator(".combat-map-banner")).toBeVisible();
     const playback = page.locator(".combat-playback-controls");
+    const skip = playback.getByRole("button", {
+      name: ru ? "Пропустить анимацию" : "Skip animation",
+      exact: true,
+    });
+    const waitForPlayback = async () => {
+      await expect(playback).toHaveAttribute("data-state", "complete", {
+        timeout: 30000,
+      });
+      await expect(skip).toBeDisabled();
+    };
     const beforeReplay = (await state(page, f)).revision;
     if (mode === "live") {
       await playback
@@ -99,14 +116,9 @@ for (const mode of ["live", "tablet", "english"]) {
       await expect(board).toHaveAttribute("data-ready", "true", {
         timeout: 60000,
       });
-      const skip = playback.getByRole("button", {
-        name: ru ? "Пропустить анимацию" : "Skip animation",
-        exact: true,
-      });
-      if (mode === "english" && (await skip.isEnabled())) await skip.click();
-      await expect(playback).toHaveAttribute("data-state", "complete", {
-        timeout: 30000,
-      });
+      if (mode === "english")
+        await clickOrWaitForCompletion(skip, waitForPlayback);
+      else await waitForPlayback();
       await expect(page.locator('[data-region3d="winterfell"]')).toHaveClass(
         /battle-from/,
       );
@@ -128,7 +140,10 @@ for (const mode of ["live", "tablet", "english"]) {
       ).toHaveText("1");
     }
     expect((await state(page, f)).revision).toBe(beforeReplay);
-    await page.screenshot({ path: test.info().outputPath("attack-map.png") });
+    await captureVisualCheckpoint(
+      page,
+      test.info().outputPath("attack-map.png"),
+    );
     await page
       .getByRole("button", {
         name: ru ? "Вернуться к бою" : "Return to battle",
@@ -175,8 +190,15 @@ for (const mode of ["live", "tablet", "english"]) {
       name: ru ? "Показать весь расчёт" : "Show full calculation",
       exact: true,
     });
-    if (await fullCalculation.isEnabled()) await fullCalculation.click();
-    await expect(report.getByTestId("strength-total")).toHaveText(["13", "8"]);
+    await clickOrWaitForCompletion(fullCalculation, async () => {
+      await expect(report.getByTestId("strength-total")).toHaveText(
+        ["13", "8"],
+        {
+          timeout: 30000,
+        },
+      );
+      await expect(fullCalculation).toBeDisabled();
+    });
     expect(
       (await state(page, f)).match!.combats![0].result?.strength?.attacker
         .total,
@@ -189,12 +211,9 @@ for (const mode of ["live", "tablet", "english"]) {
       })
       .click();
     await expect(playback).toBeVisible();
-    const skipLosses = playback.getByRole("button", {
-      name: ru ? "Пропустить анимацию" : "Skip animation",
-      exact: true,
-    });
-    if (mode !== "tablet" && (await skipLosses.isEnabled()))
-      await skipLosses.click();
+    if (mode !== "tablet")
+      await clickOrWaitForCompletion(skip, waitForPlayback);
+    else await waitForPlayback();
     if (await board.count()) {
       await expect(board).toHaveAttribute("data-playback", "losses");
       await expect(
@@ -216,9 +235,10 @@ for (const mode of ["live", "tablet", "english"]) {
       })
       .click();
     await expect(report.locator(".combat-victory-banner")).toHaveCount(1);
-    await page.screenshot({
-      path: test.info().outputPath("combat-result.png"),
-    });
+    await captureVisualCheckpoint(
+      page,
+      test.info().outputPath("combat-result.png"),
+    );
     await report
       .getByRole("button", {
         name: ru ? "Продолжить" : "Continue",
@@ -228,6 +248,7 @@ for (const mode of ["live", "tablet", "english"]) {
     await expect(page.locator(".events-modal")).toBeVisible();
     await expect(page.getByRole("dialog")).toHaveCount(1);
     await page.reload();
+    await waitForRoomRevision(page, f.id, (await state(page, f)).revision);
     await expect(page.locator(".combat-intro")).toHaveCount(0);
     await expect(page.locator(".combat-report")).toHaveCount(0);
     expect(errors).toEqual([]);
@@ -253,6 +274,7 @@ test("two fast completed battles survive a skipped snapshot and reload, then yie
     await expect(intro.locator(".eyebrow")).toContainText(`№${id}`);
     if (id === 2) {
       await page.reload();
+      await waitForRoomRevision(page, f.id, (await state(page, f)).revision);
       await expect(intro.locator(".eyebrow")).toContainText("№2");
     }
     await intro
@@ -379,6 +401,7 @@ test("saved casualties and map retreat replay without moving the live army", asy
   // Reload does not consume an unread result or leak its cards into the first step.
   await expect(report.locator(".combat-card-back")).toHaveCount(2);
   await page.reload();
+  await waitForRoomRevision(page, f.id, (await state(page, f)).revision);
   await expect(report.locator(".combat-card-back")).toHaveCount(2, {
     timeout: 20000,
   });
@@ -421,9 +444,10 @@ test("saved casualties and map retreat replay without moving the live army", asy
         '[data-region3d="white-harbor"] [data-unit-house="lannister"]',
       ),
     ).toHaveText("2");
-    await page.screenshot({
-      path: test.info().outputPath("saved-retreat.png"),
-    });
+    await captureVisualCheckpoint(
+      page,
+      test.info().outputPath("saved-retreat.png"),
+    );
   }
   const after = await state(page, f);
   // The response clock advances even when no game command has been sent.

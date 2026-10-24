@@ -1,4 +1,21 @@
 import type { Locator, Page } from "@playwright/test";
+import { errors } from "@playwright/test";
+
+/** An animation shortcut may disable itself while Playwright checks stability.
+ * The bounded click must settle before proceeding; only an actual completed
+ * outcome can justify its timeout. Other action errors are never ignored.
+ */
+export async function clickOrWaitForCompletion(
+  button: Pick<Locator, "click">,
+  assertComplete: () => Promise<unknown>,
+) {
+  try {
+    await button.click({ timeout: 3000 });
+  } catch (error) {
+    if (!(error instanceof errors.TimeoutError)) throw error;
+  }
+  await assertComplete();
+}
 
 /** Synchronize on React's applied server snapshot, not only a finished HTTP call. */
 export async function waitForRoomRevision(

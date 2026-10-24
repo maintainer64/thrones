@@ -1,9 +1,84 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { createRequire } from "node:module";
 import {
   captureVisualCheckpoint,
+  clickOrWaitForCompletion,
   throttleBrowserCPU,
 } from "../../web/e2e/helpers/runtime.ts";
+const require = createRequire(
+  new URL("../../web/package.json", import.meta.url),
+);
+const { errors } = require("@playwright/test");
+
+test("a shortcut waits for its click to settle and then verifies completion", async () => {
+  const steps = [];
+  await clickOrWaitForCompletion(
+    {
+      click: async (options) => {
+        assert.equal(options.timeout, 3000);
+        steps.push("click settled");
+      },
+    },
+    async () => steps.push("completed outcome checked"),
+  );
+  assert.deepEqual(steps, ["click settled", "completed outcome checked"]);
+});
+test("natural completion during actionability does not wait for a disabled shortcut", async () => {
+  let complete = false;
+  await clickOrWaitForCompletion(
+    {
+      click: async () => {
+        complete = true;
+        throw new errors.TimeoutError("animation disabled the button");
+      },
+    },
+    async () => assert.equal(complete, true),
+  );
+});
+test("a shortcut timeout cannot hide an unfinished animation", async () => {
+  const unfinished = new Error("animation is still playing");
+  await assert.rejects(
+    clickOrWaitForCompletion(
+      {
+        click: async () => {
+          throw new errors.TimeoutError("not actionable");
+        },
+      },
+      async () => {
+        throw unfinished;
+      },
+    ),
+    (error) => error === unfinished,
+  );
+});
+test("a successful shortcut still must produce the expected outcome", async () => {
+  const unfinished = new Error("wrong final army");
+  await assert.rejects(
+    clickOrWaitForCompletion({ click: async () => undefined }, async () => {
+      throw unfinished;
+    }),
+    (error) => error === unfinished,
+  );
+});
+test("unexpected action errors are preserved even if completion would pass", async () => {
+  const disconnected = new Error("browser disconnected");
+  let checked = false;
+  await assert.rejects(
+    clickOrWaitForCompletion(
+      {
+        click: async () => {
+          throw disconnected;
+        },
+      },
+      async () => {
+        checked = true;
+      },
+    ),
+    (error) => error === disconnected,
+  );
+  assert.equal(checked, false);
+});
 
 function environment(t, key, value) {
   const previous = process.env[key];

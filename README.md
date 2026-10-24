@@ -117,10 +117,10 @@ WESTEROS_BROWSER_TEST=1 SOFTWARE_WEBGL=1 WESTEROS_BROWSER_GREP='private Tides ch
 Для воспроизведения задержек медленного runner:
 
 ```bash
-WESTEROS_CPU_THROTTLE=4 WESTEROS_BROWSER_TEST=1 SOFTWARE_WEBGL=1 go test -v ./internal/server -run '^Test(Orders|SetupBlade|Tides|Influence)Browser$' -count=1 -timeout=15m
+WESTEROS_CPU_THROTTLE=4 WESTEROS_BROWSER_TEST=1 SOFTWARE_WEBGL=1 go test -v ./internal/server -run '^Test(Orders|SetupBlade|Tides|Influence|Combat)Browser$' -count=1 -timeout=20m
 ```
 
-`WESTEROS_CPU_THROTTLE` (1–8) используется этими четырьмя наборами и замедляет
+`WESTEROS_CPU_THROTTLE` (1–8) используется этими пятью наборами и замедляет
 настоящий Chromium через CDP, без подмены сервера или его ответов.
 Необязательные снимки успешных проверок включаются `WESTEROS_VISUAL_CHECKS=1`.
 По умолчанию они отключены: GPU-readback со SwiftShader способен занимать
