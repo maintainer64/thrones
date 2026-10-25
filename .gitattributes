@@ -1,0 +1,6 @@
+# Small runtime art stays in ordinary Git; no mandatory LFS dependency.
+*.glb binary
+*.webp binary
+*.png binary
+*.psd binary
+*.cdr binary

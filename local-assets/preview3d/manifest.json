@@ -1,0 +1,29 @@
+{
+  "localOnly": true,
+  "board": {
+    "url": "/local-assets/preview3d/westeros.glb",
+    "width": 10,
+    "depth": 19.98999993607842,
+    "sourceBytes": 67867940,
+    "bytes": 5385672,
+    "nodes": 2
+  },
+  "footman": {
+    "url": "/local-assets/preview3d/stark-footman.glb",
+    "bytes": 618192,
+    "bones": 23,
+    "clips": [
+      {
+        "name": "idle",
+        "duration": 4,
+        "tracks": 80
+      },
+      {
+        "name": "run",
+        "duration": 0.5333338,
+        "tracks": 79
+      }
+    ]
+  },
+  "source": "Read-only local AssetRipper exports; original geometry, textures, bind poses and motion curves"
+}

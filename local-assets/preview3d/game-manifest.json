@@ -1,0 +1,895 @@
+{
+  "version": 1,
+  "localOnly": true,
+  "board": {
+    "url": "/local-assets/preview3d/westeros.glb",
+    "width": 10,
+    "depth": 19.98999993607842
+  },
+  "picking": "/local-assets/preview3d/regions.glb",
+  "regions": {
+    "blackwater": {
+      "position": [
+        0.321,
+        -3.6689997019767606
+      ],
+      "label": [
+        0.455,
+        -3.3449997019767603
+      ],
+      "order": [
+        0.758,
+        -3.68099970197676
+      ]
+    },
+    "kings-landing": {
+      "position": [
+        -1.4849999999999999,
+        -3.80199970197676
+      ],
+      "label": [
+        -1.611,
+        -3.5349997019767603
+      ],
+      "order": [
+        -1.822,
+        -3.6129997019767606
+      ]
+    },
+    "the-reach": {
+      "position": [
+        0.282,
+        -4.5809997019767605
+      ],
+      "label": [
+        0,
+        -4.84099970197676
+      ],
+      "order": [
+        1,
+        -4.4559997019767605
+      ]
+    },
+    "kingswood": {
+      "position": [
+        -1.557,
+        -4.28899970197676
+      ],
+      "label": [
+        -2.521,
+        -3.96499970197676
+      ],
+      "order": [
+        -1.496,
+        -4.293999701976761
+      ]
+    },
+    "blackwater-bay": {
+      "position": [
+        -2.601,
+        -2.6199997019767602
+      ],
+      "label": [
+        -2.601,
+        -2.87999970197676
+      ],
+      "order": [
+        -2.192,
+        -3.03099970197676
+      ]
+    },
+    "crackclaw-point": {
+      "position": [
+        -1.552,
+        -2.0349997019767603
+      ],
+      "label": [
+        -1.552,
+        -2.29499970197676
+      ],
+      "order": [
+        -1.143,
+        -2.33499970197676
+      ]
+    },
+    "harrenhal": {
+      "position": [
+        -0.628,
+        -1.6469997019767604
+      ],
+      "label": [
+        -0.468,
+        -2.0829997019767603
+      ],
+      "order": [
+        -0.7310000000000001,
+        -1.8719997019767605
+      ]
+    },
+    "stoney-sept": {
+      "position": [
+        0.966,
+        -2.1389997019767604
+      ],
+      "label": [
+        1.085,
+        -2.31399970197676
+      ],
+      "order": [
+        0.703,
+        -2.5339997019767604
+      ]
+    },
+    "riverrun": {
+      "position": [
+        0.494,
+        -0.8029997019767601
+      ],
+      "label": [
+        0.494,
+        -0.7949997019767601
+      ],
+      "order": [
+        0.504,
+        -0.3499997019767598
+      ]
+    },
+    "lannisport": {
+      "position": [
+        2.32,
+        -1.9079997019767605
+      ],
+      "label": [
+        1.986,
+        -1.5019997019767604
+      ],
+      "order": [
+        2.406,
+        -2.0739997019767604
+      ]
+    },
+    "pyke": {
+      "position": [
+        2.832,
+        0.3340002980232395
+      ],
+      "label": [
+        3.057,
+        0.6450002980232394
+      ],
+      "order": [
+        3.295,
+        0.8080002980232397
+      ]
+    },
+    "ironmans-bay": {
+      "position": [
+        3.752,
+        -0.5429997019767603
+      ],
+      "label": [
+        3.752,
+        -0.8029997019767601
+      ],
+      "order": [
+        2.1899999999999995,
+        1.1500000980232397
+      ]
+    },
+    "the-golden-sound": {
+      "position": [
+        4.215,
+        -2.9199997019767605
+      ],
+      "label": [
+        3.802,
+        -2.5459997019767604
+      ],
+      "order": [
+        3.591,
+        -1.6059997019767605
+      ]
+    },
+    "port-of-pyke": {
+      "position": [
+        3.623,
+        -0.43700010197676065
+      ],
+      "label": [
+        3.623,
+        -0.43700010197676065
+      ],
+      "order": [
+        3.58,
+        -0.11200010197676047
+      ]
+    },
+    "port-of-lannisport": {
+      "position": [
+        3.057,
+        -1.92399970197676
+      ],
+      "label": [
+        3.057,
+        -1.92399970197676
+      ],
+      "order": [
+        3.13,
+        -2.20399970197676
+      ]
+    },
+    "seagard": {
+      "position": [
+        0.9869999999999999,
+        0.9620002980232405
+      ],
+      "label": [
+        1.303,
+        1.20000029802324
+      ],
+      "order": [
+        1.0379999999999998,
+        0.9090002980232397
+      ]
+    },
+    "sunset-sea": {
+      "position": [
+        4.222,
+        2.3370002980232396
+      ],
+      "label": [
+        4.222,
+        2.07700029802324
+      ],
+      "order": [
+        4.470000000000001,
+        2.0330002980232402
+      ]
+    },
+    "flints-finger": {
+      "position": [
+        2.206,
+        2.2360002980232396
+      ],
+      "label": [
+        2.484,
+        1.84600029802324
+      ],
+      "order": [
+        2.47,
+        2.22700029802324
+      ]
+    },
+    "greywater-watch": {
+      "position": [
+        1.106,
+        2.4140002980232396
+      ],
+      "label": [
+        1.459,
+        2.0020002980232396
+      ],
+      "order": [
+        1.459,
+        2.42000029802324
+      ]
+    },
+    "searoad-marches": {
+      "position": [
+        2.612,
+        -3.1629997019767604
+      ],
+      "label": [
+        2.338,
+        -3.93599970197676
+      ],
+      "order": [
+        2.652,
+        -3.9609997019767604
+      ]
+    },
+    "bay-of-ice": {
+      "position": [
+        3.5010000000000003,
+        5.464000298023239
+      ],
+      "label": [
+        3.696,
+        6.144000298023239
+      ],
+      "order": [
+        4.289,
+        6.041000298023239
+      ]
+    },
+    "castle-black": {
+      "position": [
+        -0.13900000000000012,
+        7.199000298023241
+      ],
+      "label": [
+        -1.09,
+        7.56500029802324
+      ],
+      "order": [
+        -0.33100000000000007,
+        7.31900029802324
+      ]
+    },
+    "karhold": {
+      "position": [
+        -2.5484008339830875,
+        5.960702736660672
+      ],
+      "label": [
+        -2.797,
+        6.29600029802324
+      ],
+      "order": [
+        -2.393621160102866,
+        6.612518088239251
+      ]
+    },
+    "winterfell": {
+      "position": [
+        0.832,
+        4.11300029802324
+      ],
+      "label": [
+        0.832,
+        4.95400029802324
+      ],
+      "order": [
+        0.7809999999999999,
+        5.16100029802324
+      ]
+    },
+    "port-of-winterfell": {
+      "position": [
+        1.412,
+        6.4880012980232395
+      ],
+      "label": [
+        1.412,
+        6.4880012980232395
+      ],
+      "order": [
+        1.412,
+        6.32000129802324
+      ]
+    },
+    "the-stony-shore": {
+      "position": [
+        2.7399999999999998,
+        3.4660002980232383
+      ],
+      "label": [
+        2.424,
+        3.817000298023239
+      ],
+      "order": [
+        2.371,
+        4.375000298023239
+      ]
+    },
+    "white-harbor": {
+      "position": [
+        -1.342,
+        3.1480002980232404
+      ],
+      "label": [
+        -1.084,
+        4.20400029802324
+      ],
+      "order": [
+        -1.65,
+        4.79900029802324
+      ]
+    },
+    "widows-watch": {
+      "position": [
+        -2.153,
+        4.10000029802324
+      ],
+      "label": [
+        -2.153,
+        3.8400002980232406
+      ],
+      "order": [
+        -2.161,
+        4.39500029802324
+      ]
+    },
+    "the-shivering-sea": {
+      "position": [
+        -3.5340000000000003,
+        4.381000298023239
+      ],
+      "label": [
+        -3.95,
+        4.82500029802324
+      ],
+      "order": [
+        -4.349,
+        6.01400029802324
+      ]
+    },
+    "moat-cailin": {
+      "position": [
+        0.363,
+        1.3400002980232397
+      ],
+      "label": [
+        0.363,
+        1.9380002980232396
+      ],
+      "order": [
+        0.284,
+        2.4510002980232395
+      ]
+    },
+    "port-of-white-harbor": {
+      "position": [
+        -1.554,
+        2.3140007980232395
+      ],
+      "label": [
+        -1.554,
+        2.3140007980232395
+      ],
+      "order": [
+        -1.5270000000000001,
+        2.45300079802324
+      ]
+    },
+    "the-narrow-sea": {
+      "position": [
+        -4.236,
+        1.7440002980232396
+      ],
+      "label": [
+        -4.236,
+        2.48700029802324
+      ],
+      "order": [
+        -3.053,
+        2.61200029802324
+      ]
+    },
+    "the-fingers": {
+      "position": [
+        -1.893,
+        0.9740002980232392
+      ],
+      "label": [
+        -1.584,
+        1.0520002980232395
+      ],
+      "order": [
+        -2.138,
+        1.2790002980232398
+      ]
+    },
+    "the-twins": {
+      "position": [
+        -0.275,
+        0.9760002980232398
+      ],
+      "label": [
+        -0.275,
+        0.7160002980232401
+      ],
+      "order": [
+        -0.275,
+        0.9760002980232398
+      ]
+    },
+    "the-mountains-of-the-moon": {
+      "position": [
+        -1.117,
+        -0.4129997019767604
+      ],
+      "label": [
+        -1.487,
+        0.03300029802323934
+      ],
+      "order": [
+        -2.359,
+        0.14800029802323955
+      ]
+    },
+    "the-eyrie": {
+      "position": [
+        -2.129,
+        -0.5489997019767605
+      ],
+      "label": [
+        -2.434,
+        -0.8089997019767603
+      ],
+      "order": [
+        -2.968,
+        -0.8049997019767607
+      ]
+    },
+    "shipbreaker-bay": {
+      "position": [
+        -3.8209999999999997,
+        -4.17999970197676
+      ],
+      "label": [
+        -4.111,
+        -3.8369997019767603
+      ],
+      "order": [
+        -4.111,
+        -3.57699970197676
+      ]
+    },
+    "dragonstone": {
+      "position": [
+        -4.386,
+        -2.3739997019767602
+      ],
+      "label": [
+        -4.204,
+        -2.1639997019767603
+      ],
+      "order": [
+        -4.294,
+        -1.6429997019767604
+      ]
+    },
+    "port-of-dragonstone": {
+      "position": [
+        -4.444,
+        -3.0469996019767605
+      ],
+      "label": [
+        -4.444,
+        -3.0469996019767605
+      ],
+      "order": [
+        -4.482,
+        -2.8829996019767603
+      ]
+    },
+    "port-of-sunspear": {
+      "position": [
+        -3.791,
+        -7.690999701976761
+      ],
+      "label": [
+        -3.791,
+        -7.690999701976761
+      ],
+      "order": [
+        -3.791,
+        -7.43099970197676
+      ]
+    },
+    "sunspear": {
+      "position": [
+        -2.528,
+        -7.48399970197676
+      ],
+      "label": [
+        -1.902,
+        -7.4479997019767605
+      ],
+      "order": [
+        -2.985,
+        -7.40899970197676
+      ]
+    },
+    "sea-of-dorne": {
+      "position": [
+        -2.24,
+        -6.543999701976761
+      ],
+      "label": [
+        -2.329,
+        -6.67499970197676
+      ],
+      "order": [
+        -2.329,
+        -6.41499970197676
+      ]
+    },
+    "east-summer-sea": {
+      "position": [
+        -2.75,
+        -8.72999970197676
+      ],
+      "label": [
+        -2.75,
+        -8.98999970197676
+      ],
+      "order": [
+        -2.115,
+        -9.292999701976761
+      ]
+    },
+    "salt-shore": {
+      "position": [
+        -1.8559999999999999,
+        -7.94599970197676
+      ],
+      "label": [
+        -0.862,
+        -8.15599970197676
+      ],
+      "order": [
+        -0.894,
+        -8.17299970197676
+      ]
+    },
+    "storms-end": {
+      "position": [
+        -2.1790000000000003,
+        -5.3389997019767605
+      ],
+      "label": [
+        -2.56,
+        -5.7829997019767605
+      ],
+      "order": [
+        -2.248,
+        -5.04199970197676
+      ]
+    },
+    "port-of-storms-end": {
+      "position": [
+        -3.2879999,
+        -5.09099971797676
+      ],
+      "label": [
+        -3.2879999,
+        -5.09099971797676
+      ],
+      "order": [
+        -3.6119999,
+        -5.2629997179767605
+      ]
+    },
+    "the-boneway": {
+      "position": [
+        -0.549,
+        -6.05899970197676
+      ],
+      "label": [
+        -1.08,
+        -5.67799970197676
+      ],
+      "order": [
+        -0.2520000000000001,
+        -5.8919997019767605
+      ]
+    },
+    "princes-pass": {
+      "position": [
+        0.759,
+        -6.70699970197676
+      ],
+      "label": [
+        0.737,
+        -6.40899970197676
+      ],
+      "order": [
+        0.857,
+        -6.22199970197676
+      ]
+    },
+    "yronwood": {
+      "position": [
+        -0.541,
+        -7.32099970197676
+      ],
+      "label": [
+        -0.541,
+        -7.58099970197676
+      ],
+      "order": [
+        -0.684,
+        -7.495999701976761
+      ]
+    },
+    "three-towers": {
+      "position": [
+        1.9259999999999997,
+        -7.03299970197676
+      ],
+      "label": [
+        2.135,
+        -7.69299970197676
+      ],
+      "order": [
+        2.3409999999999997,
+        -7.18899970197676
+      ]
+    },
+    "starfall": {
+      "position": [
+        0.698,
+        -7.966999701976761
+      ],
+      "label": [
+        0.863,
+        -8.40099970197676
+      ],
+      "order": [
+        0.9,
+        -8.350999701976761
+      ]
+    },
+    "the-arbor": {
+      "position": [
+        3.519,
+        -8.87399970197676
+      ],
+      "label": [
+        3.767,
+        -8.62199970197676
+      ],
+      "order": [
+        3.767,
+        -8.36199970197676
+      ]
+    },
+    "west-summer-sea": {
+      "position": [
+        2.867,
+        -9.417999701976761
+      ],
+      "label": [
+        1.726,
+        -9.03299970197676
+      ],
+      "order": [
+        1.896,
+        -9.29799970197676
+      ]
+    },
+    "redwyne-straights": {
+      "position": [
+        3.811,
+        -6.812999701976761
+      ],
+      "label": [
+        3.547,
+        -7.405999701976761
+      ],
+      "order": [
+        3.847,
+        -6.719999701976761
+      ]
+    },
+    "port-of-oldtown": {
+      "position": [
+        3.505,
+        -6.40699970197676
+      ],
+      "label": [
+        3.505,
+        -6.40699970197676
+      ],
+      "order": [
+        3.505,
+        -6.14699970197676
+      ]
+    },
+    "oldtown": {
+      "position": [
+        2.949,
+        -6.51899970197676
+      ],
+      "label": [
+        2.423,
+        -5.979999701976761
+      ],
+      "order": [
+        2.471,
+        -5.90199970197676
+      ]
+    },
+    "highgarden": {
+      "position": [
+        2.266,
+        -4.75799970197676
+      ],
+      "label": [
+        2.44,
+        -4.5729997019767605
+      ],
+      "order": [
+        2.259,
+        -5.39799970197676
+      ]
+    },
+    "dornish-marches": {
+      "position": [
+        0.926,
+        -5.7509997019767605
+      ],
+      "label": [
+        0.674,
+        -5.50799970197676
+      ],
+      "order": [
+        1.2240000000000002,
+        -5.93399970197676
+      ]
+    }
+  },
+  "units": {
+    "footman": {
+      "url": "/local-assets/preview3d/game-footman.glb",
+      "textures": {
+        "stark": "/local-assets/preview3d/footman-stark.png",
+        "lannister": "/local-assets/preview3d/footman-lannister.png",
+        "greyjoy": "/local-assets/preview3d/footman-greyjoy.png",
+        "baratheon": "/local-assets/preview3d/footman-baratheon.png",
+        "tyrell": "/local-assets/preview3d/footman-tyrell.png",
+        "martell": "/local-assets/preview3d/footman-martell.png"
+      },
+      "bytes": 618192,
+      "bones": 23,
+      "clips": [
+        "idle",
+        "run"
+      ]
+    },
+    "knight": {
+      "url": "/local-assets/preview3d/game-knight.glb",
+      "textures": {
+        "stark": "/local-assets/preview3d/knight-stark.png",
+        "lannister": "/local-assets/preview3d/knight-lannister.png",
+        "greyjoy": "/local-assets/preview3d/knight-greyjoy.png",
+        "baratheon": "/local-assets/preview3d/knight-baratheon.png",
+        "tyrell": "/local-assets/preview3d/knight-tyrell.png",
+        "martell": "/local-assets/preview3d/knight-martell.png"
+      },
+      "bytes": 1594624,
+      "bones": 42,
+      "clips": [
+        "idle",
+        "run"
+      ]
+    },
+    "ship": {
+      "url": "/local-assets/preview3d/game-ship.glb",
+      "textures": {
+        "stark": "/local-assets/preview3d/ship-stark.png",
+        "lannister": "/local-assets/preview3d/ship-lannister.png",
+        "greyjoy": "/local-assets/preview3d/ship-greyjoy.png",
+        "baratheon": "/local-assets/preview3d/ship-baratheon.png",
+        "tyrell": "/local-assets/preview3d/ship-tyrell.png",
+        "martell": "/local-assets/preview3d/ship-martell.png"
+      },
+      "bytes": 931744,
+      "bones": 10,
+      "clips": [
+        "idle"
+      ]
+    },
+    "siege-engine": {
+      "url": "/local-assets/preview3d/game-siege-engine.glb",
+      "textures": {
+        "stark": "/local-assets/preview3d/siege-engine-stark.png",
+        "lannister": "/local-assets/preview3d/siege-engine-lannister.png",
+        "greyjoy": "/local-assets/preview3d/siege-engine-greyjoy.png",
+        "baratheon": "/local-assets/preview3d/siege-engine-baratheon.png",
+        "tyrell": "/local-assets/preview3d/siege-engine-tyrell.png",
+        "martell": "/local-assets/preview3d/siege-engine-martell.png"
+      },
+      "bytes": 410292,
+      "bones": 0,
+      "clips": []
+    }
+  },
+  "landmarks": {
+    "castle": "/local-assets/preview3d/landmark-castle.glb",
+    "stronghold": "/local-assets/preview3d/landmark-stronghold.glb",
+    "port": "/local-assets/preview3d/landmark-port.glb"
+  }
+}

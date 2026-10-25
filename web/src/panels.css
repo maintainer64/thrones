@@ -1,0 +1,469 @@
+/* Shared HUD panel layout. Widths include padding and match the board inset. */
+.game-hud {
+  --side-panel-width: 320px;
+  --houses-panel-width: 264px;
+  --hud-right: calc(var(--side-panel-width) + 28px);
+}
+.game-hud[data-tracks-open="true"] {
+  --hud-right: calc(var(--side-panel-width) + 28px);
+}
+.game-hud[data-inspector-open="false"]:not([data-tracks-open="true"]) {
+  --hud-right: 0px;
+}
+.game-hud[data-houses-open="true"] {
+  --hud-left: calc(var(--houses-panel-width) + 28px);
+}
+.game-hud :is(.houses, .inspector, .influence-panel) {
+  min-width: 0;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+.game-hud :is(.inspector, .influence-panel) {
+  width: var(--side-panel-width);
+  right: 14px;
+  padding: 18px 16px;
+}
+.game-hud .houses {
+  width: var(--houses-panel-width);
+  padding: 16px 14px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.game-hud :is(.room-caption, .my-house, .seat-title, .section-heading) {
+  min-width: 0;
+}
+.game-hud .room-caption .eyebrow {
+  max-width: none;
+  min-width: 0;
+}
+.game-hud .room-caption button {
+  flex: none;
+  min-width: 36px;
+  min-height: 36px;
+}
+.game-hud .my-house {
+  gap: 12px;
+  margin: 12px 0;
+}
+.game-hud .my-house > div {
+  min-width: 0;
+}
+.game-hud .my-house :is(h2, span) {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.game-hud .my-house .crest {
+  flex: none;
+}
+.game-hud .houses .house-picker-option {
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 4px;
+  min-height: 70px;
+  text-align: center;
+}
+.game-hud .houses .house-picker-option span {
+  overflow-wrap: normal;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.game-hud .houses .house-picker-option img {
+  width: 26px;
+  height: 26px;
+}
+.game-hud .house-resources {
+  padding: 0;
+  margin: 10px 0 18px;
+  border: 1px solid #92774744;
+  border-radius: 3px;
+  background: #181d1766;
+}
+.game-hud .house-resources > div {
+  padding: 8px 2px;
+  min-width: 0;
+}
+.game-hud .house-resources b {
+  font-size: 23px;
+}
+.game-hud .house-resources small {
+  white-space: nowrap;
+  font-size: 10px;
+}
+.game-hud .seat-list {
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr);
+}
+.game-hud .seat {
+  padding: 10px;
+  margin: 0;
+  min-width: 0;
+}
+.game-hud .seat-title {
+  gap: 12px;
+}
+.game-hud .seat-title > .seat-identity {
+  min-width: 0;
+}
+.game-hud .seat-title b {
+  display: block;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.game-hud .seat-title > svg {
+  flex: none;
+}
+.game-hud .seat-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  margin-top: 3px;
+}
+.game-hud .seat-name svg {
+  flex: none;
+  margin: 0;
+  color: #a69b7f;
+}
+.game-hud .seat-name > span {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.seat-resources {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 12px 0 0;
+  gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.seat-resources > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 0;
+  padding: 4px 0;
+  border: 1px solid #8d74462e;
+  border-radius: 3px;
+  background: #11171266;
+}
+.seat-resources dt {
+  display: flex;
+  color: #b5a078;
+}
+.seat-resources dd {
+  margin: 0;
+  color: #e0ceaa;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.game-hud .seat-resources small {
+  display: inline;
+  margin: 0;
+  font-size: 10px;
+  color: #8d9988;
+}
+.game-hud .seat-controls {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #8d74462e;
+}
+.game-hud .seat-controls label {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-size: 11px;
+  color: #aeb39e;
+}
+.game-hud .seat-controls select {
+  min-width: 0;
+  width: 100%;
+  min-height: 36px;
+  padding: 6px;
+  font-size: 12px;
+  color: #e9dbb7;
+}
+.game-hud .area-heading {
+  padding: 0 22px 12px 0;
+  border-bottom: 1px solid #92774744;
+}
+.game-hud .area-heading .eyebrow {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.game-hud .area-heading h2 {
+  margin: 8px 0 4px;
+  font-size: 27px;
+  line-height: 1.15;
+  overflow-wrap: normal;
+}
+.game-hud .area-heading .subtle {
+  margin: 0;
+  font-size: 11px;
+}
+.game-hud .fortification-info {
+  display: block;
+  margin: 12px 0;
+  padding: 0;
+  border-color: #92774744;
+}
+.fortification-info details {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.fortification-info details > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  list-style: none;
+}
+.fortification-info details > summary::-webkit-details-marker {
+  display: none;
+}
+.fortification-info summary::after {
+  content: "+";
+  margin-left: auto;
+  color: #c7b17d;
+}
+.fortification-info details[open] > summary::after {
+  content: "−";
+}
+.fortification-info .fortification-badge {
+  flex: none;
+}
+.fortification-info details > p {
+  margin: 0;
+  padding: 0 10px 10px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #c5c4b0;
+}
+.game-hud .inspector .stats {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0 18px;
+  padding: 0;
+  border: 0;
+}
+.game-hud .inspector .stats > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+  padding: 8px 4px;
+  border: 0;
+  box-shadow: none;
+  background: #151b1566;
+}
+.game-hud .inspector .stats :is(b, span) {
+  margin: 0;
+}
+.game-hud .inspector .stats b {
+  font-size: 18px;
+}
+.game-hud .inspector .stats span {
+  font-size: 10px;
+  white-space: nowrap;
+}
+.game-hud .inspector h3 {
+  margin: 16px 0 10px;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+.game-hud .detailed-unit {
+  gap: 10px;
+}
+.game-hud .detailed-unit > div {
+  min-width: 0;
+}
+.game-hud .detailed-unit b {
+  font-size: 13px;
+}
+.game-hud .detailed-unit small {
+  margin-top: 2px;
+  font-size: 10px;
+}
+.game-hud .detailed-unit > strong {
+  flex: none;
+}
+.game-hud .inspector .section-heading {
+  align-items: baseline;
+  margin-top: 18px;
+}
+.game-hud .inspector .section-heading span {
+  text-align: right;
+  font-size: 11px;
+}
+.game-hud .order-budget {
+  display: block;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.order-budget dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+.order-budget dl > div {
+  min-width: 0;
+}
+.order-budget dt {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #b9b799;
+}
+.order-budget dd {
+  margin: 3px 0 0;
+  font-size: 23px;
+  font-variant-numeric: tabular-nums;
+  color: #eed9a5;
+}
+.order-budget dd small {
+  font-size: 13px;
+}
+.order-budget details {
+  margin-top: 8px;
+  border-top: 1px solid #92774733;
+  padding-top: 8px;
+  font-size: 11px;
+  color: #bfb998;
+}
+.order-budget summary {
+  cursor: pointer;
+}
+.order-budget details p {
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.game-hud .order-picker {
+  display: flex;
+  flex-direction: column;
+}
+.game-hud .order-picker .order-palette {
+  margin-bottom: 12px;
+}
+.game-hud .order-picker .order-help {
+  position: sticky;
+  top: -18px;
+  z-index: 2;
+  block-size: 152px;
+  margin-bottom: 12px;
+  box-shadow: 0 5px 12px #0004;
+}
+.game-hud .influence-columns h3 {
+  display: grid;
+  place-items: center;
+  min-height: 40px;
+  margin: 6px 0;
+  font-size: 12px;
+  overflow-wrap: normal;
+  word-break: normal;
+  line-height: 1.35;
+}
+.track-status {
+  min-height: 28px;
+  font-size: 10px;
+  color: #9ea78c;
+}
+.track-status[data-used="true"] {
+  color: #c8a265;
+}
+.game-hud .influence-columns ol {
+  grid-template-rows: repeat(6, 52px);
+}
+.game-hud .influence-columns li .track-stars {
+  inset: auto 0 2px;
+  text-align: center;
+  font-size: 9px;
+  color: #dfc783;
+}
+.influence-columns li:has(.track-stars) img {
+  margin-bottom: 10px;
+}
+.game-hud
+  :is(.houses, .inspector, .influence-panel)
+  :is(summary, select):focus-visible {
+  outline: 2px solid #e5c57c;
+  outline-offset: 2px;
+}
+@media (max-width: 1150px) {
+  .game-hud {
+    --side-panel-width: 292px;
+    --houses-panel-width: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .game-hud,
+  .game-hud[data-houses-open="true"],
+  .game-hud[data-tracks-open="true"] {
+    --hud-left: 0px;
+    --hud-right: 0px;
+  }
+  .game-hud :is(.houses, .inspector, .influence-panel) {
+    max-width: calc(100% - 24px);
+  }
+}
+@media (pointer: coarse) {
+  .game-hud .seat-controls select {
+    min-height: 44px;
+  }
+  .order-budget summary {
+    display: flex;
+    align-items: center;
+    min-height: 36px;
+  }
+}
+.app.game-hud[data-combat-playback="true"] {
+  --hud-left: 0px;
+  --hud-right: 0px;
+  --hand-height: 0px;
+}
+.app.game-hud[data-combat-playback="true"]
+  :is(
+    .houses,
+    .inspector,
+    .influence-panel,
+    .house-hand-dock,
+    .action-dock,
+    .hud-panel-buttons,
+    .influence-toggle,
+    .game-toast,
+    .winner-ribbon,
+    .game3d-caption
+  ) {
+  display: none;
+}
+.app.game-hud[data-combat-playback="true"] .combat-map-banner {
+  left: 16px;
+  right: 16px;
+  bottom: 20px;
+}

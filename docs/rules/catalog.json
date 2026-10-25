@@ -1,0 +1,10 @@
+[
+  {"id":"base-ru","title":"Игра престолов: настольная игра. Второе издание","language":"ru","publisher":"Hobby Games","filename":"01-base-ru.pdf","url":"https://hobbygames.ru/download/rules/agot2_rules_rus.pdf"},
+  {"id":"dance-ru","title":"Танец с драконами","language":"ru","publisher":"Hobby World","filename":"02-dance-with-dragons-ru.pdf","url":"https://hobbyworld.ru/download/rules/Igra_Prestolov_2e_Tancy_s_Drakonami_rules_web.pdf"},
+  {"id":"feast-ru","title":"Пир воронов","language":"ru","publisher":"Hobby World","filename":"03-feast-for-crows-ru.pdf","url":"https://hobbyworld.ru/download/rules/Igra_Prestolov_2e_Pir_Voronov_rules_web.pdf"},
+  {"id":"mother-ru","title":"Мать драконов","language":"ru","publisher":"Hobby World","filename":"04-mother-of-dragons-ru.pdf","url":"https://hobbyworld.ru/download/rules/Motherofdragons_rules_rus_web-min.pdf"},
+  {"id":"faq-ru","title":"Эррата и FAQ 2.0","language":"ru","publisher":"Hobby World","filename":"05-faq-2-ru.pdf","url":"https://hobbyworld.ru/download/rules/AGOT2_FAQ-min.pdf"},
+  {"id":"base-en","title":"Base rules, Second Edition","language":"en","publisher":"Fantasy Flight Games","filename":"06-base-en.pdf","url":"https://images-cdn.fantasyflightgames.com/filer_public/30/4f/304f72e3-4fe4-4f91-bfbe-75133161b092/va65_agot2_rulebook_web.pdf"},
+  {"id":"mother-en","title":"Mother of Dragons","language":"en","publisher":"Fantasy Flight Games","filename":"07-mother-of-dragons-en.pdf","url":"https://images-cdn.fantasyflightgames.com/filer_public/3d/92/3d92cef0-91d7-4d25-abdd-5e9e555d9f7c/va103_rulebook-compressed.pdf"},
+  {"id":"faq-en","title":"Errata and FAQ 2.0","language":"en","publisher":"Fantasy Flight Games","filename":"08-faq-2-en.pdf","url":"https://images-cdn.fantasyflightgames.com/filer_public/cf/06/cf06eb26-48e3-46b9-b57c-f053beb2518d/agotbg_faq_v2_forweb.pdf"}
+]

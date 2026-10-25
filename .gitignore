@@ -1,9 +1,8 @@
-agot-bg-game-server/.vscode/settings.json
 .idea/
 .favorites.json
 
-# Production/staging deployment secrets (see .env.prod.example for the template) — never commit
-# real values.
+# Local environment and deployment secrets — never commit real values.
+.env
 .env.prod
 
 # Created by https://www.gitignore.io/api/macos
@@ -41,9 +40,15 @@ Temporary Items
 
 
 
-/agot-bg-website-dotnet/.vs
-agot-bg-website-dotnet/agot-bg-website/GameClientTemplates/play.html
-agot-bg-website-dotnet/agot-bg-website/wwwroot/static_game/**
 /.vs/**
-/agot-bg-website-dotnet/publish/**
-/agot-bg-website-dotnet/Snr.Migration/publish-linux
+local-rulebooks/
+# Prepared runtime assets may be versioned locally; editable PSD sources live outside this repo.
+# They are NOT covered by the code license; check redistribution rights before push.
+/.local-data/
+/bin/
+/web/node_modules/
+/web/dist/
+/web/test-results/
+/web/playwright-report/
+/internal/assets/dist/*
+!/internal/assets/dist/.gitkeep

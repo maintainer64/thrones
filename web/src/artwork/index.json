@@ -1,0 +1,782 @@
+{
+  "events/ClashOfKings.png": {
+    "file": "events/ClashOfKings.webp",
+    "width": 1672,
+    "height": 941,
+    "revision": "07969929e90d",
+    "sourceRevision": "b2a3c382a0da",
+    "sourceBytes": 2608120,
+    "bytes": 398142,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/CrowKillersLarge.png": {
+    "file": "events/CrowKillersLarge.webp",
+    "width": 1199,
+    "height": 1312,
+    "revision": "1df083dbf386",
+    "sourceRevision": "3b990c379f1c",
+    "sourceBytes": 3263436,
+    "bytes": 582112,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/DarkWingsDarkWords.png": {
+    "file": "events/DarkWingsDarkWords.webp",
+    "width": 1448,
+    "height": 1086,
+    "revision": "fe6291835c54",
+    "sourceRevision": "f2e1f8b1b95c",
+    "sourceBytes": 2309116,
+    "bytes": 294004,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/FeastForCrows.png": {
+    "file": "events/FeastForCrows.webp",
+    "width": 1587,
+    "height": 991,
+    "revision": "878f7cba5e4b",
+    "sourceRevision": "ad205ed38961",
+    "sourceBytes": 3119368,
+    "bytes": 523944,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/GameOfThrones.png": {
+    "file": "events/GameOfThrones.webp",
+    "width": 1573,
+    "height": 1000,
+    "revision": "6118b6168582",
+    "sourceRevision": "45dea5d0ebca",
+    "sourceBytes": 2464557,
+    "bytes": 348334,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/HordeDescendsLarge.png": {
+    "file": "events/HordeDescendsLarge.webp",
+    "width": 1101,
+    "height": 1429,
+    "revision": "f91aec37de0b",
+    "sourceRevision": "ae5ff80ce373",
+    "sourceBytes": 3252205,
+    "bytes": 559244,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/KingBeyondLarge.png": {
+    "file": "events/KingBeyondLarge.webp",
+    "width": 1199,
+    "height": 1312,
+    "revision": "d93e486aaaf8",
+    "sourceRevision": "061d4fa0abf0",
+    "sourceBytes": 2287209,
+    "bytes": 340330,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/LastDaysOfSummer.png": {
+    "file": "events/LastDaysOfSummer.webp",
+    "width": 1573,
+    "height": 1000,
+    "revision": "9edc7f8fa344",
+    "sourceRevision": "0a2d627897b0",
+    "sourceBytes": 3078513,
+    "bytes": 551050,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/Mammothlarge.png": {
+    "file": "events/Mammothlarge.webp",
+    "width": 1573,
+    "height": 1000,
+    "revision": "d0f5b58c271c",
+    "sourceRevision": "f608a255b02e",
+    "sourceBytes": 3031881,
+    "bytes": 513012,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/MilkwaterLarge.png": {
+    "file": "events/MilkwaterLarge.webp",
+    "width": 1573,
+    "height": 1000,
+    "revision": "39f0249034f5",
+    "sourceRevision": "d74d1de9db66",
+    "sourceBytes": 3085139,
+    "bytes": 551920,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/Mustering.png": {
+    "file": "events/Mustering.webp",
+    "width": 1573,
+    "height": 1000,
+    "revision": "12f4306f18b3",
+    "sourceRevision": "75d693104b6a",
+    "sourceBytes": 2823216,
+    "bytes": 466180,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/PreemptiveLarge.png": {
+    "file": "events/PreemptiveLarge.webp",
+    "width": 1573,
+    "height": 1000,
+    "revision": "1d7cefa5c31b",
+    "sourceRevision": "50bd6bc8692a",
+    "sourceBytes": 3038370,
+    "bytes": 536342,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/PutToTheSword.png": {
+    "file": "events/PutToTheSword.webp",
+    "width": 1573,
+    "height": 1000,
+    "revision": "a9d825dc26f9",
+    "sourceRevision": "1d236f683b53",
+    "sourceBytes": 2430915,
+    "bytes": 352730,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/RainsOfAutumn.png": {
+    "file": "events/RainsOfAutumn.webp",
+    "width": 1572,
+    "height": 1001,
+    "revision": "cb42d8c70423",
+    "sourceRevision": "6eadfcc46322",
+    "sourceBytes": 2870166,
+    "bytes": 445868,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/RattleshirtLarge.png": {
+    "file": "events/RattleshirtLarge.webp",
+    "width": 1571,
+    "height": 1001,
+    "revision": "fa7ae3234e9b",
+    "sourceRevision": "297f5d750511",
+    "sourceBytes": 2994843,
+    "bytes": 478014,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/SeaOfStorms.png": {
+    "file": "events/SeaOfStorms.webp",
+    "width": 1572,
+    "height": 1001,
+    "revision": "95030c93ca2b",
+    "sourceRevision": "9e84e051849c",
+    "sourceBytes": 3116834,
+    "bytes": 532418,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/SilenceLarge.png": {
+    "file": "events/SilenceLarge.webp",
+    "width": 2172,
+    "height": 724,
+    "revision": "52966ff4b0af",
+    "sourceRevision": "b851298bb976",
+    "sourceBytes": 3164295,
+    "bytes": 529390,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/SkinchangerLarge.png": {
+    "file": "events/SkinchangerLarge.webp",
+    "width": 1571,
+    "height": 1001,
+    "revision": "33bbaa7de036",
+    "sourceRevision": "e3e5d62de52c",
+    "sourceBytes": 3070335,
+    "bytes": 511100,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/StormOfSwords.png": {
+    "file": "events/StormOfSwords.webp",
+    "width": 1774,
+    "height": 887,
+    "revision": "cd8736749afb",
+    "sourceRevision": "f81be46781f1",
+    "sourceBytes": 2669589,
+    "bytes": 411054,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/Supply.png": {
+    "file": "events/Supply.webp",
+    "width": 1570,
+    "height": 1001,
+    "revision": "57f6e348c684",
+    "sourceRevision": "39227348f829",
+    "sourceBytes": 3409726,
+    "bytes": 644254,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/ThroneOfBlades.png": {
+    "file": "events/ThroneOfBlades.webp",
+    "width": 1570,
+    "height": 1002,
+    "revision": "67afdd7c0916",
+    "sourceRevision": "40fd7671d268",
+    "sourceBytes": 2718032,
+    "bytes": 400948,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/WebOfLies.png": {
+    "file": "events/WebOfLies.webp",
+    "width": 1570,
+    "height": 1002,
+    "revision": "92ecfbf61f44",
+    "sourceRevision": "2842189b5125",
+    "sourceBytes": 2287379,
+    "bytes": 337044,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/WildlingsAttackIII.png": {
+    "file": "events/WildlingsAttackIII.webp",
+    "width": 1570,
+    "height": 1002,
+    "revision": "71427785da26",
+    "sourceRevision": "03fc8d5efd8a",
+    "sourceBytes": 2964096,
+    "bytes": 452570,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "events/WinterIsComing.png": {
+    "file": "events/WinterIsComing.webp",
+    "width": 1570,
+    "height": 1002,
+    "revision": "d23ad28f96ca",
+    "sourceRevision": "3410cffd36a0",
+    "sourceBytes": 2795910,
+    "bytes": 403058,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "media/orders/Consolidate.png": {
+    "file": "media/orders/Consolidate.webp",
+    "width": 1254,
+    "height": 1254,
+    "revision": "fcf4646058d4",
+    "sourceRevision": "eb8d73daa107",
+    "sourceBytes": 1658363,
+    "bytes": 415472,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "media/orders/Defend.png": {
+    "file": "media/orders/Defend.webp",
+    "width": 1272,
+    "height": 1237,
+    "revision": "39488c3c954d",
+    "sourceRevision": "7e478c64ef94",
+    "sourceBytes": 1989886,
+    "bytes": 397782,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "media/orders/March.png": {
+    "file": "media/orders/March.webp",
+    "width": 1277,
+    "height": 1231,
+    "revision": "27a0a7a0b2e8",
+    "sourceRevision": "aacfd5985012",
+    "sourceBytes": 1683133,
+    "bytes": 408610,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "media/orders/Raid.png": {
+    "file": "media/orders/Raid.webp",
+    "width": 1277,
+    "height": 1231,
+    "revision": "cdf508a55ee0",
+    "sourceRevision": "1688fa10fba7",
+    "sourceBytes": 918475,
+    "bytes": 253728,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "media/orders/Support.png": {
+    "file": "media/orders/Support.webp",
+    "width": 1277,
+    "height": 1231,
+    "revision": "da43d4aef201",
+    "sourceRevision": "2427a1ddc155",
+    "sourceBytes": 1797357,
+    "bytes": 385322,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_baratheon_brienne.png": {
+    "file": "T_crd_baratheon_brienne.webp",
+    "width": 1254,
+    "height": 1254,
+    "revision": "2f5617bb5522",
+    "sourceRevision": "9d3d7ef6292c",
+    "sourceBytes": 2217282,
+    "bytes": 278566,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_baratheon_davos.png": {
+    "file": "T_crd_baratheon_davos.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "c6f7d8290bfb",
+    "sourceRevision": "9a2bedb1c7f6",
+    "sourceBytes": 2428163,
+    "bytes": 338966,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_baratheon_melisandre.png": {
+    "file": "T_crd_baratheon_melisandre.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "f433368ce915",
+    "sourceRevision": "e0d976278d79",
+    "sourceBytes": 2649095,
+    "bytes": 488156,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_baratheon_patchface.png": {
+    "file": "T_crd_baratheon_patchface.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "a2add46d80dd",
+    "sourceRevision": "3bb1671166b1",
+    "sourceBytes": 2842231,
+    "bytes": 450168,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_baratheon_renly.png": {
+    "file": "T_crd_baratheon_renly.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "bef1148bca06",
+    "sourceRevision": "131713c32e3e",
+    "sourceBytes": 2807755,
+    "bytes": 457536,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_baratheon_salladhor.png": {
+    "file": "T_crd_baratheon_salladhor.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "3eeaa92ba04a",
+    "sourceRevision": "a1f7b8d6cb7b",
+    "sourceBytes": 2851709,
+    "bytes": 460140,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_baratheon_stannis.png": {
+    "file": "T_crd_baratheon_stannis.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "ba6101dde0cc",
+    "sourceRevision": "658290a8790d",
+    "sourceBytes": 2785707,
+    "bytes": 423320,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_greyjoy_aeron.png": {
+    "file": "T_crd_greyjoy_aeron.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "86ac35ad16d2",
+    "sourceRevision": "9b873fd1f7c1",
+    "sourceBytes": 2889372,
+    "bytes": 478268,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_greyjoy_asha.png": {
+    "file": "T_crd_greyjoy_asha.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "4711c7969e9b",
+    "sourceRevision": "c7bb09ce0099",
+    "sourceBytes": 3203639,
+    "bytes": 550930,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_greyjoy_balon.png": {
+    "file": "T_crd_greyjoy_balon.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "0f1ca8283d24",
+    "sourceRevision": "2fe3f103fd36",
+    "sourceBytes": 3014630,
+    "bytes": 533864,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_greyjoy_dagmer.png": {
+    "file": "T_crd_greyjoy_dagmer.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "b75577dd5381",
+    "sourceRevision": "eb4daef81977",
+    "sourceBytes": 3038450,
+    "bytes": 496294,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_greyjoy_euron.png": {
+    "file": "T_crd_greyjoy_euron.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "0b34cdd337e1",
+    "sourceRevision": "d9571b2c0d3e",
+    "sourceBytes": 2612944,
+    "bytes": 410224,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_greyjoy_theon.png": {
+    "file": "T_crd_greyjoy_theon.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "35d6537c46e6",
+    "sourceRevision": "ea773b95a8ac",
+    "sourceBytes": 2750755,
+    "bytes": 407220,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_greyjoy_victarion.png": {
+    "file": "T_crd_greyjoy_victarion.webp",
+    "width": 1122,
+    "height": 1402,
+    "revision": "87ab8c5d0da5",
+    "sourceRevision": "94528bf1fec5",
+    "sourceBytes": 2857762,
+    "bytes": 468580,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_lannister_cersei.png": {
+    "file": "T_crd_lannister_cersei.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "d2782025d562",
+    "sourceRevision": "14362dee68a8",
+    "sourceBytes": 2572244,
+    "bytes": 395982,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_lannister_gregor.png": {
+    "file": "T_crd_lannister_gregor.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "eee362177c6e",
+    "sourceRevision": "5d54a5a6a780",
+    "sourceBytes": 2973135,
+    "bytes": 543502,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_lannister_jaime.png": {
+    "file": "T_crd_lannister_jaime.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "8bb57ee8a6b5",
+    "sourceRevision": "9ad491a752c1",
+    "sourceBytes": 2814879,
+    "bytes": 488020,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_lannister_kevan.png": {
+    "file": "T_crd_lannister_kevan.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "e418e2571571",
+    "sourceRevision": "1f44b974ef07",
+    "sourceBytes": 2600229,
+    "bytes": 391296,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_lannister_sandor.png": {
+    "file": "T_crd_lannister_sandor.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "b76225dd9927",
+    "sourceRevision": "eb433f21847e",
+    "sourceBytes": 2581482,
+    "bytes": 430350,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_lannister_tyrion.png": {
+    "file": "T_crd_lannister_tyrion.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "26adbf45c9d3",
+    "sourceRevision": "8b9c0bb7ed59",
+    "sourceBytes": 2363058,
+    "bytes": 331840,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_lannister_tywin.png": {
+    "file": "T_crd_lannister_tywin.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "a3943f260c2f",
+    "sourceRevision": "8c6ab2aac2b4",
+    "sourceBytes": 2792918,
+    "bytes": 467158,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_martell_areo.png": {
+    "file": "T_crd_martell_areo.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "7a24df19c12c",
+    "sourceRevision": "fdd2d6845aca",
+    "sourceBytes": 3132286,
+    "bytes": 521258,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_martell_arianne.png": {
+    "file": "T_crd_martell_arianne.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "c29b6170bb6d",
+    "sourceRevision": "bfb41949f65f",
+    "sourceBytes": 2637491,
+    "bytes": 379990,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_martell_darkstar.png": {
+    "file": "T_crd_martell_darkstar.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "fd6aa6848a19",
+    "sourceRevision": "e32e48b376bc",
+    "sourceBytes": 2495126,
+    "bytes": 371664,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_martell_doran.png": {
+    "file": "T_crd_martell_doran.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "012e8826479d",
+    "sourceRevision": "85906baf62b1",
+    "sourceBytes": 2604178,
+    "bytes": 415218,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_martell_nymeria.png": {
+    "file": "T_crd_martell_nymeria.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "95fc43958828",
+    "sourceRevision": "77960f9b332d",
+    "sourceBytes": 2665722,
+    "bytes": 410594,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_martell_obara.png": {
+    "file": "T_crd_martell_obara.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "9cbb4c1a843c",
+    "sourceRevision": "0566b75bd9d3",
+    "sourceBytes": 2370539,
+    "bytes": 344646,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_martell_theredviper.png": {
+    "file": "T_crd_martell_theredviper.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "7d9a4046c9b5",
+    "sourceRevision": "49e04dd8b7a8",
+    "sourceBytes": 2350796,
+    "bytes": 339108,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_stark_blackfish.png": {
+    "file": "T_crd_stark_blackfish.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "03d24e15d582",
+    "sourceRevision": "70011fc334e2",
+    "sourceBytes": 2815815,
+    "bytes": 451900,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_stark_catelyn.png": {
+    "file": "T_crd_stark_catelyn.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "0cf369bd9db8",
+    "sourceRevision": "574540ca9893",
+    "sourceBytes": 2877511,
+    "bytes": 445462,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_stark_eddard.png": {
+    "file": "T_crd_stark_eddard.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "b1e11033bb14",
+    "sourceRevision": "a05aa5f015e0",
+    "sourceBytes": 2826646,
+    "bytes": 479774,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_stark_greatjon.png": {
+    "file": "T_crd_stark_greatjon.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "7e2d1efd95d9",
+    "sourceRevision": "f5a1ac69e634",
+    "sourceBytes": 3217831,
+    "bytes": 524782,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_stark_robb.png": {
+    "file": "T_crd_stark_robb.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "74d38d523015",
+    "sourceRevision": "083983c97572",
+    "sourceBytes": 3161597,
+    "bytes": 517680,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_stark_rodrik.png": {
+    "file": "T_crd_stark_rodrik.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "ad5cb3a82603",
+    "sourceRevision": "0e481365be86",
+    "sourceBytes": 3265811,
+    "bytes": 566108,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_stark_roose.png": {
+    "file": "T_crd_stark_roose.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "ebb0e1399dd3",
+    "sourceRevision": "671246e4df26",
+    "sourceBytes": 2429274,
+    "bytes": 359144,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_tyrell_alester.png": {
+    "file": "T_crd_tyrell_alester.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "d5c50fd2aca8",
+    "sourceRevision": "f61442bf65c7",
+    "sourceBytes": 2866741,
+    "bytes": 452400,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_tyrell_garlan.png": {
+    "file": "T_crd_tyrell_garlan.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "af19d5b97141",
+    "sourceRevision": "ec3a5f6f1453",
+    "sourceBytes": 2978631,
+    "bytes": 507084,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_tyrell_loras.png": {
+    "file": "T_crd_tyrell_loras.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "39efdaf5544a",
+    "sourceRevision": "51f48dc6218f",
+    "sourceBytes": 2691071,
+    "bytes": 421684,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_tyrell_mace.png": {
+    "file": "T_crd_tyrell_mace.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "70d8ab0d1f06",
+    "sourceRevision": "48b0e818554b",
+    "sourceBytes": 2563652,
+    "bytes": 392044,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_tyrell_margaery.png": {
+    "file": "T_crd_tyrell_margaery.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "5595436880f0",
+    "sourceRevision": "7028a34105ab",
+    "sourceBytes": 2100354,
+    "bytes": 208086,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_tyrell_queenofthorns.png": {
+    "file": "T_crd_tyrell_queenofthorns.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "148f3603fb0b",
+    "sourceRevision": "56f06c376fc6",
+    "sourceBytes": 2264503,
+    "bytes": 277836,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "T_crd_tyrell_randyll.png": {
+    "file": "T_crd_tyrell_randyll.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "3ed796230102",
+    "sourceRevision": "44a9be844aaf",
+    "sourceBytes": 2833019,
+    "bytes": 469156,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "tides-of-battle/fortification.png": {
+    "file": "tides-of-battle/fortification.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "fa53fd67abba",
+    "sourceRevision": "7a23b4d6cae4",
+    "sourceBytes": 4058634,
+    "bytes": 842112,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "tides-of-battle/skull.png": {
+    "file": "tides-of-battle/skull.webp",
+    "width": 1007,
+    "height": 1561,
+    "revision": "49f3a6b520e8",
+    "sourceRevision": "c983790dc9de",
+    "sourceBytes": 3772329,
+    "bytes": 764672,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "tides-of-battle/sword.png": {
+    "file": "tides-of-battle/sword.webp",
+    "width": 1007,
+    "height": 1562,
+    "revision": "de8c4dd957b9",
+    "sourceRevision": "6e59fb6d13ba",
+    "sourceBytes": 3587133,
+    "bytes": 714328,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "tides-of-battle/three.png": {
+    "file": "tides-of-battle/three.webp",
+    "width": 1007,
+    "height": 1561,
+    "revision": "2dbd171e02ad",
+    "sourceRevision": "6640e0a8cd2c",
+    "sourceBytes": 3656723,
+    "bytes": 769740,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "tides-of-battle/two.png": {
+    "file": "tides-of-battle/two.webp",
+    "width": 1024,
+    "height": 1536,
+    "revision": "abb8b256fa46",
+    "sourceRevision": "e6435ba692e4",
+    "sourceBytes": 3460215,
+    "bytes": 733972,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "tides-of-battle/zero.png": {
+    "file": "tides-of-battle/zero.webp",
+    "width": 1007,
+    "height": 1562,
+    "revision": "a537a65208c2",
+    "sourceRevision": "342bb1698c51",
+    "sourceBytes": 3853643,
+    "bytes": 814914,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  },
+  "ui/strength-shield.png": {
+    "file": "ui/strength-shield.webp",
+    "width": 1167,
+    "height": 1347,
+    "revision": "fbfbd606fe7f",
+    "sourceRevision": "33fdc99746e0",
+    "sourceBytes": 3557483,
+    "bytes": 712920,
+    "encoding": "webp-q92-alpha100-effort6-v1-libwebp1.6.0"
+  }
+}

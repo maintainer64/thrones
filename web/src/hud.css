@@ -1,0 +1,686 @@
+/* Game-only HUD: the real board remains the workspace, panels can be tucked away. */
+.fortification-badge {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-width: 26px;
+  min-height: 25px;
+  padding: 3px;
+  background: #28241cef;
+  border: 1px solid #ae9660;
+  color: #ead6a5;
+  border-radius: 3px;
+  font: bold 12px system-ui;
+}
+.fortification-badge > svg {
+  flex: none;
+}
+.fortification-badge > img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+.fortification-badge[data-fortification="blocked"] {
+  color: #edb4a3;
+  border-color: #a25e50;
+}
+.fortification-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0;
+  padding: 10px;
+  border: 1px solid #9a805455;
+  background: #a28a4215;
+}
+.fortification-info > p {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #d0c6ad;
+}
+.game3d-region .fortification-badge {
+  box-shadow: 0 2px 4px #0008;
+}
+.decision-next {
+  position: sticky;
+  bottom: -20px;
+  z-index: 2;
+  padding: 14px;
+  margin-top: 18px;
+  background: #24271bf5;
+  border: 1px solid #b49a60;
+  text-align: left;
+}
+.decision-next p {
+  margin: 0 0 10px;
+}
+.decision-next button {
+  min-height: 44px;
+}
+.sidebar-action {
+  display: grid;
+  gap: 12px;
+}
+.sidebar-action h3,
+.action-route {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.sidebar-action h4,
+.sidebar-action p {
+  margin: 0;
+}
+.sidebar-action fieldset {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #9a805455;
+}
+.sidebar-action legend {
+  font-size: 15px;
+  color: #d9c593;
+}
+.sidebar-action-unit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+}
+.sidebar-action-unit img {
+  width: 30px;
+  height: 36px;
+  object-fit: contain;
+}
+.sidebar-action-unit span {
+  flex: 1;
+  min-width: 0;
+}
+.sidebar-action-unit small {
+  display: block;
+  font-size: 11px;
+  color: #b7ad92;
+}
+.sidebar-action-unit input {
+  width: 64px;
+  min-height: 44px;
+  padding: 6px;
+}
+.sidebar-action select,
+.sidebar-action > button {
+  width: 100%;
+  min-height: 44px;
+}
+.sidebar-action-status,
+.action-recap {
+  padding: 10px;
+  border: 1px solid #9a805455;
+  background: #a28a4215;
+  font-size: 13px;
+}
+.sidebar-action .checkbox-label {
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 13px;
+}
+.sidebar-action .checkbox-label small {
+  color: #b7ad92;
+}
+.order-picker .order-help {
+  block-size: 176px;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.order-palette button[aria-disabled="true"] {
+  opacity: 0.42;
+  filter: grayscale(0.7);
+}
+.order-palette button[data-used="true"] {
+  border-style: dashed;
+}
+.order-budget {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #9a805455;
+  background: #a28a4215;
+}
+.order-budget small {
+  flex-basis: 100%;
+  color: #b7ad92;
+  line-height: 1.4;
+}
+.game-hud {
+  --hud-left: 0px;
+  --hud-right: 312px;
+  --hand-height: 208px;
+  height: 100dvh;
+  overflow: hidden;
+  background: #0c1518;
+}
+.game-hud[data-houses-open="true"] {
+  --hud-left: 232px;
+}
+.game-hud[data-inspector-open="false"] {
+  --hud-right: 0px;
+}
+.game-hud[data-hand-open="false"] {
+  --hand-height: 44px;
+}
+.game-hud header {
+  height: 56px;
+  background: #10191cf2;
+  border-bottom: 1px solid #b99a5744;
+}
+.hud-resources {
+  display: none;
+}
+.game-hud .hud-resources {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-left: 18px;
+  border-left: 1px solid #ab945344;
+  flex-shrink: 0;
+}
+.hud-resources > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.hud-resources > span > svg {
+  color: #c2ad76;
+  flex-shrink: 0;
+}
+.hud-resources small {
+  font-size: 9px;
+  color: #94a797;
+}
+.hud-resources b {
+  color: #e5d1a0;
+  font:
+    18px Georgia,
+    serif;
+}
+.hud-resources i {
+  color: #8ca08f;
+  font: 10px system-ui;
+  font-style: normal;
+}
+.hud-resources .hud-resource-house b {
+  font-size: 16px;
+}
+.game-hud .prototype-note {
+  min-height: 24px;
+  padding-block: 4px;
+  font-size: 10px;
+  background: #191e1b;
+}
+.game-hud .game-workspace {
+  position: relative;
+  display: block;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 35%, #2a3c3d, #0b151a 75%);
+}
+.game-hud .table-center {
+  position: absolute;
+  inset: 0 0 var(--hand-height);
+  display: flex;
+  min-height: 0;
+}
+.game-hud .phase-banner {
+  flex: 0 0 62px;
+  min-height: 62px;
+  padding: 8px max(22px, var(--hud-right)) 8px max(238px, var(--hud-left));
+  border: 0;
+  background: linear-gradient(90deg, #111d1e00, #1d2a29c9 45%, #111d1e00);
+}
+.game-hud .phase-banner h2 {
+  margin: 3px 0 0;
+  font-size: 22px;
+  color: #ead5a8;
+}
+.game-hud .phase-banner .eyebrow {
+  font-size: 9px;
+}
+.game-hud .phase-banner > div:last-child {
+  white-space: nowrap;
+}
+.game-hud .game-board {
+  border: 0;
+  background: none;
+}
+.game-hud .game3d-stage {
+  min-height: 120px;
+  margin-left: var(--hud-left);
+  margin-right: var(--hud-right);
+  transition: none;
+}
+.game-hud .game3d-board:after {
+  box-shadow: none;
+}
+.game-hud .game3d-tools {
+  left: 12px;
+  top: 10px;
+}
+.game-hud .game3d-tools button {
+  min-width: 40px;
+  min-height: 40px;
+  background: #152426e8;
+  border-color: #a9915766;
+}
+.game-hud .game3d-caption {
+  padding: 24px 14px 8px;
+  background: linear-gradient(transparent, #102124bb);
+}
+.game-hud .game3d-caption small {
+  display: none;
+}
+.hud-panel-buttons {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  z-index: 25;
+  display: flex;
+  gap: 7px;
+}
+.hud-panel-buttons button {
+  min-height: 40px;
+  font-size: 11px;
+  background: #142326ef;
+  border: 1px solid #84754e;
+  color: #d9c691;
+}
+.hud-panel-buttons button[aria-pressed="true"] {
+  background: #36443a;
+  border-color: #ceae66;
+}
+.game-hud .houses,
+.game-hud .inspector {
+  position: absolute;
+  top: 68px;
+  bottom: calc(var(--hand-height) + 12px);
+  max-height: none;
+  z-index: 20;
+  padding: 16px;
+  overflow: auto;
+  scrollbar-width: thin;
+  background: linear-gradient(145deg, #25332df5, #112124f5);
+  border: 1px solid #ac91554d;
+  border-radius: 9px;
+  box-shadow: 0 14px 35px #0005;
+}
+.game-hud .houses {
+  left: 14px;
+  width: 208px;
+}
+.game-hud .inspector {
+  right: 14px;
+  width: 284px;
+}
+.game-hud[data-houses-open="false"] .houses,
+.game-hud[data-inspector-open="false"] .inspector {
+  display: none;
+}
+.hud-close-panel {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border-color: transparent;
+  padding: 6px;
+  color: #b5baa5;
+}
+.game-hud .inspector > .eyebrow {
+  padding-right: 24px;
+  font-size: 9px;
+}
+.game-hud .inspector > h2 {
+  font-size: 27px;
+  margin: 8px 0;
+}
+.game-hud .inspector .stats {
+  margin: 14px 0;
+  padding: 12px 0;
+}
+.game-hud .inspector h3 {
+  font-size: 10px;
+  margin: 16px 0 10px;
+}
+.game-hud .detailed-unit {
+  padding: 6px 0;
+}
+.game-hud .detailed-unit > img {
+  width: 32px;
+  height: 32px;
+}
+.game-hud .my-house {
+  gap: 12px;
+  margin: 17px 0;
+}
+.game-hud .my-house .crest {
+  width: 42px;
+  height: 42px;
+}
+.game-hud .my-house h2 {
+  font-size: 27px;
+}
+.game-hud .house-resources {
+  padding: 12px 0;
+  border-inline: 0;
+  border-radius: 0;
+  margin-bottom: 18px;
+  background: transparent;
+}
+.game-hud .house-resources b {
+  font-size: 25px;
+}
+.game-hud .seat {
+  padding: 10px 8px;
+  margin-bottom: 7px;
+  border: 1px solid #8a8e6840;
+  border-left: 2px solid var(--house);
+  background: #17272788;
+}
+.game-hud .seat-title b {
+  font-size: 11px;
+}
+.game-hud .seat-name {
+  font-size: 9px;
+}
+.game-hud .seat-title > .crest {
+  width: 24px;
+  height: 24px;
+}
+.game-hud .seat-controls {
+  flex-wrap: wrap;
+}
+.game-hud .seat-controls select {
+  font-size: 10px;
+  min-width: 0;
+}
+.game-hud .action-dock {
+  min-height: 68px;
+  padding: 10px max(20px, var(--hud-right)) 10px max(20px, var(--hud-left));
+  gap: 16px;
+  border: 0;
+  background: linear-gradient(0deg, #112022ea, #15242499);
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.game-hud .action-dock > div {
+  min-width: 0;
+}
+.game-hud .action-dock small {
+  font-size: 8px;
+}
+.game-hud .action-dock p {
+  font-size: 11px;
+  max-width: 420px;
+  margin: 4px 0 0;
+}
+.game-hud .action-dock button {
+  min-height: 44px;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+.game-hud .map-move-dock {
+  max-height: 34dvh;
+  overflow: auto;
+  margin-left: var(--hud-left);
+  margin-right: var(--hud-right);
+  background: #18332ff5;
+  border-color: #ad945b;
+}
+.game-hud .house-hand-dock {
+  position: absolute;
+  inset: auto 0 0;
+  height: var(--hand-height);
+  z-index: 30;
+  padding: 0 22px 8px;
+  background:
+    radial-gradient(ellipse at 50% 95%, #3d422b77, transparent 65%),
+    linear-gradient(0deg, #0b1419, #152223f5 80%, #182725cc);
+  border-top: 1px solid #c2a4655c;
+  box-shadow: 0 -10px 35px #050c0d55;
+}
+.game-hud .hand {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.game-hud .hand summary {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #ddc991;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+.game-hud .hand-heading,
+.game-hud .hand-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.game-hud .hand-count {
+  font-family: system-ui;
+  color: #a5b39c;
+  font-size: 10px;
+}
+.game-hud .hand[open] .hand-count > svg {
+  transform: rotate(180deg);
+}
+.game-hud .hand-cards {
+  display: flex;
+  justify-content: safe center;
+  gap: 16px;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 5px 5px 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+.game-hud .hand-cards button {
+  position: relative;
+  flex: 0 0 98px;
+  width: 98px;
+  min-width: 98px;
+  aspect-ratio: 10 / 17;
+  min-height: 0;
+  border-radius: 6px;
+  padding: 0;
+  background: transparent;
+}
+.game-hud .hand-cards .house-card {
+  border-radius: 6px;
+  box-shadow:
+    0 2px 0 #99874f,
+    0 5px 0 #342f24,
+    0 8px 14px #0007;
+}
+.game-hud .hand-cards button:hover,
+.game-hud .hand-cards button:focus-visible {
+  outline: 2px solid #e6c882;
+  outline-offset: 2px;
+  transform: none;
+}
+.hand-discard-label {
+  position: absolute;
+  inset: auto 4px 34%;
+  background: #131e1de8;
+  color: #d7cbb0;
+  font-size: 9px;
+  padding: 4px;
+  border: 1px solid #9e8f67;
+}
+.game-hud .order-help {
+  position: static;
+  padding: 10px;
+  background: #162b29;
+  border-color: #a18c544d;
+}
+.game-hud .order-description {
+  font-size: 11px;
+  line-height: 1.65;
+}
+.game-hud .order-palette {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+.game-hud .order-palette button {
+  min-height: 60px;
+  scroll-margin-block: 10px;
+  border-radius: 8px;
+  background: #20342e;
+}
+.game-hud .order-palette button:hover,
+.game-hud .order-palette button.inspected {
+  background: #43543b;
+  border-color: #c1aa6c;
+}
+.game-hud .order-palette .picked {
+  box-shadow: inset 0 0 0 2px #d2b169;
+  background: #534d30;
+}
+.game-hud .game-toast {
+  bottom: calc(var(--hand-height) + 18px);
+}
+@media (max-width: 1150px) {
+  .game-hud {
+    --hand-height: 180px;
+    --hud-right: 286px;
+  }
+  .game-hud .inspector {
+    width: 262px;
+    padding: 14px;
+  }
+  .game-hud[data-houses-open="true"] {
+    --hud-left: 212px;
+  }
+  .game-hud .houses {
+    width: 190px;
+  }
+  .game-hud .hand-cards {
+    gap: 12px;
+  }
+  .game-hud .hand-cards button {
+    flex-basis: 80px;
+    width: 80px;
+    min-width: 80px;
+  }
+  .game-hud .phase-banner {
+    padding-left: 216px;
+    gap: 8px;
+  }
+  .game-hud .phase-banner h2 {
+    font-size: 19px;
+  }
+  .game-hud .phase-banner > div:last-child {
+    font-size: 9px;
+  }
+  .game-hud .hud-resources {
+    gap: 11px;
+    padding-left: 10px;
+  }
+  .hud-resources .hud-resource-house,
+  .hud-resources small {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .game-hud {
+    --hud-right: 268px;
+  }
+  .game-hud .inspector {
+    width: 250px;
+    right: 8px;
+  }
+  .game-hud .phase-banner {
+    padding: 8px 12px 8px 210px;
+  }
+  .game-hud .phase-banner > div:last-child {
+    display: none;
+  }
+  .game-hud .action-dock {
+    /* Keep real action buttons outside the open side panels on tablets too. */
+    padding: 8px max(12px, var(--hud-right)) 8px max(12px, var(--hud-left));
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .game-hud .action-dock > div {
+    flex-basis: 100%;
+  }
+  .game-hud .action-dock p {
+    max-width: 290px;
+  }
+  .game-hud .hand-cards {
+    justify-content: flex-start;
+  }
+  .game-hud .hand summary {
+    font-size: 10px;
+  }
+  .game-hud .house-hand-dock {
+    padding-inline: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .game-hud .hud-resources {
+    display: none;
+  }
+  .game-hud {
+    --hud-right: 0px;
+    --hand-height: 160px;
+  }
+  .game-hud .inspector {
+    top: 65px;
+    bottom: calc(var(--hand-height) + 8px);
+    width: min(280px, calc(100% - 24px));
+    background: #172b29fa;
+  }
+  .game-hud .hand-cards button {
+    flex-basis: 70px;
+    min-width: 70px;
+    width: 70px;
+  }
+  .game-hud .phase-banner h2 {
+    font-size: 16px;
+  }
+  .game-hud .action-dock > div {
+    display: none;
+  }
+  .game-hud .action-dock {
+    /* Phone inspectors intentionally overlay the board, but never the actions. */
+    position: relative;
+    z-index: 21;
+  }
+  .game-hud .map-move-dock {
+    max-height: 44dvh;
+    overflow: auto;
+  }
+}
+@media (pointer: coarse) {
+  .hud-panel-buttons button,
+  .hud-close-panel,
+  .game-hud .hand summary {
+    min-height: 44px;
+  }
+  .game-hud .hand summary {
+    height: 44px;
+  }
+}

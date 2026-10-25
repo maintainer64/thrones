@@ -1,0 +1,61 @@
+.order-token {
+  --order-size: 42px;
+  position: relative;
+  display: inline-block;
+  width: var(--order-size);
+  height: var(--order-size);
+  flex: 0 0 auto;
+  vertical-align: middle;
+  isolation: isolate;
+  container-type: inline-size;
+  border-radius: 50%;
+  background: radial-gradient(circle, #54432988, #171b1be0 70%);
+  box-shadow:
+    inset 0 0 0 1px #c2a46c55,
+    0 2px 4px #0005;
+}
+.order-token > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 1px #0009);
+}
+.order-token .order-token-modifier {
+  position: absolute;
+  left: -8%;
+  bottom: -4%;
+  z-index: 2;
+  min-width: 48%;
+  padding: 0 4%;
+  border: 1px solid #d0af6d;
+  border-radius: 4px;
+  background: #211e19;
+  color: #fff1cd;
+  font-family: "Alegreya Variable", Georgia, serif;
+  font-size: clamp(10px, 34cqw, 18px);
+  line-height: 1.1;
+  text-align: center;
+  text-shadow: 0 1px 2px #000;
+  box-shadow: 0 1px 3px #0009;
+}
+.order-token .order-token-star {
+  position: absolute;
+  z-index: 3;
+  right: -10%;
+  top: -10%;
+  width: 43%;
+  height: 43%;
+}
+.order-token-star > .game-symbol {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.order-token-fallback {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: #e7ce97;
+  font-weight: 700;
+}
