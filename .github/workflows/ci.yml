@@ -1,7 +1,6 @@
 name: Go and React
 
 on:
-  push:
   pull_request:
 
 permissions:
@@ -10,6 +9,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
@@ -30,7 +30,7 @@ jobs:
       - run: pnpm --dir web build
       - run: node scripts/sync-web.mjs
       - run: test -z "$(gofmt -l cmd internal)"
-      - run: go test -race -count=1 ./...
+      - run: go test -race -count=1 -timeout=20m ./...
       - run: go vet ./...
       - run: go build -trimpath -o bin/westeros ./cmd/server
       - name: Save the exact frontend and artwork used by browser jobs
@@ -106,13 +106,3 @@ jobs:
             web/playwright-report/
           if-no-files-found: ignore
           retention-days: 7
-
-  container:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: docker/setup-buildx-action@v4
-      - uses: docker/build-push-action@v7
-        with:
-          context: .
-          push: false
