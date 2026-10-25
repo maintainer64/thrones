@@ -1,7 +1,6 @@
 name: Go and React
 
 on:
-  push:
   pull_request:
 
 permissions:
@@ -106,13 +105,3 @@ jobs:
             web/playwright-report/
           if-no-files-found: ignore
           retention-days: 7
-
-  container:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: docker/setup-buildx-action@v4
-      - uses: docker/build-push-action@v7
-        with:
-          context: .
-          push: false

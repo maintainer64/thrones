@@ -1,4 +1,4 @@
-FROM node:24-bookworm-slim AS frontend
+FROM --platform=$BUILDPLATFORM node:24-bookworm-slim AS frontend
 WORKDIR /src
 RUN corepack enable && corepack prepare pnpm@11.13.0 --activate
 COPY web/package.json web/pnpm-lock.yaml ./web/
@@ -10,7 +10,7 @@ COPY scripts/lib/webp-art.mjs ./scripts/lib/webp-art.mjs
 RUN cd web && pnpm build
 RUN node scripts/sync-web.mjs
 
-FROM golang:1.26-bookworm AS backend
+FROM --platform=$BUILDPLATFORM golang:1.26-bookworm AS backend
 WORKDIR /src
 ARG TARGETOS=linux
 ARG TARGETARCH
