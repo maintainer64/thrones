@@ -18,6 +18,12 @@ const publication = parse(
 test("only pull requests run tests; releases and ordinary pushes cannot start CI", () => {
   assert.deepEqual(Object.keys(workflow.on), ["pull_request"]);
   assert.equal(workflow.jobs.container, undefined);
+  assert.equal(workflow.jobs.test["timeout-minutes"], 30);
+  assert.ok(
+    workflow.jobs.test.steps.some((step) =>
+      step.run?.startsWith("go test -race -count=1 -timeout=20m "),
+    ),
+  );
   assert.ok(
     !Object.values(workflow.jobs).some((job) =>
       job.steps?.some((step) => step.uses?.startsWith("docker/")),
